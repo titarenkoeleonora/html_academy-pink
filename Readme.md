@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Элеонора  Титаренко](https://up.htmlacademy.ru/adaptive/18/user/1120597).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга  Вадясова](https://htmlacademy.ru/profile/ad0v0).
 
 ---
 
