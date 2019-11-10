@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
+  <title>Главная &#448; HTML Academy: Пинк</title>
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="#" alt="Мобильное приложение PINK" width="" height="">
+      <img class="page-header__logo-image logo" src="#" alt="Мобильное приложение PINK" width="" height="">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -25,7 +25,7 @@
             <a href="contest.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -34,30 +34,36 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">PINK - мобильное приложение для раскрашивания серых будней в розовый цвет!</h1>
-    <div class="preview">
-      <img class="preview__image" src="#" alt="Взгляните на жизнь иначе!" width="" height="">
-    </div>
+    <section class="promo">
+      <!-- Картинка с телефоном фоном -->
+    </section>
     <section class="download">
-      <h2 class="visually-hidden>">Скачать на мобильный телефон</h2>
-      <a class="download__button" href="https://www.apple.com/ios/app-store/">Скачать приложение</a>
+      <section class="download__call-to-action">
+        <h2 class="visually-hidden>">PINK - мобильное приложение для раскрашивания серых будней в розовый цвет!</h2>
+        <a class="download__button button" href="https://www.apple.com/ios/app-store/">Скачать приложение</a>
+      </section>
       <ul class="download_list apps__list">
         <li class="apps_item">
-          <a href="https://www.apple.com/ios/app-store/" aria-label="Скачать приложение в App Store"></a>
+          <a href="https://www.apple.com/ios/app-store/">
+            <img class="apps__logo app-store" src="#" alt="Скачать приложение в App Store" width="" height="">
+          </a>
         </li>
         <li class="apps_item">
-          <a href="https://play.google.com/store" aria-label="Скачать приложение в Google Play"></a>
+          <a href="https://play.google.com/store">
+            <img class="apps__logo app-store" src="#" alt="Скачать приложение в Google Play" width="" height="">
+          </a>
         </li>
         <li class="apps_item">
-          <a href="https://www.microsoft.com/ru-ru/" aria-label="Скачать приложение в Microsoft Store"></a>
+          <a href="https://www.microsoft.com/ru-ru/">
+            <img class="apps__logo app-store" src="#" alt="Скачать приложение в Microsoft Store" width="" height="">
+          </a>
         </li>
       </ul>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества приложения</h2>
-      <div class="call-to-action">
-        <p class="call-to-action__text">Устали от серости мегаполиса?</p>
-        <p class="call-to-action__text">Нам есть, что Вам предложить!</p>
-      </div>
+      <p class="advantages__slogan">Устали от серости мегаполиса?</p>
+      <p class="advantages__slogan">Нам есть, что Вам предложить!</p>
       <ul class="advantages__list">
         <li class="advantages__item">
           <h3 class="advantages__title">Поднимает настроение</h3>
@@ -75,7 +81,8 @@
           </p>
         </li>
       </ul>
-      <img class="advantages__image" src="#" alt="Всем привет!" width="" height="">
+      <div class="advantages-image">
+      </div>
     </section>
     <!-- Отзывы -->
     <!-- Тарифы -->
