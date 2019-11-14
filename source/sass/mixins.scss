@@ -1,0 +1,17 @@
+@mixin font-light {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@mixin font-normal {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font-bold {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}

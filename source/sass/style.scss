@@ -1,0 +1,23 @@
+@import "normalize";
+@import "mixins";
+@import "fonts";
+@import "visually-hidden";
+@import "global";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/promo";
+@import "blocks/download";
+@import "blocks/advantages";
+@import "blocks/intro";
+@import "blocks/photos";
+@import "blocks/comment";
+@import "blocks/like";
+@import "blocks/page-footer";
+@import "blocks/social";
+@import "blocks/copyright";
+
+
+$dark-background: #283645;
+$light-background: #ffffff;
+$grey-background:#f2f2f2;
