@@ -1,0 +1,68 @@
+$dark-background: #283645;
+$light-background: #ffffff;
+$grey-background:#f2f2f2;
+$light-text: #ffffff;
+$pink-text: #d22856;
+
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $light-text;
+  background-color: $dark-background;
+}
+
+.download__button {
+  display: block;
+  width: 281px;
+  margin-top: 28px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  border: 3px solid #ffffff;
+  border-radius: 55px;
+  -webkit-border-radius: 55px;
+  -moz-border-radius: 55px;
+  -ms-border-radius: 55px;
+  -o-border-radius: 55px;
+
+  &:hover {
+    color: $pink-text;
+    background-color: $light-background;
+  }
+}
+
+.download_list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 32px;
+  list-style: none;
+}
+
+.app-store {
+  margin-right: 34px;
+}
+
+.google-play {
+  margin-top: 8px;
+  margin-right: 37px;
+}
+
+.microsoft-store {
+  margin-top: 12px;
+}
+
+.download__info {
+  width: 240px;
+  margin-top: 28px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}

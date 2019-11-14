@@ -1,0 +1,36 @@
+$dark-background: #283645;
+$light-background: #ffffff;
+$grey-background:#f2f2f2;
+$light-text: #ffffff;
+$pink-text: #d22856;
+
+
+.site-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 63px;
+  text-align: center;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.site-list__link {
+  padding-top: auto;
+  color: $light-text;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+
+
+  &:hover {
+    color: $pink-text;
+  }
+
+  &:focus,
+  &:active {
+    color: $light-text;
+    opacity: 0.3;
+  }
+}
