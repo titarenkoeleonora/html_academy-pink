@@ -13,14 +13,13 @@
   margin-right: 18px;
   border: 3px solid #e9ebec;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+
   &:hover {
     border: 3px solid $dark-background;
   }
-  &:active, &:focus {
+
+  &:active,
+  &:focus {
     opacity: 0.3;
   }
 }
