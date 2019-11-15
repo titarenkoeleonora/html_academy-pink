@@ -29,6 +29,7 @@
 
 .download_list {
   display: flex;
+
   @include reset-list;
   margin-top: 32px;
 }
