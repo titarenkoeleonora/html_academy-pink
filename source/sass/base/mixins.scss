@@ -15,3 +15,13 @@
   font-style: normal;
   font-weight: 700;
 }
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset-text {
+  margin: 0;
+}

@@ -1,12 +1,12 @@
 $dark-background: #283645;
-$light-background: #ffffff;
+$white-background: #ffffff;
 $grey-background:#f2f2f2;
 
 .advantages {
   display: flex;
   flex-flow: column;
 
-  background: linear-gradient(170deg, #ffffff 40%, #f2f2f2 10%);
+  background: linear-gradient(170deg, $white-background 40%, $grey-background 10%);
 }
 
 .advantages__slogan {
@@ -17,14 +17,12 @@ $grey-background:#f2f2f2;
 }
 
 .advantages__list {
+  @include reset-list;
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin: 0;
-  padding: 0;
   margin-top: 119px;
   text-align: center;
-  list-style: none;
 }
 
 .advantages__item {
@@ -39,4 +37,5 @@ $grey-background:#f2f2f2;
 
 .advantages__text {
   font-size: 14px;
+  line-height: 24px;
 }

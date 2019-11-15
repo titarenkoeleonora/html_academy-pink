@@ -1,14 +1,8 @@
-$dark-background: #283645;
-$light-background: #ffffff;
-$grey-background:#f2f2f2;
-$light-text: #ffffff;
-$pink-text: #d22856;
-
 .photos {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $light-background;
+  background-color: $white-background;
 }
 
 .photos__text {
@@ -24,9 +18,7 @@ $pink-text: #d22856;
 }
 
 .photos__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
 }
 
 .photos__item {

@@ -1,10 +1,3 @@
-$dark-background: #283645;
-$light-background: #ffffff;
-$grey-background:#f2f2f2;
-$light-text: #ffffff;
-$pink-text: #d22856;
-
-
 .site-list__item {
   display: flex;
   flex-direction: column;
@@ -16,7 +9,7 @@ $pink-text: #d22856;
 
 .site-list__link {
   padding-top: auto;
-  color: $light-text;
+  color: $white-text;
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
@@ -30,7 +23,7 @@ $pink-text: #d22856;
 
   &:focus,
   &:active {
-    color: $light-text;
+    color: $white-text;
     opacity: 0.3;
   }
 }

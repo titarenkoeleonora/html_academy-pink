@@ -1,7 +1,7 @@
 $dark-background: #283645;
-$light-background: #ffffff;
+$white-background: #ffffff;
 $grey-background:#f2f2f2;
-$light-text: #ffffff;
+$white-text: #ffffff;
 $pink-text: #d22856;
 
 .comment {
@@ -31,12 +31,13 @@ $pink-text: #d22856;
 .comment__publication-date {
   margin: 0;
   padding: 0;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   opacity: 0.6;
 }
 
 .comment__text {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
+  line-height: 24px;
 }

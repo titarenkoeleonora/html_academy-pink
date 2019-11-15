@@ -5,12 +5,14 @@
 
 .social__list {
   display: flex;
-  list-style: none;
+  @include reset-list;
 }
 
 .social__item {
+  width: 45px;
   height: 45px;
   margin-right: 18px;
+  text-align: center;
   border: 3px solid #e9ebec;
   border-radius: 50%;
 
@@ -26,25 +28,17 @@
 
 .social__link {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .social__link--twitter {
   padding-top: 16px;
-  padding-right: 13px;
-  padding-bottom: 15px;
-  padding-left: 14px;
 }
 
 .social__link--facebook {
   padding-top: 12px;
-  padding-right: 18px;
-  padding-bottom: 15px;
-  padding-left: 18px;
 }
 
 .social__link--youtube {
   padding-top: 15px;
-  padding-right: 13px;
-  padding-bottom: 17px;
-  padding-left: 17px;
 }

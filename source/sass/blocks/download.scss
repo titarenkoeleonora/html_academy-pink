@@ -1,14 +1,8 @@
-$dark-background: #283645;
-$light-background: #ffffff;
-$grey-background:#f2f2f2;
-$light-text: #ffffff;
-$pink-text: #d22856;
-
 .download {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: $light-text;
+  color: $white-text;
   background-color: $dark-background;
 }
 
@@ -29,16 +23,14 @@ $pink-text: #d22856;
 
   &:hover {
     color: $pink-text;
-    background-color: $light-background;
+    background-color: $white-background;
   }
 }
 
 .download_list {
   display: flex;
-  margin: 0;
-  padding: 0;
+  @include reset-list;
   margin-top: 32px;
-  list-style: none;
 }
 
 .app-store {
