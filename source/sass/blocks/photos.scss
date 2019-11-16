@@ -1,0 +1,26 @@
+.photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white-background;
+}
+
+.photos__text {
+  width: 241px;
+  margin-top: 54px;
+  margin-right: 39px;
+  margin-bottom: 56px;
+  margin-left: 40px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.photos__list {
+  @include reset-list;
+}
+
+.photos__item {
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+.intro {
+  color: $white-text;
+  background-color: $dark-background;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+}
+
+.intro__title {
+  display: flex;
+  width: 230px;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 87px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}

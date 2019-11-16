@@ -1,0 +1,17 @@
+.promo {
+  width: 320px;
+  height: 462px;
+  background-color: $dark-background;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 498px;
+    height: 462px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position-y: 176px;
+  }
+}

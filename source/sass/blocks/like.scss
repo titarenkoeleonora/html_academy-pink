@@ -1,0 +1,16 @@
+.like__heart {
+  width: 13px;
+  height: 13px;
+  background-color: transparent;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.like__count {
+  color: $pink-text;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}

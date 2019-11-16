@@ -1,0 +1,45 @@
+.social {
+  margin-top: 43px;
+  margin-bottom: 42px;
+}
+
+.social__list {
+  display: flex;
+
+  @include reset-list;
+}
+
+.social__item {
+  width: 45px;
+  height: 45px;
+  margin-right: 18px;
+  text-align: center;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+
+  &:hover {
+    border: 3px solid $dark-background;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.social__link {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social__link--twitter {
+  padding-top: 16px;
+}
+
+.social__link--facebook {
+  padding-top: 12px;
+}
+
+.social__link--youtube {
+  padding-top: 15px;
+}
