@@ -1,3 +1,38 @@
 .main-nav__list {
   @include reset-list;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-nav__toggle {
+  @include reset-button;
+  position: absolute;
+  width: 50px;
+  height: 24px;
+  top: 21px;
+  text-indent: -9999px;
+  background-image: url("../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

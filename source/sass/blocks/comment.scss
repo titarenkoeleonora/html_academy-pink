@@ -1,10 +1,5 @@
-$dark-background: #283645;
-$white-background: #ffffff;
-$grey-background:#f2f2f2;
-$white-text: #ffffff;
-$pink-text: #d22856;
-
 .comment {
+  width: 201px;
   margin-right: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
@@ -40,4 +35,24 @@ $pink-text: #d22856;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    min-height: 155px;
+  }
+
+  .comment__of-the-day {
+    width: 520px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+    min-height: 155px;
+  }
+
+  .comment__of-the-day {
+    width: 860px;
+  }
 }

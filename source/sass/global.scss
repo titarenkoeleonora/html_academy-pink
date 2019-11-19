@@ -1,24 +1,38 @@
+html {
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
 body {
-  width: 320px;
+  min-width: 320px;
+
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-  background-color: $white-background;
+  background-color: $white;
 
   img {
     max-width: 100%;
+    height: auto;
   }
 
   a {
     text-decoration: none;
   }
+}
 
-  html {
-    box-sizing: border-box;
+@media (min-width: $tablet-width) {
+  .body {
+    width: 660px;
   }
+}
 
-  &::before,
-  &::after {
-    box-sizing: inherit;
+@media (min-width: $desktop-width) {
+  .body {
+    width: 1200px;
   }
 }
