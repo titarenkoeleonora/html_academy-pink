@@ -20,8 +20,8 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin-top: 119px;
   text-align: center;
+  margin-top: 119px;
 }
 
 .advantages__item {
@@ -58,10 +58,10 @@
   .advantages__list {
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 23px;
-    min-height: 547px;
     margin: 0 auto;
+    padding-right: 23px;
     width: 640px;
+    min-height: 547px;
     text-align: left;
 
     &::before {
@@ -141,37 +141,38 @@
     }
   }
 
-    .advantages__item--2 {
-      &::before {
-        content: "";
-        position: absolute;
-        z-index: 10;
-        display: block;
-        width: 236px;
-        height: 554px;
+  .advantages__item--2 {
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 10;
+      display: block;
+      width: 236px;
+      height: 554px;
 
-        background-image: url("../img/iphone-screen-2-desktop@1x.png");
-        background-repeat: no-repeat;
-        background-position-x: -15px;
-      }
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position-x: -15px;
     }
-      .advantages__item--3 {
-        &::before {
-          content: "";
-          position: absolute;
-          z-index: 10;
-          display: block;
-          width: 236px;
-          height: 554px;
+  }
 
-          background-image: url("../img/iphone-screen-3-desktop@1x.png");
-          background-repeat: no-repeat;
-          background-position-x: -15px;
-        }
-      }
+  .advantages__item--3 {
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 10;
+      display: block;
+      width: 236px;
+      height: 554px;
 
-      .advantages__text {
-        font-size: 18px;
-        line-height: 30px;
-      }
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position-x: -15px;
     }
+  }
+
+  .advantages__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

@@ -46,26 +46,26 @@
     display: flex;
     flex-wrap: wrap;
     width: 660px;
-    margin:0 auto;
+    margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
   }
 
   .photos__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
     padding-left: 10px;
     padding-right: 10px;
+    list-style: none;
   }
 
   .photo__of-the-day {
-    width: 620px;
     flex-grow: 1;
+    width: 620px;
   }
 
   .photos__text {
@@ -90,6 +90,6 @@
   }
 
   .photo__image--panorama {
-  width: 100%;
-}
+    width: 100%;
+  }
 }

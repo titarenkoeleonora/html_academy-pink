@@ -1,9 +1,9 @@
 .download {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-width: 320px;
-  position: relative;
   color: $white;
   background-color: $dark-background;
 }
@@ -76,11 +76,11 @@
   }
 
   .download__wrapper {
+    position: absolute;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    z-index: 1;
     padding-top: 150px;
     padding-right: 380px;
   }

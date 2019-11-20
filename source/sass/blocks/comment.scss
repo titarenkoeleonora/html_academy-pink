@@ -1,12 +1,12 @@
 .comment {
-  width: 201px;
+  width: 211px;
   margin-right: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
   padding-top: 25px;
-  padding-right: 42px;
+  padding-right: 40px;
   padding-bottom: 28px;
-  padding-left: 37px;
+  padding-left: 27px;
   text-align: left;
   background-color: $grey-background;
 }
@@ -43,7 +43,8 @@
   }
 
   .comment__of-the-day {
-    width: 520px;
+    width: 535px;
+    padding-bottom: 0;
   }
 }
 
@@ -53,6 +54,7 @@
   }
 
   .comment__of-the-day {
-    width: 860px;
+    width: 875px;
+    padding-bottom: 0;
   }
 }

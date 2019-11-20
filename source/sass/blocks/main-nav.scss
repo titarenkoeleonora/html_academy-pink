@@ -9,9 +9,9 @@
 .main-nav__toggle {
   @include reset-button;
   position: absolute;
+  top: 21px;
   width: 50px;
   height: 24px;
-  top: 21px;
   text-indent: -9999px;
   background-image: url("../img/icon-menu-burger.svg");
   background-repeat: no-repeat;
