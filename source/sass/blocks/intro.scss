@@ -19,6 +19,7 @@
   .intro {
     min-height: 333px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .intro__title {
@@ -37,7 +38,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .intro {
+    min-height: 395px;
+    margin-top: -110px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 2650px 853px;
+    background-position-x: center;
+  }
+
   .intro__title--contest {
     width: 839px;
+  }
+
+  .intro__title {
+    padding-top: 184px;
   }
 }

@@ -108,8 +108,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0;
     padding-top: 60px;
     text-align: center;
 
@@ -126,7 +127,7 @@
     min-height: 564px;
   }
 
-  .advantages__item--1 {
+  .advantages__item--mood {
     &::before {
       content: "";
       position: absolute;
@@ -141,7 +142,7 @@
     }
   }
 
-  .advantages__item--2 {
+  .advantages__item--world {
     &::before {
       content: "";
       position: absolute;
@@ -156,7 +157,7 @@
     }
   }
 
-  .advantages__item--3 {
+  .advantages__item--friends {
     &::before {
       content: "";
       position: absolute;
