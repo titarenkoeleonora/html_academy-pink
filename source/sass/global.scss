@@ -8,8 +8,6 @@ html {
 }
 
 body {
-  min-width: 320px;
-
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -22,17 +20,5 @@ body {
 
   a {
     text-decoration: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .body {
-    width: 660px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .body {
-    width: 1200px;
   }
 }

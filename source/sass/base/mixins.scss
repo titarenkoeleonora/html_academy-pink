@@ -30,3 +30,8 @@
   border: none;
   background-color: transparent;
 }
+
+@mixin reset-fieldset {
+  padding: 0;
+  border: none;
+}

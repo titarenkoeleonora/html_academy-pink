@@ -18,10 +18,10 @@
 }
 
 .photo__sticker {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   width: 140px;
   height: 36px;
   left: 50%;
