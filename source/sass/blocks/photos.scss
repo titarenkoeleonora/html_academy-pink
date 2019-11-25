@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $white-background;
+  background-color: $white;
 }
 
 .photos__text {
-  width: 241px;
+  width: 251px;
   margin-top: 54px;
   margin-right: 39px;
   margin-bottom: 56px;
@@ -17,10 +17,78 @@
   line-height: 30px;
 }
 
+.photo__sticker {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 36px;
+  left: 50%;
+  background-color: $pink-text;
+  color: $white;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
 .photos__list {
   @include reset-list;
 }
 
 .photos__item {
   text-align: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 660px;
+    margin: 0 auto;
+    padding-right: 10px;
+  }
+
+  .photos__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style: none;
+  }
+
+  .photo__of-the-day {
+    flex-grow: 1;
+    width: 620px;
+  }
+
+  .photos__text {
+    width: 536px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos {
+    width: 1200px;
+  }
+
+  .photos__list {
+    width: 980px;
+    margin: 0 auto;
+  }
+
+  .photo__of-the-day {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .photo__image--panorama {
+    width: 100%;
+  }
 }

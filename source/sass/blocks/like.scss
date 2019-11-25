@@ -14,3 +14,9 @@
   line-height: 24px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .like {
+    order: 2;
+  }
+}

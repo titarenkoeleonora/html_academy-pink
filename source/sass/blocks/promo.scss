@@ -1,17 +1,64 @@
-.promo {
-  width: 320px;
-  height: 462px;
-  background-color: $dark-background;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
+// .promo {
+//   min-width: 320px;
+//   min-height: 462px;
+//   background-color: $dark-background;
+//   background-image: url("../img/bg-back-mobile@1x.jpg");
+//   background-repeat: no-repeat;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 498px;
-    height: 462px;
-    background-image: url("../img/iphone-hand-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position-y: 176px;
-  }
-}
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     width: 320px;
+//     height: 462px;
+//     background-image: url("../img/iphone-hand-mobile@1x.png");
+//     background-repeat: no-repeat;
+//     // background-position-y: 176px;
+//   }
+// }
+
+
+// @media (min-width: $tablet-width) {
+//   .promo {
+//     top: -110px;
+//     width: 100%;
+//     height: 729px;
+//     background-color: $dark-background;
+//     background-image: url("../img/bg-back-tablet@1x.jpg");
+//     background-repeat: no-repeat;
+
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       z-index: 1;
+//       width: 768px;
+//       height: 729px;
+//       background-image: url("../img/iphone-hand-tablet@1x.png");
+//       background-repeat: no-repeat;
+//       background-position-y: 185px;
+//       background-position-x: 270px;
+//     }
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .promo {
+//     width: 100%;
+//     height: 853px;
+//     background-color: $dark-background;
+//     background-image: url("../img/bg-back-desktop@1x.jpg");
+//     background-repeat: no-repeat;
+//     background-size: 2560px 853px;
+
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       width: 1050px;
+//       height: 853px;
+//       margin-left: 677px;
+//       background-image: url("../img/iphone-hand-desktop@1x.png");
+//       background-repeat: no-repeat;
+//       background-position-y: 210px;
+//       background-position-x: 150px;
+//     }
+//   }
+// }

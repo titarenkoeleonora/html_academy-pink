@@ -1,5 +1,5 @@
 .intro {
-  color: $white-text;
+  color: $white;
   background-color: $dark-background;
   background-image: url("../img/bg-back-mobile@1x.jpg");
 }
@@ -13,4 +13,45 @@
   text-align: center;
   font-size: 24px;
   font-weight: 300;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    min-height: 333px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .intro__title {
+    padding-top: 81px;
+    font-size: 50px;
+    font-weight: 300;
+  }
+
+  .intro__title--photos {
+    width: 348px;
+  }
+
+  .intro__title--contest {
+    width: 570px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    min-height: 395px;
+    margin-top: -110px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 2650px 853px;
+    background-position-x: center;
+  }
+
+  .intro__title--contest {
+    width: 839px;
+  }
+
+  .intro__title {
+    padding-top: 184px;
+  }
 }

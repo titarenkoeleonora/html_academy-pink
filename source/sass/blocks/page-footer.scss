@@ -7,3 +7,33 @@
 .page-footer__logo {
   margin-top: 40px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
+}

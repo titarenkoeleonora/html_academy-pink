@@ -9,19 +9,19 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo logo" href="index.html">
-      <img class="page-header__logo-image logo" src="img/logo-pink-white-mobile.svg" alt="Мобильное приложение PINK"
-        width="75" height="22">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
+    <div class="page-header__container">
+      <a class="page-header__logo" href="index.html" aria-label="Переход на главную страницу">
+        <img class="page-header__logo-image logo" src="img/logo-pink-white-mobile.svg" alt="Мобильное приложение PINK"
+          width="75" height="22">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Фотографии</a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Фотографии</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="contest.html">Конкурс</a>
@@ -30,24 +30,28 @@
             <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
     <section class="intro">
-      <h1 class="intro__title">Фотографии пользователей</h1>
+      <h1 class="intro__title intro__title--photos">Фотографии пользователей</h1>
     </section>
     <section class="photos">
       <h2 class="visually-hidden">Опубликованные фотографии</h2>
       <p class="photos__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       </p>
       <ul class="photos__list">
-        <li class="photos__item photo">
+        <li class="photos__item photo photo__of-the-day">
           <div class="photo__image-wrapper">
-            <img class="photo__image" src="img/panorama-mobile@1x.jpg" alt="Панорама" width="320" height="137">
+            <div class="photo__sticker">
+              <h3 class="photo__title">Панорама дня</h3>
+            </div>
+            <img class="photo__image photo__image--panorama" src="img/panorama-mobile@1x.jpg" alt="Панорама" width="320"
+              height="137">
           </div>
-          <div class="photo__comment comment">
+          <div class="photo__comment comment comment__of-the-day">
             <div class="comment__publication-info">
               <span class="comment__username">Анна</span>
               <p class="comment__publication-date">(5 минут назад)</p>

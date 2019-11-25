@@ -1,24 +1,24 @@
-body {
-  width: 320px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  background-color: $white-background;
-
-  img {
-    max-width: 100%;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  html {
-    box-sizing: border-box;
-  }
+html {
+  box-sizing: border-box;
 
   &::before,
   &::after {
     box-sizing: inherit;
+  }
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: $white;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
