@@ -14,7 +14,7 @@
         <img class="page-header__logo-image logo" src="img/logo-pink-white-mobile.svg" alt="Мобильное приложение PINK"
           width="75" height="22">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -43,7 +43,7 @@
       <p class="photos__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       </p>
       <ul class="photos__list">
-        <li class="photos__item photo photo__of-the-day">
+        <li class="photos__item photo photo_panorama">
           <div class="photo__image-wrapper">
             <div class="photo__sticker">
               <h3 class="photo__title">Панорама дня</h3>
@@ -51,17 +51,19 @@
             <img class="photo__image photo__image--panorama" src="img/panorama-mobile@1x.jpg" alt="Панорама" width="320"
               height="137">
           </div>
-          <div class="photo__comment comment comment__of-the-day">
-            <div class="comment__publication-info">
-              <span class="comment__username">Анна</span>
-              <p class="comment__publication-date">(5 минут назад)</p>
+          <div class="photo__comment comment comment__panorama">
+            <div class="comment__wrapper">
+              <div class="comment__publication-info">
+                <span class="comment__username">Анна</span>
+                <p class="comment__publication-date">(5 минут назад)</p>
+              </div>
+              <p class="comment__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
+                перископе, задавайте свои вопросы!</p>
+              <p class="comment__likes like like__panorama">
+                <button class="like__heart" type="button"></button>
+                <span class="like__count">Нравится: 215</span>
+              </p>
             </div>
-            <p class="comment__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
-              перископе, задавайте свои вопросы!</p>
-            <p class="comment__likes like">
-              <button class="like__heart" type="button"></button>
-              <span class="like__count">Нравится: 215</span>
-            </p>
           </div>
         </li>
         <li class="photos__item photo">
@@ -69,15 +71,17 @@
             <img class="photo__image" src="img/photo-car-mobile@1x.jpg" alt="Автомобиль" width="280" height="180">
           </div>
           <div class="photo__comment comment">
-            <div class="comment__publication-info">
-              <span class="comment__username">Левон</span>
-              <p class="comment__publication-date">(5 часов назад)</p>
+            <div class="comment__wrapper">
+              <div class="comment__publication-info">
+                <span class="comment__username">Левон</span>
+                <p class="comment__publication-date">(5 часов назад)</p>
+              </div>
+              <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="comment__likes like">
+                <button class="like__heart" type="button"></button>
+                <span class="like__count">Нравится: 356</span>
+              </p>
             </div>
-            <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <p class="comment__likes like">
-              <button class="like__heart" type="button"></button>
-              <span class="like__count">Нравится: 356</span>
-            </p>
           </div>
         </li>
         <li class="photos__item photo">
@@ -85,15 +89,17 @@
             <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" alt="Барабаны" width="280" height="180">
           </div>
           <div class="photo__comment comment">
-            <div class="comment__publication-info">
-              <span class="comment__username">Антон</span>
-              <p class="comment__publication-date">(12 часов назад)</p>
+            <div class="comment__wrapper">
+              <div class="comment__publication-info">
+                <span class="comment__username">Антон</span>
+                <p class="comment__publication-date">(12 часов назад)</p>
+              </div>
+              <p class="comment__text">Соседи будут рады!</p>
+              <p class="comment__likes like">
+                <button class="like__heart" type="button"></button>
+                <span class="like__count">Нравится: 666</span>
+              </p>
             </div>
-            <p class="comment__text">Соседи будут рады!</p>
-            <p class="comment__likes like">
-              <button class="like__heart" type="button"></button>
-              <span class="like__count">Нравится: 666</span>
-            </p>
           </div>
         </li>
         <li class="photos__item photo">
@@ -101,15 +107,17 @@
             <img class="photo__image" src="img/photo-window-mobile@1x.jpg" alt="Архитектура" width="280" height="180">
           </div>
           <div class="photo__comment comment">
-            <div class="comment__publication-info">
-              <span class="comment__username">Борис</span>
-              <p class="comment__publication-date">(20 часов назад)</p>
+            <div class="comment__wrapper">
+              <div class="comment__publication-info">
+                <span class="comment__username">Борис</span>
+                <p class="comment__publication-date">(20 часов назад)</p>
+              </div>
+              <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="comment__likes like">
+                <button class="like__heart" type="button"></button>
+                <span class="like__count">Нравится: 215</span>
+              </p>
             </div>
-            <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <p class="comment__likes like">
-              <button class="like__heart" type="button"></button>
-              <span class="like__count">Нравится: 215</span>
-            </p>
           </div>
         </li>
         <li class="photos__item photo">
@@ -117,15 +125,17 @@
             <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" alt="Кубанская бахча" width="280" height="180">
           </div>
           <div class="photo__comment comment">
-            <div class="comment__publication-info">
-              <span class="comment__username">Сергей</span>
-              <p class="comment__publication-date">(25 часов назад)</p>
+            <div class="comment__wrapper">
+              <div class="comment__publication-info">
+                <span class="comment__username">Сергей</span>
+                <p class="comment__publication-date">(25 часов назад)</p>
+              </div>
+              <p class="comment__text">Сама кубанская в мире!</p>
+              <p class="comment__likes like">
+                <button class="like__heart" type="button"></button>
+                <span class="like__count">Нравится: 4</span>
+              </p>
             </div>
-            <p class="comment__text">Сама кубанская в мире!</p>
-            <p class="comment__likes like">
-              <button class="like__heart" type="button"></button>
-              <span class="like__count">Нравится: 4</span>
-            </p>
           </div>
         </li>
         <li class="photos__item photo">
@@ -133,15 +143,17 @@
             <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" alt="Горы" width="280" height="180">
           </div>
           <div class="photo__comment comment">
-            <div class="comment__publication-info">
-              <span class="comment__username">Максим</span>
-              <p class="comment__publication-date">(40 часов назад)</p>
+            <div class="comment__wrapper">
+              <div class="comment__publication-info">
+                <span class="comment__username">Максим</span>
+                <p class="comment__publication-date">(40 часов назад)</p>
+              </div>
+              <p class="comment__text">Где снег-то?</p>
+              <p class="comment__likes like">
+                <button class="like__heart" type="button"></button>
+                <span class="like__count">Нравится: 215</span>
+              </p>
             </div>
-            <p class="comment__text">Где снег-то?</p>
-            <p class="comment__likes like">
-              <button class="like__heart" type="button"></button>
-              <span class="like__count">Нравится: 215</span>
-            </p>
           </div>
         </li>
         <li class="photos__item photo">
@@ -149,15 +161,17 @@
             <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" alt="Самолет" width="280" height="180">
           </div>
           <div class="photo__comment comment">
-            <div class="comment__publication-info">
-              <span class="comment__username">Надежда</span>
-              <p class="comment__publication-date">(45 часов назад)</p>
+            <div class="comment__wrapper">
+              <div class="comment__publication-info">
+                <span class="comment__username">Надежда</span>
+                <p class="comment__publication-date">(45 часов назад)</p>
+              </div>
+              <p class="comment__text">Всем GM и взаимные лайки!</p>
+              <p class="comment__likes like">
+                <button class="like__heart" type="button"></button>
+                <span class="like__count">Нравится: 2560</span>
+              </p>
             </div>
-            <p class="comment__text">Всем GM и взаимные лайки!</p>
-            <p class="comment__likes like">
-              <button class="like__heart" type="button"></button>
-              <span class="like__count">Нравится: 2560</span>
-            </p>
           </div>
         </li>
       </ul>
@@ -218,6 +232,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

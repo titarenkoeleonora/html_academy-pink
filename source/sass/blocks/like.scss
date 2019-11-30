@@ -17,6 +17,28 @@
 
 @media (min-width: $tablet-width) {
   .like {
-    order: 2;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .like__panorama {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 118px;
+    top: 0;
+    right: 29px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .like__panorama {
+    position: absolute;
+    top: 0;
+    right: 31px;
   }
 }
