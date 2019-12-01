@@ -1,3 +1,7 @@
+.like {
+  padding-left: 17px;
+}
+
 .like__heart {
   width: 13px;
   height: 13px;
@@ -21,6 +25,10 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 30px;
   }
 
   .like__panorama {
@@ -30,7 +38,7 @@
     justify-content: space-between;
     align-items: center;
     min-width: 118px;
-    top: 0;
+    top: 15px;
     right: 29px;
   }
 }
@@ -38,7 +46,7 @@
 @media (min-width: $desktop-width) {
   .like__panorama {
     position: absolute;
-    top: 0;
+    top: 30px;
     right: 31px;
   }
 }
