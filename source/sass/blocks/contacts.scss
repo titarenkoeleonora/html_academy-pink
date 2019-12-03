@@ -1,0 +1,111 @@
+.contacts {
+  padding-top: 50px;
+  background-color: $white;
+}
+
+.contacts__container {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 320px;
+    height: 123px;
+    margin-top: -20px;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+}
+
+.contacts__subtitle {
+  max-width: 229px;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.contacts__list {
+  @include reset-list;
+  margin-top: 44px;
+}
+
+.contacts__item {
+  font-size: 24px;
+  font-weight: 300;
+  color: $pink-text;
+}
+
+.contacts__title {
+  @include reset-text;
+  display: block;
+  padding-bottom: 11px;
+  font-size: 18px;
+  font-weight: 700;
+  color: $dark-background;
+}
+
+.contacts__text {
+  @include reset-text;
+  padding-bottom: 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__container {
+    width: 660px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 660px;
+      height: 123px;
+      margin-top: -20px;
+      background-image: url("../img/bg-triangle-white-footer.svg");
+      background-repeat: no-repeat;
+      background-position-x: center;
+    }
+  }
+
+  .contacts__subtitle {
+    max-width: 376px;
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__container {
+    width: 1200px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 1200px;
+      height: 123px;
+      background-image: url("../img/bg-triangle-white-footer.svg");
+      background-repeat: no-repeat;
+      background-position-x: center;
+    }
+
+    .contacts__subtitle {
+      max-width: 466px;
+      font-size: 50px;
+    }
+
+    .contacts__list {
+      width: 1200px;
+    }
+  }
+}

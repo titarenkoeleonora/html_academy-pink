@@ -1,0 +1,24 @@
+.switch {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 56px;
+  min-height: 6px;
+}
+
+.switch__button {
+  @include reset-button;
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  background-color: #bec3c7;
+  border: 3px solid $white;
+  border-radius: 50px;
+}
+
+.switch__button--active {
+  background-color: $white;
+  border: 3px solid #283645;
+  border-radius: 50px;
+}
