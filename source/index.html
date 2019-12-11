@@ -77,8 +77,10 @@
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества приложения</h2>
-      <p class="advantages__slogan">Устали от серости мегаполиса?</p>
-      <p class="advantages__slogan">Нам есть, что вам<br>предложить!</p>
+      <div class="advantages__wrapper">
+        <p class="advantages__slogan">Устали от серости мегаполиса?</p>
+        <p class="advantages__slogan">Нам есть, что вам<br>предложить!</p>
+      </div>
       <div class="advantages__container">
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--mood">
@@ -104,7 +106,7 @@
       <h2 class="visually-hidden">Исследование о положительном влиянии PINK</h2>
       <div class="research__info">
         <div class="research__container">
-          <p class="research__subtitle">Эффект на 24 часа!</p>
+          <p class="research__subtitle">Эффект <br>на 24 часа!</p>
           <p class="research__text">
             Британские ученые провели исследования и доказали,
             что положительный эффект от использования приложения длится целые сутки!
@@ -142,8 +144,8 @@
       <h2 class="visually-hidden">Тарифы</h2>
       <div class="rates__container">
         <table class="rates__table">
-          <tr>
-            <th></th>
+          <tr class="rates__head">
+            <th class="rates__title--empty"></th>
             <th class="rates__title">
               <span>База</span>
               <p class="rates__price">1,99 USD</p>
@@ -157,39 +159,39 @@
               <p class="rates__price">9,99 USD</p>
             </th>
           </tr>
-          <tr>
+          <tr class="rates__strings">
             <td class="rates__option">Розовый фильтр</td>
-            <td class="rates__option--yes">
+            <td class="rates__option rates__option--yes">
               <span class="visually-hidden">Да</span>
             </td>
-            <td class="rates__option--yes">
+            <td class="rates__option rates__option--yes">
               <span class="visually-hidden">Да</span>
             </td>
-            <td class="rates__option--yes">
+            <td class="rates__option rates__option--yes">
               <span class="visually-hidden">Да</span>
             </td>
           </tr>
-          <tr>
+          <tr class="rates__strings">
             <td class="rates__option">Смайлики</td>
-            <td class="rates__option--no">
+            <td class="rates__option rates__option--no">
               <span class="visually-hidden">Нет</span>
             </td>
-            <td class="rates__option--yes">
+            <td class="rates__option rates__option--yes">
               <span class="visually-hidden">Да</span>
             </td>
-            <td class="rates__option--yes">
+            <td class="rates__option rates__option--yes">
               <span class="visually-hidden">Да</span>
             </td>
           </tr>
-          <tr>
+          <tr class="rates__strings">
             <td class="rates__option">Комментарии</td>
-            <td class="rates__option--no">
+            <td class="rates__option rates__option--no">
               <span class="visually-hidden">Нет</span>
             </td>
-            <td class="rates__option--no">
+            <td class="rates__option rates__option--no">
               <span class="visually-hidden">Нет</span>
             </td>
-            <td class="rates__option--yes">
+            <td class="rates__option rates__option--yes">
               <span class="visually-hidden">Да</span>
             </td>
           </tr>

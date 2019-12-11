@@ -1,0 +1,95 @@
+.emotion__container {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 0;
+}
+
+.emotion__list {
+  @include reset-list;
+  margin-right: 22px;
+  margin-left: 22px;
+}
+
+.emotion__title {
+  display: block;
+  text-align: center;
+  margin-top: 41px;
+  color: $pink-text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.emotion__text-area {
+  display: flex;
+  width: 276px;
+  height: 197px;
+  resize: none;
+  margin: 0 auto;
+  margin-top: 6px;
+  padding-top: 14px;
+  padding-right: 20px;
+  padding-left: 20px;
+  overflow: auto;
+  line-height: 30px;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: $dark-background;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &:hover {
+    border-color: #000000;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    border-color: $pink-text;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .emotion__container {
+    width: 590px;
+    margin-top: 52px;
+    padding-top: 10px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .emotion__title {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .emotion__list {
+    margin: 0 auto;
+  }
+
+  .emotion__text-area {
+    width: 496px;
+    height: 180px;
+    margin-top: 23px;
+    margin-bottom: 35px;
+    padding-top: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .emotion__container {
+    width: 936px;
+    box-sizing: border-box;
+  }
+
+  .emotion__text-area {
+    width: 816px;
+    height: 124px;
+    margin-top: 19px;
+  }
+}

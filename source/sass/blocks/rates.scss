@@ -1,6 +1,6 @@
 .rates {
- padding-top: 114px;
-background: linear-gradient(175deg, $white 20%, $grey-background 20%);
+  padding-top: 114px;
+  background: linear-gradient(175deg, $white 15%, $grey-background 15%);
 }
 
 .rates__container {
@@ -9,19 +9,28 @@ background: linear-gradient(175deg, $white 20%, $grey-background 20%);
 
 .rates__table {
   margin: 0 auto;
+  margin-top: 15px;
   background-color: $white;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $white;
+  border-collapse: collapse;
 }
 
 .rates__title {
   @include reset-text;
-  min-width: 152px;
+  width: 276px;
+  height: 100px;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
   color: $white;
   background-color: $dark-background;
+  border: 2px solid $white;
+  border-collapse: collapse;
+
+  &--empty {
+    background-color: $grey-background;
+  }
 }
 
 .rates__price {
@@ -34,42 +43,73 @@ background: linear-gradient(175deg, $white 20%, $grey-background 20%);
 .rates__switch {
   @include reset-list;
   margin: 0 auto;
-  padding-top: 45px;
-  padding-bottom: 51px;
+  padding-top: 37px;
+  padding-bottom: 48px;
 }
 
 .rates__option {
-  width: 152px;
-  height: 45px;
+  width: 276px;
+height: 57px;
   border: 2px solid #e5e5e5;
   border-collapse: collapse;
-}
 
-.rates__option--yes {
-  background-image: url("../img/icon-yes.svg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  border: 2px solid #e5e5e5;
-  border-collapse: collapse;
-}
+  &--yes {
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+  }
 
-.rates__option--no {
-  background-image: url("../img/icon-no.svg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  border: 2px solid #e5e5e5;
-  border-collapse: collapse;
+  &--no {
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .rates {
-    padding-top: 160px;
-    padding-bottom: 98px;
+    padding-top: 110px;
+    padding-bottom: 63px;
+    background: linear-gradient(176deg, #ffffff 16%, #f2f2f2 16%);
+  }
+
+  .rates__table {
+    margin-top: 0;
+  }
+
+  .rates__title {
+    width: 152px;
+height: 75px;
+  }
+
+  .rates__option {
+    width: 152px;
+height: 45px;
+font-size: 14px;
   }
 
   .rates__switch {
     display: none;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .rates__price {
+    font-size: 24px;
+  }
+
+  .rates__title {
+    width: 233px;
+    height: 94px;
+  }
+
+  .rates__option {
+    width: 234px;
+    height: 59px;
+    padding-left: 24px;
+    font-size: 18px;
+  }
+
 }

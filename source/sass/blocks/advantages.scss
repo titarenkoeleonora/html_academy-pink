@@ -3,7 +3,8 @@
     display: flex;
     flex-flow: column;
     min-width: 320px;
-    background: linear-gradient(170deg, $white 20%, $grey-background 20%);
+    margin-top: -26px;
+    background: linear-gradient(175deg, $white 22%, $grey-background 22%);
 
     &::after {
       content: "";
@@ -17,9 +18,14 @@
   }
 }
 
+.advantages__wrapper {
+  padding-bottom: 15px;
+}
+
 .advantages__slogan {
   width: 222px;
   margin: 0 auto;
+  padding-bottom: 33px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
@@ -31,20 +37,25 @@
   flex-flow: column;
   align-items: center;
   text-align: center;
-  margin-top: 105px;
+  margin-top: 68px;
+  margin-bottom: 13px;
 }
 
 .advantages__item {
   width: 259px;
+  margin-bottom: 30px;
 }
 
 .advantages__title {
+  margin: 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
 }
 
 .advantages__text {
+  margin: 0;
+  margin-top: 12px;
   font-size: 14px;
   line-height: 24px;
 }
@@ -52,7 +63,14 @@
 @media (min-width: $tablet-width) {
   .advantages {
     width: 100%;
-    background: linear-gradient(175deg, $white 40%, $grey-background 10%);
+    margin-top: -20px;
+    width: 100%;
+    margin-top: -20px;
+    background: linear-gradient(174deg, #ffffff 33%, #f2f2f2 10%);
+  }
+
+  .advantages__wrapper {
+    padding: 0;
   }
 
   .advantages__slogan {
@@ -61,7 +79,7 @@
     margin: 0 auto;
     font-size: 40px;
     font-weight: 300;
-    line-height: 60px;
+    line-height: 50px;
   }
 
   .advantages__container {
@@ -69,20 +87,23 @@
     align-items: flex-end;
     width: 610px;
     margin: 0 auto;
-    min-height: 547px;
     text-align: left;
 
     &::before {
       content: "";
       position: relative;
       width: 268px;
-      height: 439px;
+      height: 480px;
       margin-right: 38px;
 
       background-image: url("../img/iphone-screen-3-tablet@1x.png");
       background-repeat: no-repeat;
-      // background-position-x: 30px;
     }
+  }
+
+  .advantages__list {
+    margin-top: 120px;
+    margin-bottom: 0px;
   }
 
   .advantages__title {
@@ -96,6 +117,7 @@
   .advantages__item {
     width: 255px;
   }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -104,6 +126,7 @@
     flex-direction: column;
     width: 100%;
     margin-top: 3px;
+    background: linear-gradient(176deg, #ffffff 37%, #f2f2f2 37%);
   }
 
   .advantages__title {
@@ -121,6 +144,7 @@
     margin: 0 auto;
     font-size: 50px;
     font-weight: 300;
+    line-height: 60px;
   }
 
   .advantages__container {

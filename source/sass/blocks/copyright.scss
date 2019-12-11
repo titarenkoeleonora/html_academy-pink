@@ -1,10 +1,25 @@
 .copyright {
   display: flex;
   align-items: center;
+  margin-top: 0px;
 }
 
 .copyright__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin-top: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+  }
 }

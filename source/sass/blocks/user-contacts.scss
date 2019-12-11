@@ -1,0 +1,137 @@
+.user-contacts__container {
+  width: 320px;
+  margin: 0 auto;
+  border: 0;
+}
+
+.user-contacts__title {
+  display: none;
+}
+
+.user-contacts__list {
+  @include reset-list;
+  margin-right: 22px;
+  margin-left: 22px;
+  padding-top: 32px;
+  padding-bottom: 13px;
+}
+
+.user-contacts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-bottom: 15px;
+}
+
+.user-contacts__label {
+  padding-left: 21px;
+  color: $pink-text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.user-contacts__text-area {
+  min-height: 59px;
+  margin-top: 5px;
+  padding-left: 20px;
+  line-height: 30px;
+  border: 2px solid #e5e5e5;
+
+  &::placeholder {
+    color: $dark-background;
+    font-size: 18px;
+  }
+
+  &:hover {
+    border-color: #000000;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    border-color: $pink-text;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-contacts__container {
+    width: 590px;
+    margin-top: 50px;
+    margin-bottom: 9px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .user-contacts__title {
+    display: block;
+    text-align: center;
+    padding-right: 32px;
+    padding-left: 32px;
+    color: $pink-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    background-color: $white;
+  }
+
+  .user-contacts__list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 22px;
+    padding-left: 22px;
+    padding-bottom: 3px;
+  }
+
+  .user-contacts__item {
+    padding-bottom: 26px;
+
+    &:last-child {
+      padding-bottom: 15px;
+    }
+  }
+
+  .user-contacts__text-area {
+    order: 1;
+    width: 476px;
+  }
+
+  .user-contacts__label {
+    order: 2;
+    padding-top: 6px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .user-contacts__container {
+    width: 940px;
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  .user-contacts__list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 840px;
+    margin: 0 auto;
+    padding-top: 22px;
+    }
+
+    .user-contacts__item {
+      padding-bottom: 10px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  .user-contacts__label {
+    padding-top: 9px;
+  }
+
+  .user-contacts__text-area {
+    width: 371px;
+  }
+}

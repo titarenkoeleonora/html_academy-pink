@@ -26,7 +26,7 @@
 
   .reviews__author {
     @include reset-text;
-    margin-top: 49px;
+    margin-top: 44px;
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
@@ -37,16 +37,20 @@
   }
 
   .reviews__text {
-    max-width: 276px;
+    max-width: 286px;
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
+  }
+
+  .reviews__switch {
+    margin-top: 18px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding-top: 106px;
+    padding-top: 90px;
   }
 
   .reviews__container {
@@ -71,13 +75,13 @@
     order: 3;
     font-size: 14px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 38px;
   }
 
   .reviews__text {
     @include reset-text;
     order: 1;
-    padding-bottom: 51px;
+    padding-bottom: 40px;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -85,11 +89,15 @@
 
   .reviews__switch {
     margin: 0 auto;
-    padding-top: 43px;
+    padding-top: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
+.reviews {
+  padding-top: 183px;
+}
+
   .reviews__container {
     width: 1200px;
   }

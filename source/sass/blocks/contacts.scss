@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 50px;
+  padding-top: 43px;
   background-color: $white;
 }
 
@@ -30,10 +30,11 @@
 
 .contacts__list {
   @include reset-list;
-  margin-top: 44px;
+  margin-top: 38px;
 }
 
 .contacts__item {
+  padding-bottom: 26px;
   font-size: 24px;
   font-weight: 300;
   color: $pink-text;
@@ -42,7 +43,7 @@
 .contacts__title {
   @include reset-text;
   display: block;
-  padding-bottom: 11px;
+  padding-bottom: 4px;
   font-size: 18px;
   font-weight: 700;
   color: $dark-background;
@@ -50,10 +51,13 @@
 
 .contacts__text {
   @include reset-text;
-  padding-bottom: 28px;
 }
 
 @media (min-width: $tablet-width) {
+.contacts {
+  padding-top: 45px;
+}
+
   .contacts__container {
     width: 660px;
 
@@ -74,6 +78,7 @@
     max-width: 376px;
     font-size: 40px;
     font-weight: 300;
+    line-height: 47px;
   }
 
   .contacts__list {
@@ -81,6 +86,12 @@
     flex-wrap: wrap;
     justify-content: space-around;
     width: 620px;
+    margin: 0 auto;
+    margin-top: 46px;
+  }
+
+  .contacts__item {
+    padding-bottom: 56px;
   }
 }
 
@@ -96,6 +107,7 @@
       height: 123px;
       background-image: url("../img/bg-triangle-white-footer.svg");
       background-repeat: no-repeat;
+      background-size: contain;
       background-position-x: center;
     }
 
