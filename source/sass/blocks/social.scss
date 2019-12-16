@@ -4,11 +4,11 @@
 }
 
 .social__list {
+  @include reset-list;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 177px;
-  @include reset-list;
 }
 
 .social__item {

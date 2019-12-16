@@ -1,419 +1,28 @@
-// .rates {
-//   padding-top: 114px;
-//   background: linear-gradient(175deg, $white 15%, $grey-background 15%);
-//   overflow: hidden;
-// }
-
-// .rates__container {
-//   margin: 0 auto;
-// }
-
-// .rates__table {
-//   width: 320px;
-//   margin: 0 auto;
-//   margin-top: 15px;
-//   background-color: $white;
-//   border: 2px solid $white;
-//   border-collapse: collapse;
-//   overflow: hidden;
-// }
-
-// .rates__title {
-//   @include reset-text;
-//   width: 276px;
-//   height: 100px;
-//   font-size: 16px;
-//   font-weight: 700;
-//   line-height: 30px;
-//   text-transform: uppercase;
-//   color: $white;
-//   background-color: $dark-background;
-//   border: 2px solid $white;
-//   border-collapse: collapse;
-
-//   &--empty {
-//     background-color: $grey-background;
-//   }
-
-//   &--hit {
-//     background-image: url("../img/bg-hit.svg");
-//     background-repeat: no-repeat;
-//   }
-// }
-
-// .rates__price {
-//   @include reset-text;
-//   font-size: 18px;
-//   font-weight: 300;
-//   line-height: 30px;
-// }
-
-.rates__switch {
-  @include reset-list;
-  margin: 0 auto;
-  padding-top: 37px;
-  padding-bottom: 48px;
-}
-
-// .rates__option {
-//   width: 276px;
-//   height: 57px;
-//   border: 2px solid #e5e5e5;
-//   border-collapse: collapse;
-
-//   &--yes {
-//     background-image: url("../img/icon-yes.svg");
-//     background-repeat: no-repeat;
-//     background-position-x: center;
-//     background-position-y: center;
-//   }
-
-//   &--no {
-//     background-image: url("../img/icon-no.svg");
-//     background-repeat: no-repeat;
-//     background-position-x: center;
-//     background-position-y: center;
-//   }
-// }
-
-// @media (min-width: $tablet-width) {
-//   .rates {
-//     padding-top: 110px;
-//     padding-bottom: 63px;
-//     background: linear-gradient(176deg, #ffffff 16%, #f2f2f2 16%);
-//   }
-
-//   .rates__table {
-//     margin-top: 0;
-//   }
-
-//   .rates__title {
-//     width: 152px;
-// height: 75px;
-
-//   }
-
-//   .rates__option {
-//     width: 152px;
-// height: 45px;
-// font-size: 14px;
-//   }
-
-//   .rates__switch {
-//     display: none;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-// .rates {
-//   padding-top: 180px;
-//   padding-bottom: 90px;
-//   background: linear-gradient(176deg, #ffffff 20%, #f2f2f2 20%);
-// }
-
-//   .rates__price {
-//     font-size: 24px;
-//   }
-
-//   .rates__title {
-//     height: 94px;
-//     font-size: 18px;
-//   }
-
-//   .rates__option {
-//     width: 209px;
-//     height: 59px;
-//     padding-left: 24px;
-//     font-size: 18px;
-//   }
-
-// }
-
-// .tariffs {
-//   padding-bottom: 40px;
-//   background-color: $white;
-// }
-
-// .tariffs__inner {
-//   position: relative;
-//   list-style: none;
-//   text-align: center;
-//   overflow: hidden;
-//   margin-top: 0;
-
-//   &::before {
-//     position: absolute;
-//     display: block;
-//     content: "";
-//     width: 100%;
-//     height: 100%;
-//     background: url("../img/svg/bg-triangle-white.svg") no-repeat center top;
-//     background-size: 100%;
-//   }
-// }
-
-// .tariffs__table {
-//   position: relative;
-//   margin-top: 89px;
-//   margin-bottom: 34px;
-//   border-collapse: collapse;
-//   width: 262%;
-//   left: 50%;
-//   transform: translateX(-50%);
-// }
-
-// .tariffs__features,
-// .tariffs__show {
-//   background-color: $white;
-// }
-
-// .tariffs__feature,
-// .tariffs__item {
-//   border: 2px solid #e5e5e5;
-// }
-
-// .tariffs__table-row > th:first-child {
-//   display: none;
-// }
-
-// .tariffs__header {
-//   box-sizing: border-box;
-//   position: relative;
-//   width: 276px;
-//   padding: 20px;
-//   background-color: $dark-background;
-//   background-clip: padding-box;
-
-//   &:nth-child(2) {
-//     border-top-left-radius: 2px;
-//     border-bottom-left-radius: 2px;
-//     border-right: 2px solid transparent;
-//   }
-
-//   &:last-child {
-//     border-top-right-radius: 2px;
-//     border-bottom-right-radius: 2px;
-//     border-left: 2px solid transparent;
-//   }
-
-//   &--hit::before {
-//     background-image: url("../img/bg-hit.svg");
-//     position: absolute;
-//     content: "";
-//     width: 74px;
-//     height: 73px;
-//     left: -2px;
-//     top: 0;
-//   }
-
-//   &--hit::after {
-//     position: absolute;
-//     content: "хит";
-//     text-transform: uppercase;
-//     left: 11px;
-//     top: 12px;
-//     transform: rotate(-45deg);
-
-//   }
-// }
-
-// .tariffs__title {
-//   text-transform: uppercase;
-//   margin-top: -4px;
-// }
-
-// .tariffs__cost {
-//   text-transform: uppercase;
-// }
-
-// .tariffs__item {
-//   position: relative;
-//   box-sizing: border-box;
-//   height: 61px;
-//   text-align: left;
-//   padding: 0 20px;
-//   background-clip: padding-box;
-//   border-top: none;
-
-//   text-transform: uppercase;
-// }
-
-// .tariffs__availability {
-//   position: absolute;
-//   display: block;
-//   width: 32px;
-//   height: 27px;
-//   right: 18px;
-//   top: 16px;
-//   font-size: 0;
-//   background: transparent no-repeat center;
-
-//   &--on {
-//     background-image: url("../img/icon-yes.svg");
-//   }
-
-//   &--off {
-//     background-image: url("../img/icon-no.svg");
-//   }
-// }
-
-// /*   tablet version   */
-
-// @media (min-width: $tablet-width) {
-//   .tariffs {
-//     padding-bottom: 6px;
-//   }
-
-//   .tariffs__table {
-//     width: 94vw;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 62px;
-//     margin-top: 92px;
-//     padding: 0 20px;
-//     left: 0;
-//     transform: none;
-//   }
-
-//   .tariffs__table-row > th:first-child {
-//     display: table-cell;
-//   }
-
-//   .tariffs__header-none {
-//     background-color: $white;
-//   }
-
-//   .tariffs__header {
-//     width: 25%;
-//     padding: 11px 0 5px;
-
-//     &--hit::before {
-//       background-image: url("../img/svg/bg-hit-tablet.svg");
-//       width: 61px;
-//       height: 61px;
-//       left: 0;
-//       top: 0;
-//     }
-
-//     &--hit::after {
-//       left: 6px;
-//       top: 6px;
-//     }
-//   }
-
-//   .tariffs__title {
-//     font-size: 16px;
-//     margin-top: 2px;
-//   }
-
-//   .tariffs__cost {
-//     font-size: 18px;
-//   }
-
-//   .tariffs__feature {
-//     text-align: left;
-//     padding-left: 16px;
-//   }
-
-//   .tariffs__item {
-//     height: 47px;
-//   }
-
-//   .tariffs__name {
-//     display: none;
-//   }
-
-//   .tariffs__availability {
-//     position: relative;
-//     top: 0;
-//     left: 0;
-//     margin: auto;
-//   }
-
-//   .tariffs__controls {
-//     display: none;
-//   }
-// }
-
-// /*   desktop version   */
-
-// @media (min-width: $desktop-width) {
-//   .tariffs__inner {
-//     margin-top: -17px;
-//     padding-bottom: 27px;
-//   }
-
-//   .tariffs__table {
-//     width: 98vw;
-//     max-width: 1200px;
-//     margin-top: 142px;
-//   }
-
-//   .tariffs__header {
-//     height: 98px;
-
-//     &--hit::before {
-//       background-image: url("../img/svg/bg-hit.svg");
-//       width: 74px;
-//       height: 73px;
-//       left: 0;
-//       top: 0;
-//     }
-
-//     &--hit::after {
-//       left: 11px;
-//       top: 11px;
-//     }
-//   }
-
-//   .tariffs__title {
-//     margin-top: 0;
-//     font-size: 18px;
-//   }
-
-//   .tariffs__cost {
-//     font-size: 24px;
-//   }
-
-//   .tariffs__feature {
-//     padding-left: 20px;
-//     font-size: 18px;
-//   }
-
-//   .tariffs__item {
-//     height: 61px;
-//   }
-// }
-
 .rates {
-  background-color: $white;
   padding-bottom: 40px;
+  background: linear-gradient(175deg, $white 13%, $grey-background 10%);
 }
 
 .rates__container {
   position: relative;
-  list-style: none;
-  text-align: center;
-  overflow: hidden;
   margin-top: 0;
+  overflow: hidden;
+  text-align: center;
+  list-style: none;
 }
 
 .rates__table {
   position: relative;
-  margin-top: 89px;
-  margin-bottom: 34px;
-  border-collapse: collapse;
-  width: 262%;
+  width: 173%;
   left: 50%;
+  margin-top: 133px;
+  margin-bottom: 34px;
+  background-color: $white;
+  border-collapse: collapse;
   transform: translateX(-50%);
 }
 
-.tariffs__features,
-.tariffs__show {
-  background-color: #ffffff;
-}
-
-.tariffs__feature,
+.rates__object,
 .rates__item {
   border: 2px solid #e5e5e5;
 }
@@ -423,39 +32,30 @@
 }
 
 .rates__title {
-  box-sizing: border-box;
   position: relative;
   width: 276px;
   padding: 20px;
   background-color: $dark-background;
   background-clip: padding-box;
+  box-sizing: border-box;
 
   &:nth-child(2) {
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
     border-right: 2px solid transparent;
   }
 
   &:last-child {
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
     border-left: 2px solid transparent;
   }
 
-  &--hit::before {
+  &--hit {
     background-image: url("../img/bg-hit.svg");
-    position: absolute;
-    content: "";
-    width: 74px;
-    height: 73px;
-    left: -2px;
-    top: 0;
+    background-repeat: no-repeat;
   }
 
+
   &--hit::after {
+    content: "Хит";
     position: absolute;
-    content: "хит";
-    text-transform: uppercase;
     left: 11px;
     top: 12px;
     transform: rotate(-45deg);
@@ -463,40 +63,40 @@
     font-weight: 400;
     line-height: 24px;
     color: #ffffff;
+    text-transform: uppercase;
   }
 }
 
 .rates__subtitle {
-  text-transform: uppercase;
   margin-top: -4px;
   font-size: 18px;
-    font-weight: 700;
-    line-height: 30px;
-    color: #ffffff;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .rates__price {
   font-size: 24px;
-    font-weight: 300;
-    line-height: 30px;
-    color: #ffffff;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
 .rates__item {
   position: relative;
-  box-sizing: border-box;
   height: 61px;
-  text-align: left;
   padding: 0 20px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $dark-background;
+  text-transform: uppercase;
   background-clip: padding-box;
   border-top: none;
-
-  font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-    color: $dark-background;
-  text-transform: uppercase;
+  box-sizing: border-box;
 }
 
 .rates__option {
@@ -504,17 +104,18 @@
   display: block;
   width: 32px;
   height: 27px;
-  right: 18px;
   top: 16px;
+  right: 18px;
   font-size: 0;
-  background: transparent no-repeat center;
 
   &--yes {
     background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
   }
 
   &--no {
     background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -522,47 +123,45 @@
   display: none;
 }
 
-/*   tablet version   */
+.rates__switch {
+  @include reset-list;
+  margin: 0 auto;
+  padding-top: 6px;
+  padding-bottom: 8px;
+}
 
 @media (min-width: $tablet-width) {
-  .tariffs {
+  .rates {
     padding-bottom: 6px;
   }
 
-  .tariffs__table {
-    width: 94vw;
-    margin-left: auto;
+  .rates__table {
+    width: 616px;
+    margin-top: 84px;
     margin-right: auto;
     margin-bottom: 62px;
-    margin-top: 92px;
+    margin-left: auto;
     padding: 0 20px;
     left: 0;
     transform: none;
   }
 
-  .tariffs__table-row > th:first-child {
+  .rates__strings > th:first-child {
     display: table-cell;
   }
 
   .rates__title--empty {
-    background-color: $white;
+    display: block;
+    background-color: $grey-background;
   }
 
   .rates__title {
     width: 25%;
     padding: 11px 0 5px;
 
-    &--hit::before {
-      background-image: url("../img/bg-hit-tablet.svg");
-      width: 61px;
-      height: 61px;
-      left: 0;
-      top: 0;
-    }
-
     &--hit::after {
-      left: 6px;
-      top: 6px;
+      top: 13px;
+      left: 12px;
     }
   }
 
@@ -575,10 +174,9 @@
     font-size: 18px;
   }
 
-  .tariffs__feature {
-    text-align: left;
+  .rates__object {
     padding-left: 16px;
-
+    text-align: left;
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
@@ -600,57 +198,46 @@
     margin: auto;
   }
 
-  .tariffs__controls {
+  .rates__switch {
     display: none;
   }
 }
 
-/*   desktop version   */
-
 @media (min-width: $desktop-width) {
-  .tariffs__inner {
-    margin-top: -17px;
+  .rates__container {
+    padding-top: 10px;
     padding-bottom: 27px;
   }
 
-  .tariffs__table {
-    width: 98vw;
-    max-width: 1200px;
-    margin-top: 142px;
+  .rates__table {
+    width: 938px;
+    margin-top: 110px;
   }
 
-  .tariffs__header {
+  .rates__title {
     height: 98px;
 
-    &--hit::before {
-      background-image: url("../img/bg-hit.svg");
-      width: 74px;
-      height: 73px;
-      left: 0;
-      top: 0;
-    }
-
     &--hit::after {
-      left: 11px;
       top: 11px;
+      left: 11px;
     }
   }
 
-  .tariffs__title {
+  .rates__subtitle {
     margin-top: 0;
     font-size: 18px;
   }
 
-  .tariffs__cost {
+  .rates__price {
     font-size: 24px;
   }
 
-  .tariffs__feature {
+  .rates__object {
     padding-left: 20px;
     font-size: 18px;
   }
 
-  .tariffs__item {
+  .rates__item {
     height: 61px;
   }
 }

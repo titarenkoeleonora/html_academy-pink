@@ -27,32 +27,13 @@
   width: 276px;
   height: 197px;
   resize: none;
+  overflow: auto;
   margin: 0 auto;
   margin-top: 6px;
   padding-top: 14px;
   padding-right: 20px;
   padding-left: 20px;
-  overflow: auto;
   line-height: 30px;
-  // border: 2px solid #e5e5e5;
-  // box-sizing: border-box;
-
-  // &::placeholder {
-  //   color: $dark-background;
-  //   font-size: 18px;
-  //   font-weight: 400;
-  //   line-height: 30px;
-  // }
-
-  // &:hover {
-  //   border-color: #000000;
-  // }
-
-  // &:focus,
-  // &:active {
-  //   outline: none;
-  //   border-color: $pink-text;
-  // }
 }
 
 @media (min-width: $tablet-width) {

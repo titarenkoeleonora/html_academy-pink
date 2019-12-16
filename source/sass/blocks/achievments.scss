@@ -9,10 +9,10 @@
 }
 
 .achievments__title {
+  max-width: 220px;
   margin: 0 auto;
   padding-top: 39px;
   padding-bottom: 37px;
-  max-width: 220px;
   text-align: center;
   color: $pink-text;
   font-size: 14px;
@@ -43,10 +43,6 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-}
-
-.achievments__checkbox {
-
 }
 
 @media (min-width: $tablet-width) {

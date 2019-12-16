@@ -96,12 +96,18 @@
   .reviews__switch {
     margin: 0 auto;
     padding-top: 30px;
+    padding-bottom: 26px;
+  }
+
+  .reviews__toggle {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
     padding-top: 183px;
+    padding-bottom: 65px;
   }
 
   .reviews__container {
@@ -161,5 +167,9 @@
       margin-left: 1050px;
       background-image: url("../img/icon-review-arrow-right.svg");
     }
+  }
+
+  .reviews__toggle {
+    display: block;
   }
 }

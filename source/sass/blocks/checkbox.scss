@@ -1,4 +1,4 @@
-.checkbox+.achievments__label::before {
+.checkbox + .achievments__label::before {
   content: "";
   position: absolute;
   display: block;
@@ -10,11 +10,11 @@
   background-color: $white;
 }
 
-.checkbox:checked+.achievments__label::before {
+.checkbox:checked + .achievments__label::before {
   content: "";
   position: absolute;
   display: block;
-  background-image: url(../img/icon-yes.svg);
+  background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position-x: center;
@@ -22,7 +22,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .checkbox+.achievments__label::before {
+  .checkbox + .achievments__label::before {
     margin-left: -10px;
   }
 }
