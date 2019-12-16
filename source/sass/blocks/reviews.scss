@@ -111,7 +111,7 @@
   }
 
   .reviews__container {
-    width: 1200px;
+    width: 940px;
 
     &::before {
       content: "";
@@ -120,7 +120,7 @@
       width: 79px;
       height: 63px;
       margin-top: -110px;
-      margin-left: 560px;
+      margin-left: 440px;
       background-image: url("../img/icon-quotes.svg");
       background-repeat: no-repeat;
       background-size: contain;
@@ -155,7 +155,7 @@
     &--left {
       position: absolute;
       margin-top: -165px;
-      margin-left: 130px;
+      margin-left: 10px;
       background-image: url("../img/icon-review-arrow-left.svg");
       background-repeat: no-repeat;
       background-size: contain;
@@ -164,7 +164,7 @@
     &--right {
       position: absolute;
       margin-top: -165px;
-      margin-left: 1050px;
+      margin-left: 927px;
       background-image: url("../img/icon-review-arrow-right.svg");
     }
   }

@@ -119,8 +119,6 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     margin-top: -45px;
     background: linear-gradient(176deg, #ffffff 37%, #f2f2f2 37%);
@@ -145,8 +143,6 @@
   }
 
   .advantages__container {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     width: 100%;
     margin: 0 auto;

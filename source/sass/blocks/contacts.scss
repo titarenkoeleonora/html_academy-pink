@@ -101,13 +101,13 @@
   }
 
   .contacts__container {
-    width: 1200px;
+    width: 960px;
 
     &::after {
       content: "";
       position: absolute;
       display: block;
-      width: 1200px;
+      width: 960px;
       height: 123px;
       background-image: url("../img/bg-triangle-white-footer.svg");
       background-repeat: no-repeat;
