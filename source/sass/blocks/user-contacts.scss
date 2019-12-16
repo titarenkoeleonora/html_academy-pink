@@ -12,8 +12,8 @@
   @include reset-list;
   margin-right: 22px;
   margin-left: 22px;
-  padding-top: 32px;
-  padding-bottom: 13px;
+  padding-top: 30px;
+  padding-bottom: 16px;
 }
 
 .user-contacts__item {
@@ -33,32 +33,32 @@
 }
 
 .user-contacts__text-area {
-  min-height: 59px;
+  min-height: 63px;
   margin-top: 5px;
   padding-left: 20px;
   line-height: 30px;
-  border: 2px solid #e5e5e5;
+  // border: 2px solid #e5e5e5;
 
-  &::placeholder {
-    color: $dark-background;
-    font-size: 18px;
-  }
+  // &::placeholder {
+  //   color: $dark-background;
+  //   font-size: 18px;
+  // }
 
-  &:hover {
-    border-color: #000000;
-  }
+  // &:hover {
+  //   border-color: #000000;
+  // }
 
-  &:focus,
-  &:active {
-    outline: none;
-    border-color: $pink-text;
-  }
+  // &:focus,
+  // &:active {
+  //   outline: none;
+  //   border-color: $pink-text;
+  // }
 }
 
 @media (min-width: $tablet-width) {
   .user-contacts__container {
     width: 590px;
-    margin-top: 50px;
+    margin-top: 51px;
     margin-bottom: 9px;
     border: 2px solid #e5e5e5;
   }
@@ -99,7 +99,7 @@
 
   .user-contacts__label {
     order: 2;
-    padding-top: 6px;
+    padding-top: 9px;
   }
 
 }
@@ -113,25 +113,52 @@
 
   .user-contacts__list {
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
     width: 840px;
     margin: 0 auto;
     padding-top: 22px;
+  }
+
+  .user-contacts__item {
+    padding-bottom: 10px;
+    margin-right: 72px;
+
+    &:last-child {
+      margin: 0;
+      padding-bottom: 0;
     }
 
-    .user-contacts__item {
-      padding-bottom: 10px;
-
-      &:last-child {
-        padding-bottom: 0;
-      }
+    &--phone::after {
+      content: "";
+      position: absolute;
+      display: block;
+      margin-top: 25px;
+      margin-left: 331px;
+      width: 20px;
+      height: 19px;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
     }
+
+    &--e-mail::after {
+      content: "";
+      position: absolute;
+      display: block;
+      margin-top: 27px;
+      margin-left: 332px;
+      width: 18px;
+      height: 13px;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
   .user-contacts__label {
     padding-top: 9px;
   }
 
   .user-contacts__text-area {
     width: 371px;
+    background: linear-gradient(90deg, #ffffff 85%, #f2f2f2 20%);
   }
 }

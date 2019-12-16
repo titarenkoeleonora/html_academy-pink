@@ -96,6 +96,10 @@
 }
 
 @media (min-width: $desktop-width) {
+.contacts {
+  padding-top: 65px;
+}
+
   .contacts__container {
     width: 1200px;
 
@@ -110,14 +114,32 @@
       background-size: contain;
       background-position-x: center;
     }
-
+  }
     .contacts__subtitle {
       max-width: 466px;
       font-size: 50px;
+      line-height: 60px;
     }
 
     .contacts__list {
-      width: 1200px;
+      justify-content: space-between;
+      width: 845px;
+      margin-top: 59px;
     }
-  }
+
+    .contacts__title {
+      padding-bottom: 25px;
+    }
+
+    .contacts__phone {
+      order: 1;
+    }
+
+    .contacts__email {
+      order: 3;
+    }
+
+    .contacts__adress {
+      order: 2;
+    }
 }

@@ -1,7 +1,7 @@
 .emotion__container {
   width: 320px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 32px;
   border: 0;
 }
 
@@ -34,32 +34,32 @@
   padding-left: 20px;
   overflow: auto;
   line-height: 30px;
-  border: 2px solid #e5e5e5;
-  box-sizing: border-box;
+  // border: 2px solid #e5e5e5;
+  // box-sizing: border-box;
 
-  &::placeholder {
-    color: $dark-background;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-  }
+  // &::placeholder {
+  //   color: $dark-background;
+  //   font-size: 18px;
+  //   font-weight: 400;
+  //   line-height: 30px;
+  // }
 
-  &:hover {
-    border-color: #000000;
-  }
+  // &:hover {
+  //   border-color: #000000;
+  // }
 
-  &:focus,
-  &:active {
-    outline: none;
-    border-color: $pink-text;
-  }
+  // &:focus,
+  // &:active {
+  //   outline: none;
+  //   border-color: $pink-text;
+  // }
 }
 
 @media (min-width: $tablet-width) {
   .emotion__container {
     width: 590px;
-    margin-top: 52px;
-    padding-top: 10px;
+    margin-top: 51px;
+    padding-top: 9px;
     border: 2px solid #e5e5e5;
   }
 
@@ -74,9 +74,9 @@
 
   .emotion__text-area {
     width: 496px;
-    height: 180px;
+    height: 190px;
     margin-top: 23px;
-    margin-bottom: 35px;
+    margin-bottom: 41px;
     padding-top: 13px;
   }
 }

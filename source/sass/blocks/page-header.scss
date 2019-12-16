@@ -6,6 +6,14 @@
   min-width: 320px;
   margin: 0 auto;
   background-color: $dark-background;
+
+  &--close {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &--open {
+   background-color: $dark-background;
+  }
 }
 
 .page-header__container {

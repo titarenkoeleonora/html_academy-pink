@@ -20,8 +20,8 @@
   @include reset-list;
   margin-right: 22px;
   margin-left: 23px;
-    padding-top: 30px;
-  padding-bottom: 2px;
+    padding-top: 32px;
+  padding-bottom: 12px;
 }
 
 .apps__item {
@@ -33,7 +33,7 @@
 }
 
 .apps__label {
-  margin-left: 33px;
+  margin-left: 67px;
   color: $dark-background;
   font-size: 18px;
   font-weight: 400;
@@ -79,8 +79,12 @@
   }
 
   .apps__list {
-    padding-top: 65px;
+    padding-top: 50px;
     padding-left: 3px;
     padding-bottom: 33px;
+  }
+
+  .apps__label {
+    margin-left: 93px;
   }
 }

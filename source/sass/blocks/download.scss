@@ -6,7 +6,7 @@
   align-items: center;
   min-width: 320px;
   min-height: 670px;
-  top: -66px;
+  top: -72px;
   color: $white;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
   &::before {
     content: "";
     display: block;
-    margin-top: 176px;
+    margin-top: 182px;
     width: 320px;
     height: 320px;
     background-image: url("../img/iphone-hand-mobile@1x.png");
@@ -83,7 +83,7 @@
 
 .download__info {
   width: 240px;
-  margin-top: 17px;
+  margin-top: 4px;
   text-align: center;
   font-size: 14px;
   font-weight: 300;
@@ -157,7 +157,7 @@
 
   .download__info {
     width: 300px;
-    margin-top: 35px;
+    margin-top: 13px;
     font-size: 18px;
     font-weight: 300;
     line-height: 24px;

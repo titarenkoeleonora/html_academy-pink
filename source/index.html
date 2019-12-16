@@ -138,64 +138,116 @@
             <button class="switch__button" type="button"></button>
           </li>
         </ul>
+        <div class="reviews__toggle">
+          <button class="reviews__button reviews__button--left"></button>
+          <button class="reviews__button reviews__button--right"></button>
+        </div>
       </div>
     </section>
+    <!-- <div class="wrapper">
+        <div class="table-wrap">
+          <table class="table">
+            <tr class="header">
+              <td class="first"></td>
+              <td>База</td>
+              <td>Стандарт</td>
+              <td>Анлим</td>
+            </tr>
+            <tr>
+              <td class="first">Розовый фильтр</td>
+              <td><span>Розовый фильтр</span> &#10003;</td>
+              <td><span>Розовый фильтр</span> &#10003;</td>
+              <td><span>Розовый фильтр</span> &#10003;</td>
+            </tr>
+            <tr>
+              <td class="first">Смайлики</td>
+              <td><span>Смайлики</span> &#10060;</td>
+              <td><span>Смайлики</span> &#10003;</td>
+              <td><span>Смайлики</span> &#10003;</td>
+            </tr>
+            <tr>
+              <td class="first">Комментарии</td>
+              <td><span>Комментарии</span> &#10060;</td>
+              <td><span>Комментарии</span> &#10060;</td>
+              <td><span>Комментарии</span> &#10003;</td>
+            </tr>
+          </table>
+        </div>
+        <div class="table-controls">
+          <button type="button" class="active">1</button>
+          <button type="button">2</button>
+          <button type="button">3</button>
+        </div>
+      </div> -->
+
+
     <section class="rates">
       <h2 class="visually-hidden">Тарифы</h2>
+
       <div class="rates__container">
         <table class="rates__table">
           <tr class="rates__head">
             <th class="rates__title--empty"></th>
             <th class="rates__title">
-              <span>База</span>
-              <p class="rates__price">1,99 USD</p>
+              <div class="rates__subtitle">База</div>
+              <span class="rates__price">1,99 usd</span>
+            </th>
+            <th class="rates__title rates__title--hit">
+              <div class="rates__subtitle">Стандарт</div>
+              <span class="rates__price">3,99 usd</span>
             </th>
             <th class="rates__title">
-              <span>Стандарт</span>
-              <p class="rates__price">3,99 USD</p>
-            </th>
-            <th class="rates__title">
-              <span>Анлим</span>
-              <p class="rates__price">9,99 USD</p>
+              <div class="rates__subtitle">Анлим</div>
+              <span class="rates__price">9,99 usd</span>
             </th>
           </tr>
           <tr class="rates__strings">
-            <td class="rates__option">Розовый фильтр</td>
-            <td class="rates__option rates__option--yes">
-              <span class="visually-hidden">Да</span>
+            <th class="tariffs__feature">Розовый фильтр</th>
+            <td class="rates__item">
+              <span class="rates__option-name">Розовый фильтр</span>
+              <span class="rates__option rates__option--yes">есть</span>
             </td>
-            <td class="rates__option rates__option--yes">
-              <span class="visually-hidden">Да</span>
+            <td class="rates__option">
+              <span class="rates__option-name">Розовый фильтр</span>
+              <span class="rates__option rates__option--yes">есть</span>
             </td>
-            <td class="rates__option rates__option--yes">
-              <span class="visually-hidden">Да</span>
-            </td>
-          </tr>
-          <tr class="rates__strings">
-            <td class="rates__option">Смайлики</td>
-            <td class="rates__option rates__option--no">
-              <span class="visually-hidden">Нет</span>
-            </td>
-            <td class="rates__option rates__option--yes">
-              <span class="visually-hidden">Да</span>
-            </td>
-            <td class="rates__option rates__option--yes">
-              <span class="visually-hidden">Да</span>
+            <td class="rates__item">
+              <span class="rates__option-name">Розовый фильтр</span>
+              <span class="rates__option rates__option--yes">есть</span>
             </td>
           </tr>
           <tr class="rates__strings">
-            <td class="rates__option">Комментарии</td>
-            <td class="rates__option rates__option--no">
-              <span class="visually-hidden">Нет</span>
+            <th class="tariffs__feature">Смайлики</th>
+            <td class="rates__item">
+              <span class="rates__option-name">Смайлики</span>
+              <span class="rates__option rates__option--no">нет</span>
             </td>
-            <td class="rates__option rates__option--no">
-              <span class="visually-hidden">Нет</span>
+            <td class="rates__item">
+              <span class="rates__option-name">Смайлики</span>
+              <span class="rates__option rates__option--yes">есть</span>
             </td>
-            <td class="rates__option rates__option--yes">
-              <span class="visually-hidden">Да</span>
+            <td class="rates__item">
+              <span class="rates__option-name">Смайлики</span>
+              <span class="rates__option rates__option--yes">есть</span>
+            </td>
+          </tr>
+          <tr class="rates__strings">
+            <th class="tariffs__feature">Комментарии</th>
+            <td class="rates__item">
+              <span class="rates__option-name">Комментарии</span>
+              <span class="rates__option rates__option--no">нет</span>
+            </td>
+            <td class="rates__item">
+              <span class="rates__option-name">Комментарии</span>
+              <span class="rates__option rates__option--no">нет</span>
+            </td>
+            <td class="rates__item">
+              <span class="rates__option-name">Комментарии</span>
+              <span class="rates__option rates__option--yes">есть</span>
             </td>
           </tr>
         </table>
+
         <ul class="rates__switch switch">
           <li class="switch__item">
             <button class="switch__button" type="button"></button>
@@ -209,6 +261,7 @@
         </ul>
       </div>
     </section>
+
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__container">
@@ -217,15 +270,15 @@
           Свяжитесь с нами!
         </p>
         <ul class="contacts__list">
-          <li class="contacts__item">
+          <li class="contacts__item contacts__phone">
             <span class="contacts__title">Звоните:</span>
             <p class="contacts__text">+7 (812) 555-66-66</p>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__email">
             <span class="contacts__title">Пишите:</span>
             <p class="contacts__text">mail@htmlacademy.ru</p>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__adress">
             <span class="contacts__title">Приезжайте в гости:</span>
             <p class="contacts__text">ул. Большая<br>Конюшенная, 19/8</p>
           </li>
