@@ -32,7 +32,7 @@
   text-transform: uppercase;
 }
 
-.user-contacts__text-area {
+.user-contacts__input-text {
   min-height: 63px;
   margin-top: 5px;
   padding-left: 20px;
@@ -76,7 +76,7 @@
     }
   }
 
-  .user-contacts__text-area {
+  .user-contacts__input-text {
     order: 1;
     width: 476px;
   }
@@ -140,7 +140,7 @@
     padding-top: 9px;
   }
 
-  .user-contacts__text-area {
+  .user-contacts__input-text {
     width: 371px;
     background: linear-gradient(90deg, #ffffff 85%, #f2f2f2 20%);
   }

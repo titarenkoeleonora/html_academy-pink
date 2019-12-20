@@ -1,4 +1,4 @@
-.checkbox + .achievments__label::before {
+.checkbox + .achievements__label::before {
   content: "";
   position: absolute;
   display: block;
@@ -10,7 +10,7 @@
   background-color: $white;
 }
 
-.checkbox:checked + .achievments__label::before {
+.checkbox:checked + .achievements__label::before {
   content: "";
   position: absolute;
   display: block;
@@ -22,7 +22,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .checkbox + .achievments__label::before {
+  .checkbox + .achievements__label::before {
     margin-left: -10px;
   }
 }

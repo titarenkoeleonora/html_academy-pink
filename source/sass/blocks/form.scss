@@ -1,20 +1,20 @@
-.form__list {
-  @include reset-list;
-  margin-right: 22px;
-  margin-left: 22px;
-}
-
-.form {
+.form-contest {
   display: flex;
   flex-direction: column;
   padding-top: 34px;
 }
 
-.form__apps {
+.form-contest__list {
+  @include reset-list;
+  margin-right: 22px;
+  margin-left: 22px;
+}
+
+.form-contest__apps {
   background-color: $grey-background;
 }
 
-.form__button {
+.form-contest__button {
   display: block;
   width: 276px;
   min-height: 63px;
@@ -25,13 +25,13 @@
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-  border: 2px solid #2aab6d;
-  background-color: #2aab6d;
+  border: 2px solid $green;
+  background-color: $green;
 
   &:hover,
   &:focus {
-    border: 2px solid #1c9b5e;
-    background-color: #1c9b5e;
+    border: 2px solid $dark-green;
+    background-color: $dark-green;
   }
 
   &:active {
@@ -39,7 +39,7 @@
   }
 }
 
-.form__legend {
+.form-contest__legend {
   display: block;
   margin-top: 35px;
   text-align: center;
@@ -54,36 +54,36 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form {
+  .form-contest {
     padding-top: 65px;
   }
 
-  .form__container {
+  .form-contest__container {
     width: 617px;
     margin: 0 auto;
   }
 
-  .form__user-name {
+  .form-contest__user-name {
     order: 1;
   }
 
-  .form__apps {
+  .form-contest__apps {
     order: 2;
   }
 
-  .form__user-contacts {
+  .form-contest__user-contacts {
     order: 3;
   }
 
-  .form__achievments {
+  .form-contest__achievements {
     order: 4;
   }
 
-  .form__emotion {
+  .form-contest__emotion {
     order: 5;
   }
 
-  .form__send {
+  .form-contest__send {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -91,13 +91,13 @@
     order: 6;
   }
 
-  .form__button {
+  .form-contest__button {
     width: 296px;
     margin: 0;
     margin-top: 68px;
   }
 
-  .form__legend {
+  .form-contest__legend {
     margin-top: 70px;
 
     &--full {
@@ -107,7 +107,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form {
+  .form-contest {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -115,15 +115,15 @@
     margin: 0 auto;
   }
 
-  .form__button {
+  .form-contest__button {
     margin-top: 67px;
   }
 
-  .form__send {
+  .form-contest__send {
     width: 936px;
   }
 
-  .form__legend--full {
+  .form-contest__legend--full {
     display: inline;
   }
 }

@@ -1,0 +1,128 @@
+.upload-photo {
+  padding-top: 20px;
+  background-color: $grey-background;
+}
+
+.upload-photo__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-photo__buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 38px;
+  padding-bottom: 41px;
+}
+
+.upload-photo__button {
+  @include reset-button;
+  width: 280px;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 65px;
+  outline: none;
+
+  &--post {
+    color: $pink-text;
+    border: 3px solid $pink-text;
+  }
+
+  &--cancel {
+    margin-top: 12px;
+    color: $light-grey;
+    border: 3px solid $light-grey;
+  }
+
+  &--post:hover,
+  &--post:focus {
+    color: $white;
+    background-color: $pink-text;
+  }
+
+  &--post:active {
+    color: rgba($color: $white, $alpha: 0.3);
+  }
+
+  &--cancel:hover,
+  &--cancel:focus {
+    color: $dark-grey;
+    border-color: $dark-grey;
+  }
+
+  &--cancel:active {
+    color: rgba($color: $white, $alpha: 0.3);
+    background-color: $dark-grey;
+    border-color: $dark-grey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .upload-photo {
+    padding-top: 57px;
+  }
+
+  .upload-photo__container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 620px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .upload-photo__image {
+    padding-right: 40px;
+  }
+
+  .upload-photo__buttons {
+    margin-left: 25px;
+  }
+
+  .upload-photo__button {
+    width: 260px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .upload-photo {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .upload-photo__container {
+    width: 800px;
+  }
+
+  .upload-photo__wrapper {
+    width: 410px;
+  }
+
+  .upload-photo__image {
+    padding-right: 15px;
+    padding-left: 18px;
+  }
+
+  .upload-photo__buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 410px;
+    margin-left: 93px;
+    padding-top: 155px;
+  }
+
+  .upload-photo__button {
+    width: 183px;
+
+    &--cancel {
+      margin: 0;
+    }
+  }
+}

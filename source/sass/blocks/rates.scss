@@ -17,7 +17,6 @@
   left: 50%;
   margin-top: 133px;
   margin-bottom: 34px;
-  background-color: $white;
   border-collapse: collapse;
   transform: translateX(-50%);
 }
@@ -25,6 +24,7 @@
 .rates__object,
 .rates__item {
   border: 2px solid #e5e5e5;
+  background-color: $white;
 }
 
 .rates__strings > th:first-child {

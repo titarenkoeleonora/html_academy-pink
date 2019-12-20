@@ -1,14 +1,14 @@
-.achievments {
+.achievements {
   background-color: $grey-background;
 }
 
-.achievments__container {
+.achievements__container {
   width: 320px;
   margin: 0 auto;
   border: 0;
 }
 
-.achievments__title {
+.achievements__title {
   max-width: 220px;
   margin: 0 auto;
   padding-top: 39px;
@@ -21,14 +21,14 @@
   text-transform: uppercase;
 }
 
-.achievments__list {
+.achievements__list {
   @include reset-list;
   margin-right: 22px;
   margin-left: 22px;
   padding-bottom: 22px;
 }
 
-.achievments__item {
+.achievements__item {
   padding-bottom: 52px;
   padding-left: 18px;
 
@@ -37,7 +37,7 @@
   }
 }
 
-.achievments__label {
+.achievements__label {
   margin-left: 50px;
   color: $dark-background;
   font-size: 18px;
@@ -46,17 +46,17 @@
 }
 
 @media (min-width: $tablet-width) {
-  .achievments {
+  .achievements {
     background-color: $white;
   }
 
-  .achievments__container {
+  .achievements__container {
     width: 590px;
     padding-bottom: 20px;
     border: 2px solid #e5e5e5;
   }
 
-  .achievments__title {
+  .achievements__title {
     max-width: 450px;
     padding-top: 47px;
     padding-right: 32px;
@@ -64,23 +64,23 @@
     padding-left: 32px;
   }
 
-  .achievments__list {
+  .achievements__list {
     margin-left: 36px;
   }
 
-  .achievments__item {
+  .achievements__item {
     padding-bottom: 52px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .achievments__container {
+  .achievements__container {
     width: 936px;
     max-height: 282px;
     padding: 0;
   }
 
-  .achievments__list {
+  .achievements__list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -89,7 +89,7 @@
     margin-top: 5px;
   }
 
-  .achievments__item {
+  .achievements__item {
     padding-left: 30px;
   }
 }

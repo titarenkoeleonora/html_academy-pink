@@ -64,11 +64,12 @@
   .advantages {
     width: 100%;
     margin-top: -65px;
-    background: linear-gradient(174deg, #ffffff 33%, #f2f2f2 10%);
+    background: linear-gradient(176deg, #ffffff 33%, #f2f2f2 10%);
   }
 
   .advantages__wrapper {
     padding: 0;
+    margin-bottom: 46px;
   }
 
   .advantages__slogan {
@@ -82,7 +83,6 @@
 
   .advantages__container {
     display: flex;
-    align-items: flex-end;
     width: 610px;
     margin: 0 auto;
     text-align: left;
@@ -100,11 +100,12 @@
   }
 
   .advantages__list {
-    margin-top: 120px;
+    margin-top: 72px;
     margin-bottom: 0;
   }
 
   .advantages__title {
+    margin-top: -2px;
     text-align: left;
   }
 
@@ -114,6 +115,18 @@
 
   .advantages__item {
     width: 255px;
+
+    &--mood {
+      margin-bottom: 35px;
+    }
+
+    &--world {
+      margin-bottom: 37px;
+    }
+
+    &--friends {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -153,6 +166,10 @@
     &::before {
       display: none;
     }
+  }
+
+  .advantages__wrapper {
+    margin-bottom: -42px;
   }
 
   .advantages__list {

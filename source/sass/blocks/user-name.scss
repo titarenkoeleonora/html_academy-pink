@@ -26,7 +26,7 @@
   text-transform: uppercase;
 }
 
-.user-name__text-area {
+.user-name__input-text {
   min-height: 65px;
   margin-top: 4px;
   padding-left: 20px;
@@ -58,7 +58,7 @@
     margin: 0;
   }
 
-  .user-name__text-area {
+  .user-name__input-text {
     flex-grow: 1;
     margin-left: 20px;
   }
@@ -74,7 +74,7 @@
     padding-top: 15px;
   }
 
-  .user-name__text-area {
+  .user-name__input-text {
     margin-left: 20px;
   }
 }

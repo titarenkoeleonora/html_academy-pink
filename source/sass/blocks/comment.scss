@@ -46,13 +46,14 @@
 @media (min-width: $tablet-width) {
   .comment {
     min-height: 155px;
-  }
 
-  .comment__panorama {
-    position: relative;
-    width: 620px;
-    min-height: 121px;
-    padding-bottom: 0;
+    &--panorama {
+      position: relative;
+      display: flex;
+      width: 620px;
+      min-height: 121px;
+      padding-bottom: 0;
+    }
   }
 
   .comment__text {
@@ -63,12 +64,12 @@
 @media (min-width: $desktop-width) {
   .comment {
     min-height: 155px;
-  }
 
-  .comment__panorama {
-    position: relative;
-    width: 940px;
-    min-height: 96px;
-    padding-bottom: 0;
+    &--panorama {
+      position: relative;
+      width: 940px;
+      min-height: 96px;
+      padding-bottom: 0;
+    }
   }
 }

@@ -1,0 +1,166 @@
+.filters {
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid $light-grey;
+}
+
+.filters__list {
+  @include reset-list;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 240px;
+  margin: 0 auto;
+}
+
+.filters__button {
+  @include reset-button;
+  height: 44px;
+  outline: none;
+
+  &--crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  &--fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  &--contrast {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.filters__control {
+  position: absolute;
+  top: 70px;
+  right: 0;
+}
+
+.filters__range {
+  position: relative;
+
+  &--fill {
+    display: none;
+  }
+
+  &--contrast {
+    display: none;
+  }
+}
+
+.filter__scale {
+  width: 240px;
+  height: 2px;
+  background-color: $dark-background;
+}
+
+.filter__toggle {
+  position: absolute;
+  top: -8px;
+  left: 193px;
+  width: 14px;
+  height: 15px;
+  background-color: $white;
+  border: 2px solid $pink-text;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $pink-text;
+  }
+}
+
+// @media (max-width: $mobile-width) {
+//     .filters__icon {
+//     &--active {
+//       fill: $pink-text;
+//     }
+
+//     &--not-active {
+//       fill: $grey-background;
+//     }
+
+//     &--not-active:hover,
+//     &--not-active:focus {
+//       fill: $dark-grey;
+//       }
+//     }
+//   }
+
+
+@media (min-width: $tablet-width) {
+  .filters {
+    padding: 0;
+    border: none;
+  }
+
+  .filters__list {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 190px;
+    box-sizing: border-box;
+  }
+
+  .filters__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 260px;
+    padding-top: 27px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #dcdcdc;
+
+    &--crop {
+      padding-top: 0;
+    }
+  }
+
+  .filters__control {
+    position: relative;
+    top: 0;
+  }
+
+  .filters__range {
+    &--fill {
+      display: block;
+    }
+
+    &--contrast {
+      display: block;
+    }
+  }
+
+  .filter__scale {
+    width: 202px;
+  }
+
+  .filter__toggle {
+    left: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filters__list {
+    padding-top: 0;
+  }
+
+  .filters__item {
+    width: 410px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+
+    &--crop {
+      padding-top: 0;
+    }
+  }
+
+  .filter__scale {
+    width: 288px;
+  }
+}

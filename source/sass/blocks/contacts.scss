@@ -34,10 +34,21 @@
 }
 
 .contacts__item {
-  padding-bottom: 26px;
   font-size: 24px;
   font-weight: 300;
   color: $pink-text;
+}
+
+.contacts__phone {
+  padding-bottom: 24px;
+}
+
+.contacts__email {
+  padding-bottom: 28px;
+}
+
+.contacts__adress {
+  padding-bottom: 34px;
 }
 
 .contacts__title {
