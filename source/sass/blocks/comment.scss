@@ -1,14 +1,18 @@
 .comment {
-  width: 211px;
-  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 20px;
-  margin-left: 20px;
-  padding-top: 25px;
-  padding-right: 40px;
-  padding-bottom: 28px;
-  padding-left: 27px;
+  padding-top: 15px;
   text-align: left;
-  background-color: $grey-background;
+  background-color: #f2f2f2;
+}
+
+.comment__wrapper {
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 .comment__publication-info {
@@ -32,6 +36,8 @@
 }
 
 .comment__text {
+  @include reset-text;
+  max-width: 231px;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -40,21 +46,30 @@
 @media (min-width: $tablet-width) {
   .comment {
     min-height: 155px;
+
+    &--panorama {
+      position: relative;
+      display: flex;
+      width: 620px;
+      min-height: 121px;
+      padding-bottom: 0;
+    }
   }
 
-  .comment__of-the-day {
-    width: 535px;
-    padding-bottom: 0;
+  .comment__text {
+    max-width: 519px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .comment {
     min-height: 155px;
-  }
 
-  .comment__of-the-day {
-    width: 875px;
-    padding-bottom: 0;
+    &--panorama {
+      position: relative;
+      width: 940px;
+      min-height: 96px;
+      padding-bottom: 0;
+    }
   }
 }

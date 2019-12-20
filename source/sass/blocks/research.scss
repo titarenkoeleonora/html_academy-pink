@@ -15,8 +15,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding-top: 59px;
+    width: 610px;
+    margin: 0 auto;
+    padding-top: 55px;
     padding-bottom: 51px;
     text-align: left;
     background-color: $white;
@@ -26,20 +27,26 @@
     display: flex;
     flex-direction: column;
     width: 295px;
+    margin-left: 64px;
   }
 
   .research__subtitle {
     @include reset-text;
-    width: 190px;
-    margin-top: 53px;
+    width: 200px;
+    margin-top: 43px;
     font-size: 30px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 33px;
+  }
+
+  .research__text {
+    @include reset-text;
+    width: 300px;
+    margin-top: 13px;
   }
 
   .research__info {
     display: flex;
-    justify-content: space-between;
     width: 603px;
     font-size: 14px;
     line-height: 24px;
@@ -56,6 +63,7 @@
   }
 
   .research__link {
+    margin-top: 10px;
     font-size: 14px;
   }
 }
@@ -67,7 +75,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 70px;
+    padding-top: 35px;
+    padding-bottom: 50px;
     text-align: left;
     background-color: $grey-background;
   }
@@ -77,25 +86,49 @@
     justify-content: center;
     width: 525px;
     margin: 0 auto;
+    margin-left: 69px;
   }
 
   .research__subtitle {
     @include reset-text;
     width: 350px;
+    margin-top: 45px;
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
+
+    br {
+      display: none;
+    }
   }
 
   .research__info {
     display: flex;
     justify-content: space-between;
-    width: 890px;
+    width: 940px;
+    min-height: 350px;
+    padding-bottom: 60px;
     font-size: 18px;
     line-height: 24px;
+
+    &::before {
+      content: "";
+      position: relative;
+      display: block;
+      width: 298px;
+      height: 345px;
+      background-image: url("../img/icon-timer.svg");
+      background-size: contain;
+    }
+  }
+
+  .research__text {
+    margin-top: 25px;
+    line-height: 30px;
   }
 
   .research__link {
+    padding-top: 19px;
     font-size: 18px;
   }
 }

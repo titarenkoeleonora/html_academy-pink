@@ -1,0 +1,28 @@
+.checkbox + .achievements__label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-top: -5px;
+  margin-left: -20px;
+  border: 2px solid #e5e5e5;
+  background-color: $white;
+}
+
+.checkbox:checked + .achievements__label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox + .achievements__label::before {
+    margin-left: -10px;
+  }
+}

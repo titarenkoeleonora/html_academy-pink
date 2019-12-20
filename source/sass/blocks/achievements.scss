@@ -1,0 +1,95 @@
+.achievements {
+  background-color: $grey-background;
+}
+
+.achievements__container {
+  width: 320px;
+  margin: 0 auto;
+  border: 0;
+}
+
+.achievements__title {
+  max-width: 220px;
+  margin: 0 auto;
+  padding-top: 39px;
+  padding-bottom: 37px;
+  text-align: center;
+  color: $pink-text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.achievements__list {
+  @include reset-list;
+  margin-right: 22px;
+  margin-left: 22px;
+  padding-bottom: 22px;
+}
+
+.achievements__item {
+  padding-bottom: 52px;
+  padding-left: 18px;
+
+  &:last-child {
+    padding-bottom: 10px;
+  }
+}
+
+.achievements__label {
+  margin-left: 50px;
+  color: $dark-background;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .achievements {
+    background-color: $white;
+  }
+
+  .achievements__container {
+    width: 590px;
+    padding-bottom: 20px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .achievements__title {
+    max-width: 450px;
+    padding-top: 47px;
+    padding-right: 32px;
+    padding-bottom: 43px;
+    padding-left: 32px;
+  }
+
+  .achievements__list {
+    margin-left: 36px;
+  }
+
+  .achievements__item {
+    padding-bottom: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .achievements__container {
+    width: 936px;
+    max-height: 282px;
+    padding: 0;
+  }
+
+  .achievements__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 876px;
+    max-height: 228px; //как без этого ограничения сделать перенос? ведь если добавятся пункты, то все поплывет
+    margin-top: 5px;
+  }
+
+  .achievements__item {
+    padding-left: 30px;
+  }
+}

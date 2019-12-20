@@ -1,0 +1,157 @@
+.contacts {
+  padding-top: 43px;
+  background-color: $white;
+}
+
+.contacts__container {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 320px;
+    height: 123px;
+    margin-top: -20px;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+}
+
+.contacts__subtitle {
+  max-width: 229px;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.contacts__list {
+  @include reset-list;
+  margin-top: 38px;
+}
+
+.contacts__item {
+  font-size: 24px;
+  font-weight: 300;
+  color: $pink-text;
+}
+
+.contacts__phone {
+  padding-bottom: 24px;
+}
+
+.contacts__email {
+  padding-bottom: 28px;
+}
+
+.contacts__adress {
+  padding-bottom: 34px;
+}
+
+.contacts__title {
+  @include reset-text;
+  display: block;
+  padding-bottom: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  color: $dark-background;
+}
+
+.contacts__text {
+  @include reset-text;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 45px;
+  }
+
+  .contacts__container {
+    width: 660px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 660px;
+      height: 123px;
+      margin-top: -20px;
+      background-image: url("../img/bg-triangle-white-footer.svg");
+      background-repeat: no-repeat;
+      background-position-x: center;
+    }
+  }
+
+  .contacts__subtitle {
+    max-width: 376px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 47px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 46px;
+  }
+
+  .contacts__item {
+    padding-bottom: 56px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 65px;
+  }
+
+  .contacts__container {
+    width: 960px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 960px;
+      height: 123px;
+      background-image: url("../img/bg-triangle-white-footer.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position-x: center;
+    }
+  }
+
+  .contacts__subtitle {
+    max-width: 466px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .contacts__list {
+    justify-content: space-between;
+    width: 845px;
+    margin-top: 59px;
+  }
+
+  .contacts__title {
+    padding-bottom: 25px;
+  }
+
+  .contacts__phone {
+    order: 1;
+  }
+
+  .contacts__email {
+    order: 3;
+  }
+
+  .contacts__adress {
+    order: 2;
+  }
+}

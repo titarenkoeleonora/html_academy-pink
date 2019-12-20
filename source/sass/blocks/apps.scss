@@ -1,0 +1,90 @@
+.apps__container {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 0;
+}
+
+.apps__title {
+  max-width: 220px;
+  margin: 0 auto;
+  text-align: center;
+  color: $pink-text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.apps__list {
+  @include reset-list;
+  margin-right: 22px;
+  margin-left: 23px;
+  padding-top: 32px;
+  padding-bottom: 12px;
+}
+
+.apps__item {
+  padding-bottom: 45px;
+
+  &:last-child {
+    padding-bottom: 25px;
+  }
+}
+
+.apps__label {
+  margin-left: 67px;
+  color: $dark-background;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .apps {
+    background-color: $white;
+  }
+
+  .apps__container {
+    width: 590px;
+    margin-top: 45px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .apps__title {
+    max-width: 450px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .apps__list {
+    padding-top: 42px;
+    padding-bottom: 23px;
+  }
+
+  .apps__item {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .apps__container {
+    width: 431px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .apps__title {
+    padding-top: 5px;
+  }
+
+  .apps__list {
+    padding-top: 67px;
+    padding-left: 3px;
+    padding-bottom: 33px;
+  }
+
+  .apps__label {
+    margin-left: 93px;
+  }
+}

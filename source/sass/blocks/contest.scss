@@ -1,0 +1,52 @@
+.contest__container {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 45px;
+}
+
+.contest__title {
+  width: 275px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@media (max-width: $mobile-width) {
+  .contest__call-to-action {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contest__container {
+    width: 660px;
+    padding-top: 94px;
+  }
+
+  .contest__call-to-action {
+    display: block;
+  }
+
+  .contest__title {
+    width: 500px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest__container {
+    width: 960px;
+  }
+
+  .contest__title {
+    width: 760px;
+  }
+
+  .contest__call-to-action {
+    display: inline;
+  }
+}

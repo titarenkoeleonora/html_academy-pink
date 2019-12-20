@@ -2,14 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 48px;
   background-color: $white;
 }
 
 .photos__text {
   width: 251px;
-  margin-top: 54px;
+  margin-top: 45px;
   margin-right: 39px;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
   margin-left: 40px;
   text-align: center;
   font-size: 14px;
@@ -27,7 +28,8 @@
   left: 50%;
   background-color: $pink-text;
   color: $white;
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
 }
@@ -40,6 +42,15 @@
   text-align: center;
 }
 
+.photos__subtitle {
+  @include reset-text;
+  width: 255px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
 
 @media (min-width: $tablet-width) {
   .photos {
@@ -48,6 +59,7 @@
     width: 660px;
     margin: 0 auto;
     padding-right: 10px;
+    padding-bottom: 72px;
   }
 
   .photos__list {
@@ -55,20 +67,33 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 620px;
     margin: 0;
     padding: 0;
+    padding-top: 25px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 50px;
     list-style: none;
   }
 
-  .photo__of-the-day {
+  .photo__panorama {
     flex-grow: 1;
     width: 620px;
   }
 
+  .photo__image--panorama {
+    width: 660px;
+  }
+
   .photos__text {
     width: 536px;
+    margin-top: 93px;
+    font-size: 18px;
+  }
+
+  .photos__subtitle {
+    width: 450px;
     font-size: 18px;
   }
 }
@@ -76,19 +101,25 @@
 @media (min-width: $desktop-width) {
   .photos {
     width: 1200px;
+    padding-bottom: 66px;
   }
 
   .photos__list {
-    width: 980px;
+    width: 940px;
     margin: 0 auto;
+    margin-top: 12px;
   }
 
-  .photo__of-the-day {
+  .photo__panorama {
     width: 100%;
     flex-grow: 1;
   }
 
   .photo__image--panorama {
     width: 100%;
+  }
+
+  .photos__text {
+    width: 636px;
   }
 }
