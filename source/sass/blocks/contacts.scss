@@ -78,8 +78,9 @@
       display: block;
       width: 660px;
       height: 123px;
-      margin-top: -20px;
+      margin-top: 0;
       background-image: url("../img/bg-triangle-white-footer.svg");
+      background-size: contain;
       background-repeat: no-repeat;
       background-position-x: center;
     }
@@ -118,8 +119,9 @@
       content: "";
       position: absolute;
       display: block;
-      width: 960px;
+      width: 1200px;
       height: 123px;
+      margin-left: -117px;
       background-image: url("../img/bg-triangle-white-footer.svg");
       background-repeat: no-repeat;
       background-size: contain;
@@ -137,6 +139,10 @@
     justify-content: space-between;
     width: 845px;
     margin-top: 59px;
+  }
+
+  .contacts__item {
+    padding-bottom: 5px;
   }
 
   .contacts__title {

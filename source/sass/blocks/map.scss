@@ -5,3 +5,33 @@
   margin: 0 auto;
   margin-top: -450px;
 }
+
+.map__image {
+  width: 320px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .map__container {
+    width: 660px;
+    height: 848px;
+  }
+
+  .map__image {
+    width: 700px;
+    height: 848px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__container {
+    width: 1200px;
+    margin-top: -329px;
+    overflow: hidden;
+  }
+
+  .map__image {
+    width: 2500px;
+    height: 1002px;
+  }
+}

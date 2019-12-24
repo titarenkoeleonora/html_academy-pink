@@ -1,7 +1,12 @@
 .page-footer {
+  background-color: $white;
+}
+
+.page-footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $white;
 }
 
 .page-footer__logo {
@@ -15,13 +20,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__container {
     display: flex;
     flex-direction: row;
     align-content: center;
     width: 620px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 0;
   }
 
   .page-footer__logo {
@@ -34,9 +39,14 @@
   .page-footer {
     display: flex;
     flex-direction: row;
-    width: 940px;
+    width: 1200px;
     margin: 0 auto;
-    margin-top: 25px;
+  }
+
+  .page-footer__container {
+    width: 945px;
+    min-height: 188px;
+    margin: 0 auto;
   }
 
   .page-footer__logo {

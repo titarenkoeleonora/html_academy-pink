@@ -1,4 +1,7 @@
 .like {
+  margin: 0;
+  padding-top: 9px;
+  padding-bottom: 21px;
   padding-left: 17px;
 }
 
@@ -28,7 +31,7 @@
     margin: 0;
     padding-left: 17px;
     padding-right: 17px;
-    padding-bottom: 30px;
+    padding-bottom: 45px;
 
     &--panorama {
       position: absolute;
@@ -37,8 +40,8 @@
       justify-content: space-between;
       align-items: center;
       min-width: 118px;
-      top: 15px;
-      right: 29px;
+      top: 21px;
+      right: 12px;
     }
   }
 }
