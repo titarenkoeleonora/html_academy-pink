@@ -15,10 +15,10 @@
   background-color: #bec3c7;
   border: 3px solid $white;
   border-radius: 50px;
-}
 
-.switch__button--active {
-  background-color: $white;
-  border: 3px solid #283645;
-  border-radius: 50px;
+  &--active {
+    background-color: $white;
+    border: 3px solid #283645;
+    border-radius: 50px;
+  }
 }

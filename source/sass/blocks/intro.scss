@@ -7,6 +7,10 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .intro__title {
@@ -23,14 +27,20 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    min-height: 395px;
+    min-height: 442px;
+    margin-top: -110px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position-y: -45px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .intro__title {
-    padding-top: 38px;
+    padding-top: 84px;
     font-size: 50px;
     font-weight: 300;
     line-height: 60px;
@@ -53,6 +63,10 @@
     background-repeat: no-repeat;
     background-size: 2650px 853px;
     background-position-x: center;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .intro__title--contest {

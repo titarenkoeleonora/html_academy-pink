@@ -65,8 +65,8 @@
   position: absolute;
   top: -8px;
   left: 193px;
-  width: 14px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background-color: $white;
   border: 2px solid $pink-text;
   border-radius: 50%;
@@ -111,13 +111,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 260px;
+    width: 265px;
     padding-top: 27px;
     padding-bottom: 24px;
     border-bottom: 1px solid #dcdcdc;
 
     &--crop {
       padding-top: 0;
+    }
+  }
+
+  .filters__icon {
+    &--crop {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
     }
   }
 
@@ -157,6 +174,23 @@
 
     &--crop {
       padding-top: 0;
+    }
+  }
+
+  .filters__icon {
+    &--crop {
+      width: 44px;
+      height: 44px;
+    }
+
+    &--fill {
+      width: 48px;
+      height: 43px;
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
     }
   }
 

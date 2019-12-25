@@ -40,7 +40,9 @@
   }
 
   .page-header__logo-image {
-    min-height: 110px;
+    width: 147px;
+    height: 40px;
+    padding-bottom: 26px;
   }
 }
 
@@ -61,5 +63,10 @@
     align-items: center;
     width: 941px;
     margin: 0 auto;
+  }
+
+  .page-header__logo-image {
+    width: 147px;
+    height: 40px;
   }
 }
