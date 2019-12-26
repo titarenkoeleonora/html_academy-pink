@@ -12,6 +12,7 @@
     "gulp-postcss": "8.0.x",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "2.6.x",
+    "gulp-svgstore": "^7.0.1",
     "stylelint": "10.1.x",
     "stylelint-config-htmlacademy": "^0.1.4"
   },
