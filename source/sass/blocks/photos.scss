@@ -134,8 +134,13 @@
     flex-grow: 1;
   }
 
-  .photo__image--panorama {
-    width: 100%;
+  .photo__image {
+    width: 300px;
+    height: 400px;
+
+    &--panorama {
+      width: 100%;
+    }
   }
 
   .photos__text {

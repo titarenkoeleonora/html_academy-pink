@@ -24,6 +24,22 @@
 .page-header__logo-image {
   min-height: 69px;
   padding-left: 20px;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    color: $pink-text;
+  }
+
+  &:active {
+    color: $white;
+    opacity: 0.3;
+  }
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -43,6 +59,14 @@
     width: 147px;
     height: 40px;
     padding-bottom: 26px;
+
+    &--tablet {
+      display: inline;
+    }
+
+    &--mobile {
+      display: none;
+    }
   }
 }
 
@@ -68,5 +92,13 @@
   .page-header__logo-image {
     width: 147px;
     height: 40px;
+
+    &--desktop {
+      display: inline;
+    }
+
+    &--tablet {
+      display: none;
+    }
   }
 }
