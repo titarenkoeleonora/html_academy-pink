@@ -31,18 +31,19 @@
 .social__link {
   display: inline-block;
   vertical-align: middle;
+  color: $pink-text;
 }
 
 .social__link--twitter {
-  padding-top: 16px;
+  padding-top: 8px;
 }
 
 .social__link--facebook {
-  padding-top: 12px;
+  padding-top: 7px;
 }
 
 .social__link--youtube {
-  padding-top: 15px;
+  padding-top: 8px;
 }
 
 @media (min-width: $tablet-width) {

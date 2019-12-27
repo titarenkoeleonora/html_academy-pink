@@ -13,6 +13,18 @@
   margin-top: 55px;
 }
 
+.page-footer__logo-image {
+  &:hover,
+  &:focus {
+    color: $pink-text;
+  }
+
+  &:active {
+    color: $dark-background;
+    opacity: 0.3;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .page-footer--index {
     display: none;

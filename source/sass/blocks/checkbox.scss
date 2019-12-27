@@ -8,17 +8,27 @@
   margin-left: -20px;
   border: 2px solid #e5e5e5;
   background-color: $white;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $dark-background;
+  }
 }
 
 .checkbox:checked + .achievements__label::before {
   content: "";
   position: absolute;
   display: block;
-  background-image: url("../img/icon-yes.svg");
+  background-image: url("../img/icon-yes--pink.svg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position-x: center;
   background-position-y: center;
+
+  &:hover,
+  &:focus {
+    border-color: $dark-background;
+  }
 }
 
 @media (min-width: $tablet-width) {
