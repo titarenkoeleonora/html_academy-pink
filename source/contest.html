@@ -5,30 +5,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Конкурс &#448; PINK</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
 
   </script>
-  <script src="js/picturefill.min.js" async></script>
+  <script src="js/picturefill.min.js" async=""></script>
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+    </div>
+
   <header class="page-header">
     <div class="page-header__container">
       <a class="page-header__logo">
-        <svg class="page-header__logo-image page-header__logo-image--mobile logo" width="75" height="23"
-          viewBox="0 0 74.426 22.859">
-          <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+        <svg class="page-header__logo-image page-header__logo-image--mobile logo" width="75" height="23" viewBox="0 0 74.426 22.859">
+          <use xlink:href="#icon-logo-pink-white-mobile"></use>
         </svg>
-        <svg class="page-header__logo-image page-header__logo-image--tablet logo" width="147" height="41"
-          viewBox="0 0 146.3 40.375">
-          <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+        <svg class="page-header__logo-image page-header__logo-image--tablet logo" width="147" height="41" viewBox="0 0 146.3 40.375">
+          <use xlink:href="#icon-logo-pink-white-tablet"></use>
         </svg>
-        <svg class="page-header__logo-image page-header__logo-image--desktop logo" width="147" height="41"
-          viewBox="0 0 146.3 40.375">
-          <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+        <svg class="page-header__logo-image page-header__logo-image--desktop logo" width="147" height="41" viewBox="0 0 146.3 40.375">
+          <use xlink:href="#icon-logo-pink-white-desktop"></use>
         </svg>
       </a>
       <nav class="main-nav main-nav--nojs">
@@ -67,18 +68,15 @@
             <ul class="user-name__list">
               <li class="user-name__item">
                 <label class="user-name__label" for="surname">Фамилия:</label>
-                <input class="user-name__input-text input-text" id="surname" type="text" placeholder="Укажите фамилию *"
-                  required>
+                <input class="user-name__input-text input-text" id="surname" type="text" placeholder="Укажите фамилию *" required="">
               </li>
               <li class="user-name__item">
                 <label class="user-name__label" for="name">Имя:</label>
-                <input class="user-name__input-text input-text" id="name" type="text" placeholder="Введите ваше имя *"
-                  required>
+                <input class="user-name__input-text input-text" id="name" type="text" placeholder="Введите ваше имя *" required="">
               </li>
               <li class="user-name__item">
                 <label class="user-name__label" for="patronymic">Отчество:</label>
-                <input class="user-name__input-text input-text" id="patronymic" type="text"
-                  placeholder="Ну и отчество тоже">
+                <input class="user-name__input-text input-text" id="patronymic" type="text" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </div>
@@ -88,11 +86,11 @@
             <legend class="achievements__title">Ваши безбашенные достижения в путешествии</legend>
             <ul class="achievements__list">
               <li class="achievements__item">
-                <input class="achievements__checkbox checkbox visually-hidden" type="checkbox" id="shark" checked>
+                <input class="achievements__checkbox checkbox visually-hidden" type="checkbox" id="shark" checked="">
                 <label class="achievements__label" for="shark">Сделал селфи с акулой</label>
               </li>
               <li class="achievements__item">
-                <input class="achievements__checkbox checkbox visually-hidden" type="checkbox" id="beach" checked>
+                <input class="achievements__checkbox checkbox visually-hidden" type="checkbox" id="beach" checked="">
                 <label class="achievements__label" for="beach">Обгорел на пляже</label>
               </li>
               <li class="achievements__item">
@@ -104,7 +102,7 @@
                 <label class="achievements__label" for="souvenirs">Накупил сувениров</label>
               </li>
               <li class="achievements__item">
-                <input class="achievements__checkbox checkbox visually-hidden" type="checkbox" id="tower" checked>
+                <input class="achievements__checkbox checkbox visually-hidden" type="checkbox" id="tower" checked="">
                 <label class="achievements__label" for="tower">Удержал башню</label>
               </li>
               <li class="achievements__item">
@@ -119,13 +117,11 @@
           <ul class="user-contacts__list">
             <li class="user-contacts__item user-contacts__item--phone">
               <label class="user-contacts__label" for="phone-number">Номер телефона</label>
-              <input class="user-contacts__input-text user-contacts__input-text--phone input-text" id="phone-number"
-                type="tel" placeholder="Номер, пожалуйста">
+              <input class="user-contacts__input-text user-contacts__input-text--phone input-text" id="phone-number" type="tel" placeholder="Номер, пожалуйста">
             </li>
             <li class="user-contacts__item user-contacts__item--e-mail">
               <label class="user-contacts__label" for="e-mail">Адрес почты</label>
-              <input class="user-contacts__input-text user-contacts__input-text--e-mail input-text" id="e-mail"
-                type="email" placeholder="Введите почту *" required>
+              <input class="user-contacts__input-text user-contacts__input-text--e-mail input-text" id="e-mail" type="email" placeholder="Введите почту *" required="">
             </li>
           </ul>
         </fieldset>
@@ -134,7 +130,7 @@
             <legend class="apps__title">С каким приложением путешествовали?</legend>
             <ul class="apps__list">
               <li class="apps__item">
-                <input class="apps__radio radio visually-hidden" type="radio" id="ios" checked>
+                <input class="apps__radio radio visually-hidden" type="radio" id="ios" checked="">
                 <label class="apps__label" for="ios">Pink для iOS</label>
               </li>
               <li class="apps__item">
@@ -151,14 +147,13 @@
         <div class="form-contest__emotion emotion">
           <fieldset class="emotion__container">
             <legend class="emotion__title">Опишите свои эмоции</legend>
-            <textarea class="emotion__input-text input-text" id="emotion"
-              placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="emotion__input-text input-text" id="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
         </div>
         <div class="form-contest__container form-contest__send">
           <button class="form-contest__button" type="submit">Отправить форму</button>
           <small class="form-contest__legend">
-            <sup>*</sup> — обязательные <span class="form-contest__legend--full">для заполнения</span> поля
+            <sup class="form__footnote">*</sup> — обязательные <span class="form-contest__legend--full">для заполнения</span> поля
           </small>
         </div>
       </form>
@@ -166,42 +161,41 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__container">
-      <div class="page-footer__logo logo">
-        <svg class="page-footer__logo-image page-footer__logo-image--mobile logo" width="147" height="41"
-          viewBox="0 0 146.3 40.375">
-          <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+      <div class="page-footer__logo page-footer__logo--contest logo">
+        <svg class="page-footer__logo-image page-footer__logo-image--mobile logo" width="147" height="41" viewBox="0 0 146.3 40.375">
+          <use xlink:href="#icon-logo-pink-blue-desktop"></use>
         </svg>
       </div>
-      <div class="page-footer__social social">
+      <div class="page-footer__social page-footer__social--contest social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com/" aria-label="PINK в Twitter">
               <svg class="social__link social__link--twitter" width="18" height="15" viewBox="0 0 17.5 14.663">
-                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://facebook.com/" aria-label="PINK в Facebook">
               <svg class="social__link social__link--facebook" width="9" height="19" viewBox="0 0 8.673 18.944">
-                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/" aria-label="PINK в Youtube">
               <svg class="social__link social__link--youtube" width="15" height="14" viewBox="0 0 14.64 13.96">
-                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                <use xlink:href="#icon-youtube"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
+      <div class="page-footer__copyright page-footer__copyright--contest copyright">
         <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+        <a class="copyright__link copyright__link--contest" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
           <svg class="copyright__link" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34">
-            <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+            <use xlink:href="#icon-logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
@@ -226,7 +220,7 @@
       </div>
     </div>
   </div>
-  <script src="picturefill.js" async></script>
+  <script src="picturefill.js" async=""></script>
   <script src="js/script.js"></script>
 </body>
 

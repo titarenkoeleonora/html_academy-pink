@@ -36,3 +36,9 @@
     margin-left: -10px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .checkbox + .achievements__label::before {
+    margin-left: -12px;
+  }
+}

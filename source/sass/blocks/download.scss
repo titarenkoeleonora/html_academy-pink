@@ -12,6 +12,7 @@
   background-repeat: no-repeat;
   background-size: 320px 462px;
   background-position-x: center;
+  background-position-y: 5px;
   background-color: $dark-background;
 
   @media (min-resolution: $retina-dppx) {
@@ -21,12 +22,12 @@
   &::before {
     content: "";
     display: block;
-    margin-top: 182px;
+    margin-top: 181px;
     width: 320px;
     height: 320px;
     background-image: url("../img/iphone-hand-mobile@1x.png");
     background-repeat: no-repeat;
-    background-size: 260px 281px;
+    background-size: 258px 286px;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-mobile@2x.png");
@@ -46,8 +47,8 @@
   display: block;
   width: 275px;
   margin-top: 320px;
-  padding-top: 16px;
-  padding-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 16px;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -141,7 +142,7 @@
       width: 660px;
       height: 545px;
       top: 187px;
-      margin-left: -20px;
+      left: -20px;
       background-image: url("../img/iphone-hand-tablet@1x.png");
       background-repeat: no-repeat;
 
@@ -157,8 +158,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 137px;
-    margin-left: 15px;
+    margin-top: 114px;
+    margin-left: 16px;
   }
 
   .download__slogan {
@@ -173,7 +174,7 @@
 
   .download__button {
     width: 300px;
-    margin-top: 27px;
+    margin-top: 31px;
   }
 
   .download__list {
@@ -216,7 +217,7 @@
       width: 1045px;
       height: 853px;
       top: 320px;
-      margin-left: 26px;
+      left: 26px;
       background-image: url("../img/iphone-hand-desktop@1x.png");
       background-repeat: no-repeat;
 

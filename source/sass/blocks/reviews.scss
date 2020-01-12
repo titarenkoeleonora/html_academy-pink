@@ -32,7 +32,7 @@
 
   .reviews__author {
     @include reset-text;
-    margin-top: 44px;
+    margin-top: 41px;
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
@@ -43,7 +43,7 @@
   }
 
   .reviews__text {
-    max-width: 286px;
+    max-width: 283px;
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
@@ -55,10 +55,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .reviews {
-    padding-top: 94px;
-  }
-
   .reviews__container {
     width: 660px;
     margin: 0 auto;
@@ -67,6 +63,7 @@
   .reviews__item {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .reviews__author {
@@ -79,6 +76,7 @@
   .reviews__info {
     @include reset-text;
     order: 3;
+    padding-top: 2px;
     font-size: 14px;
     font-weight: 400;
     line-height: 38px;
@@ -87,7 +85,7 @@
   .reviews__text {
     @include reset-text;
     order: 1;
-    padding-bottom: 40px;
+    padding-bottom: 38px;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -107,7 +105,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     padding-top: 183px;
-    padding-bottom: 65px;
+    padding-bottom: 0;
   }
 
   .reviews__container {
@@ -120,7 +118,7 @@
       width: 79px;
       height: 63px;
       margin-top: -110px;
-      margin-left: 440px;
+      margin-left: 433px;
       background-image: url("../img/icon-quotes.svg");
       background-repeat: no-repeat;
       background-size: contain;
@@ -128,18 +126,19 @@
   }
 
   .reviews__author {
-    padding-bottom: 3px;
     font-size: 24px;
   }
 
   .reviews__info {
+    padding-top: 0;
     font-size: 18px;
   }
 
   .reviews__text {
     max-width: 690px;
     margin: 0 auto;
-    padding-bottom: 35px;
+    padding-top: 3px;
+    padding-bottom: 37px;
   }
 
   .reviews__switch {
@@ -152,27 +151,27 @@
     width: 22px;
     height: 41px;
     outline: none;
-    color: $dark-grey;
+    fill: $dark-grey;
 
     &--left {
       position: absolute;
-      margin-top: -98px;
+      margin-top: -93px;
       margin-left: -3px;
     }
 
     &--right {
       position: absolute;
       margin-top: -98px;
-      margin-left: 458px;
+      margin-left: 456px;
     }
 
     &:hover,
     &:focus {
-      color: $grey-1;
+      fill: $grey-1;
     }
 
     &:active {
-      color: $light-grey;
+      fill: $light-grey;
     }
   }
 

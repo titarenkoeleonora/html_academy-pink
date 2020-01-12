@@ -24,12 +24,12 @@
 
 .emotion__input-text {
   display: flex;
-  width: 276px;
-  height: 197px;
+  width: 280px;
+  height: 201px;
   resize: none;
   overflow: auto;
   margin: 0 auto;
-  margin-top: 6px;
+  margin-top: 5px;
   padding-top: 14px;
   padding-right: 20px;
   padding-left: 20px;
@@ -38,7 +38,7 @@
 
 @media (min-width: $tablet-width) {
   .emotion__container {
-    width: 590px;
+    width: 592px;
     margin-top: 51px;
     padding-top: 9px;
     border: 2px solid #e5e5e5;
@@ -54,23 +54,27 @@
   }
 
   .emotion__input-text {
-    width: 496px;
-    height: 190px;
-    margin-top: 23px;
+    width: 500px;
+    height: 193px;
+    margin-top: 22px;
     margin-bottom: 41px;
-    padding-top: 13px;
+    padding-top: 14px;
+    padding-left: 19px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .emotion__container {
-    width: 936px;
+    width: 938px;
     box-sizing: border-box;
   }
 
   .emotion__input-text {
-    width: 816px;
-    height: 124px;
+    width: 819px;
+    height: 128px;
     margin-top: 19px;
+    margin-bottom: 33px;
+    padding-top: 15px;
+    padding-left: 18px;
   }
 }

@@ -22,17 +22,17 @@
 }
 
 .page-header__logo-image {
-  min-height: 69px;
+  min-height: 67px;
   padding-left: 20px;
-  color: $white;
+  fill: $white;
 
   &:hover,
   &:focus {
-    color: $pink-text;
+    fill: $pink-text;
   }
 
   &:active {
-    color: $white;
+    fill: $white;
     opacity: 0.3;
   }
 
@@ -62,6 +62,7 @@
 
     &--tablet {
       display: inline;
+      padding-top: 14px;
     }
 
     &--mobile {
@@ -92,6 +93,8 @@
   .page-header__logo-image {
     width: 147px;
     height: 40px;
+    padding-top: 13px;
+    padding-left: 0;
 
     &--desktop {
       display: inline;

@@ -7,6 +7,15 @@
   text-decoration: underline;
   font-size: 14px;
   color: $pink-text;
+
+  &:hover,
+  &:focus {
+    color: $dark-background;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -15,10 +24,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 610px;
+    width: 619px;
     margin: 0 auto;
-    padding-top: 55px;
-    padding-bottom: 51px;
+    padding-top: 60px;
+    padding-bottom: 4px;
     text-align: left;
     background-color: $white;
   }
@@ -27,16 +36,16 @@
     display: flex;
     flex-direction: column;
     width: 295px;
-    margin-left: 64px;
+    margin-left: 70px;
   }
 
   .research__subtitle {
     @include reset-text;
     width: 200px;
-    margin-top: 43px;
+    margin-top: 39px;
     font-size: 30px;
     font-weight: 700;
-    line-height: 33px;
+    line-height: 34px;
   }
 
   .research__text {
@@ -47,18 +56,27 @@
 
   .research__info {
     display: flex;
-    width: 603px;
+    width: 619px;
     font-size: 14px;
     line-height: 24px;
 
     &::before {
-      content: "";
-      position: relative;
-      display: block;
-      width: 238px;
-      height: 276px;
-      background-image: url("../img/icon-timer.svg");
-      background-size: contain;
+    content: "24";
+    position: relative;
+    display: block;
+    width: 238px;
+    height: 276px;
+    padding-top: 139px;
+    text-align: center;
+    font-size: 96px;
+    font-weight: 700;
+    color: #d22856;
+    background-image: url(../img/icon-editor-diagram-fill.svg),url(../img/icon-timer.svg);
+    background-position-x: center, center;
+    background-position-x: center, center;
+    background-position-y: 55px,0px;
+    background-size: 202px 202px,contain;
+    background-repeat: no-repeat;
     }
   }
 
@@ -75,7 +93,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 35px;
+    padding-top: 0;
     padding-bottom: 50px;
     text-align: left;
     background-color: $grey-background;
@@ -92,7 +110,7 @@
   .research__subtitle {
     @include reset-text;
     width: 350px;
-    margin-top: 45px;
+    margin-top: 9px;
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
@@ -107,7 +125,7 @@
     justify-content: space-between;
     width: 940px;
     min-height: 350px;
-    padding-bottom: 60px;
+    padding-bottom: 0;
     font-size: 18px;
     line-height: 24px;
 
@@ -116,13 +134,15 @@
       position: relative;
       display: block;
       width: 298px;
-      height: 345px;
+      height: 296px;
       background-image: url("../img/icon-timer.svg");
       background-size: contain;
+      background-position-y: 29px,0;
     }
   }
 
   .research__text {
+    width: 520px;
     margin-top: 25px;
     line-height: 30px;
   }

@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 43px;
+  padding-top: 41px;
   background-color: $white;
 }
 
@@ -26,11 +26,12 @@
   margin: 0 auto;
   font-size: 24px;
   font-weight: 300;
+  line-height: 29px;
 }
 
 .contacts__list {
   @include reset-list;
-  margin-top: 38px;
+  margin-top: 36px;
 }
 
 .contacts__item {
@@ -96,6 +97,10 @@
     }
   }
 
+  .contacts__title {
+    padding-bottom: 8px;
+  }
+
   .contacts__subtitle {
     max-width: 376px;
     font-size: 40px;
@@ -113,13 +118,17 @@
   }
 
   .contacts__item {
-    padding-bottom: 56px;
+    padding-bottom: 50px;
+  }
+
+  .contacts__adress {
+    padding-bottom: 31px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding-top: 65px;
+    padding-top: 63px;
   }
 
   .contacts__container {
@@ -169,5 +178,6 @@
 
   .contacts__adress {
     order: 2;
+    margin-left: 35px;
   }
 }

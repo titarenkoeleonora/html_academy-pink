@@ -4,7 +4,7 @@
     flex-flow: column;
     min-width: 320px;
     margin-top: -31px;
-    background: linear-gradient(175deg, $white 22%, $grey-background 22%);
+    background: linear-gradient(174deg,#fff 21%,#f2f2f2 20%);
 
     &::after {
       content: "";
@@ -30,10 +30,11 @@
 .advantages__slogan {
   width: 222px;
   margin: 0 auto;
-  padding-bottom: 33px;
+  padding-bottom: 31px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
+  line-height: 28px;
 }
 
 .advantages__list {
@@ -47,8 +48,8 @@
 }
 
 .advantages__item {
-  width: 259px;
-  margin-bottom: 30px;
+  width: 260px;
+  margin-bottom: 31px;
 }
 
 .advantages__title {
@@ -74,7 +75,7 @@
 
   .advantages__wrapper {
     padding: 0;
-    margin-bottom: 46px;
+    margin-bottom: 52px;
   }
 
   .advantages__slogan {
@@ -83,7 +84,7 @@
     margin: 0 auto;
     font-size: 40px;
     font-weight: 300;
-    line-height: 50px;
+    line-height: 48px;
   }
 
   .advantages__container {
@@ -97,7 +98,8 @@
       position: relative;
       width: 268px;
       height: 480px;
-      margin-right: 38px;
+      right: 36px;
+      left: -4px;
 
       background-image: url("../img/iphone-screen-3-tablet@1x.png");
       background-repeat: no-repeat;
@@ -110,8 +112,10 @@
   }
 
   .advantages__list {
+    align-items: flex-start;
     margin-top: 72px;
     margin-bottom: 0;
+    margin-left: 36px;
   }
 
   .advantages__title {
@@ -127,14 +131,19 @@
     width: 255px;
 
     &--mood {
-      margin-bottom: 35px;
+      width: 294px;
+      margin-bottom: 36px;
+      margin-left: 2px;
     }
 
     &--world {
+      width: 301px;
       margin-bottom: 37px;
+      margin-left: 4px;
     }
 
     &--friends {
+      width: 307px;
       margin-bottom: 20px;
     }
   }
@@ -151,10 +160,19 @@
     @include reset-text;
     max-width: 236px;
     margin-top: 355px;
+    margin-left: 4px;
     text-align: center;
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
+
+    &--world {
+      margin-left: 8px;
+    }
+
+    &--friends {
+      margin-left: 10px;
+    }
   }
 
   .advantages__slogan {
@@ -180,6 +198,7 @@
   }
 
   .advantages__wrapper {
+    margin-top: 2px;
     margin-bottom: -42px;
   }
 
@@ -188,8 +207,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 940px;
-    margin-top: 117px;
+    width: 955px;
+    margin-top: 115px;
+    margin-left: 51px;
   }
 
   .advantages__item {
@@ -215,6 +235,12 @@
           background-size: 292px auto;
         }
       }
+
+      &--world {
+        margin-left: 8px;
+      }
+
+
     }
 
     &--world {
@@ -260,9 +286,18 @@
   .advantages__text {
     @include reset-text;
     max-width: 240px;
+    margin-left: 2px;
     padding-top: 25px;
     text-align: center;
     font-size: 18px;
     line-height: 30px;
+
+    &--friends {
+      margin-left: 6px;
+    }
+
+    &--world {
+      margin-left: 8px;
+    }
   }
 }

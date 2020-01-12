@@ -1,8 +1,8 @@
 .like {
   margin: 0;
-  padding-top: 9px;
-  padding-bottom: 21px;
-  padding-left: 17px;
+  padding-top: 11px;
+  padding-bottom: 20px;
+  padding-left: 19px;
 }
 
 .like__heart {
@@ -15,6 +15,7 @@
 }
 
 .like__count {
+  margin-left: 13px;
   color: $pink-text;
   font-size: 12px;
   font-weight: 400;
@@ -29,8 +30,8 @@
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding-left: 17px;
-    padding-right: 17px;
+    padding-left: 30px;
+    padding-right: 31px;
     padding-bottom: 45px;
 
     &--panorama {
@@ -40,16 +41,36 @@
       justify-content: space-between;
       align-items: center;
       min-width: 118px;
-      top: 21px;
-      right: 12px;
+      top: 11px;
+      right: 11px;
+      padding-right: 17px;
     }
   }
+
+  .like__count {
+    margin-left: -2px;
+  }
+
+
 }
 
 @media (min-width: $desktop-width) {
-  .like--panorama {
+  .like {
+    padding-top: 13px;
+    padding-left: 28px;
+    padding-bottom: 22px;
+
+  &--panorama {
     position: absolute;
-    top: 30px;
-    right: 31px;
+    top: 9px;
+    right: 14px;
   }
+}
+
+.like__heart {
+
+  &--panorama {
+    padding-right: 1px;
+  }
+}
 }

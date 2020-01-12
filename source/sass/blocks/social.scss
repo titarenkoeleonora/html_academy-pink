@@ -1,5 +1,4 @@
 .social {
-  margin-top: 36px;
   margin-bottom: 36px;
 }
 
@@ -31,7 +30,7 @@
 .social__link {
   display: inline-block;
   vertical-align: middle;
-  color: $pink-text;
+  fill: $pink-text;
 }
 
 .social__link--twitter {
@@ -66,6 +65,6 @@
 
 @media (min-width: $desktop-width) {
   .social {
-    margin-right: 225px;
+    margin-right: 222px;
   }
 }

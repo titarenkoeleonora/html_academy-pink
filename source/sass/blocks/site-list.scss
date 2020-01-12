@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 63px;
+  min-height: 64px;
   text-align: center;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), 0 -1px #000000;
 }
@@ -33,7 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 63px;
+    min-height: 64px;
   }
 }
 
@@ -68,7 +68,7 @@
   }
 
   .site-list__link--active {
-    color: $white;
-    border-bottom: 2px solid $white;
+    line-height: 37px;
+    border-bottom: 2px solid white;
   }
 }

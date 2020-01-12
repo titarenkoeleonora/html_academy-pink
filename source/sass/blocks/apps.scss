@@ -1,7 +1,7 @@
 .apps__container {
   width: 320px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 38px;
   border: 0;
 }
 
@@ -18,10 +18,10 @@
 
 .apps__list {
   @include reset-list;
+  margin-top: 33px;
   margin-right: 22px;
-  margin-left: 23px;
-  padding-top: 32px;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
+  margin-left: 20px;
 }
 
 .apps__item {
@@ -33,7 +33,7 @@
 }
 
 .apps__label {
-  margin-left: 67px;
+  margin-left: 70px;
   color: $dark-background;
   font-size: 18px;
   font-weight: 400;
@@ -46,28 +46,38 @@
   }
 
   .apps__container {
-    width: 590px;
-    margin-top: 45px;
+    width: 592px;
+    margin-top: 48px;
+    padding-bottom: 11px;
     border: 2px solid #e5e5e5;
   }
 
   .apps__title {
     max-width: 450px;
-    padding-right: 32px;
+    padding-right: 33px;
     padding-left: 32px;
   }
 
   .apps__list {
-    padding-top: 42px;
+    margin: 0;
+    margin-top: 42px;
     padding-bottom: 23px;
   }
 
   .apps__item {
-    padding-left: 15px;
+    padding-left: 40px;
+  }
+
+  .apps__label {
+    margin-left: 65px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .apps {
+    padding-top: 3px;
+  }
+
   .apps__container {
     width: 431px;
     margin: 0;
@@ -75,13 +85,17 @@
   }
 
   .apps__title {
-    padding-top: 5px;
+    padding-top: 4px;
   }
 
   .apps__list {
-    padding-top: 67px;
-    padding-left: 3px;
-    padding-bottom: 33px;
+    margin-top: 50px;
+    padding-left: 1px;
+    padding-bottom: 35px;
+  }
+
+  .apps__item {
+    padding-bottom: 44px;
   }
 
   .apps__label {

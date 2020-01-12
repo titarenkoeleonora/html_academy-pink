@@ -16,14 +16,14 @@
 
 .form-contest__button {
   display: block;
-  width: 276px;
+  width: 280px;
   min-height: 63px;
   margin: 0 auto;
-  margin-top: 42px;
+  margin-top: 38px;
   color: $white;
   font-size: 18px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 31px;
   text-transform: uppercase;
   border: 2px solid $green;
   background-color: $green;
@@ -55,11 +55,11 @@
 
 @media (min-width: $tablet-width) {
   .form-contest {
-    padding-top: 65px;
+    padding-top: 66px;
   }
 
   .form-contest__container {
-    width: 617px;
+    width: 624px;
     margin: 0 auto;
   }
 
@@ -92,9 +92,10 @@
   }
 
   .form-contest__button {
-    width: 296px;
+    width: 300px;
     margin: 0;
-    margin-top: 68px;
+    margin-top: 67px;
+    margin-left: 2px;
   }
 
   .form-contest__legend {
@@ -116,14 +117,26 @@
   }
 
   .form-contest__button {
-    margin-top: 67px;
+    margin-top: 65px;
+    margin-left: -3px;
   }
 
   .form-contest__send {
     width: 936px;
   }
 
-  .form-contest__legend--full {
-    display: inline;
+
+
+  .form-contest__legend {
+    margin-top: 67px;
+
+    &--full {
+      display: inline;
+    }
+  }
+
+  .form__footnote {
+    top: 0;
+    font-size: 97%;
   }
 }

@@ -1,10 +1,10 @@
 
-let navMain = document.querySelector('.main-nav')
-    navToggle = document.querySelector('.main-nav__toggle')
-    pageheader = document.querySelector('.page-header')
-    some = false;
+var navMain = document.querySelector('.main-nav');
+var navToggle = document.querySelector('.main-nav__toggle');
+var pageheader = document.querySelector('.page-header');
+var some = false;
 
-  navMain.classList.remove('main-nav--nojs');
+  // navMain.classList.remove('main-nav--nojs');
 
   navToggle.addEventListener('click', function() {
     some = !some
@@ -24,11 +24,3 @@ let navMain = document.querySelector('.main-nav')
       navMain.classList.remove('main-nav--opened');
     }
   });
-
-  // function some() {
-  //   if(some) {
-  //     pageheader.classList.add('page-header--open');
-  //   } else {
-  //     pageheader.classList.add('page-header--close');
-  //   }
-  // }
