@@ -89,7 +89,6 @@
 
 @media (max-width: $mobile-width) {
   .filters__icon {
-
     &--active,
     &:active {
       color: $pink-text;
@@ -192,7 +191,6 @@
   }
 
   .filter__toggle {
-
     &--crop {
       left: 146px;
     }
@@ -206,6 +204,7 @@
     }
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .filters__list {

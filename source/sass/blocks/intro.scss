@@ -50,17 +50,14 @@
     font-weight: 300;
     line-height: 60px;
 
+    &--photos {
+      width: 348px;
+    }
+
     &--contest {
+      width: 570px;
       padding-top: 85px;
     }
-  }
-
-  .intro__title--photos {
-    width: 348px;
-  }
-
-  .intro__title--contest {
-    width: 570px;
   }
 }
 

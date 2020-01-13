@@ -27,7 +27,7 @@
   background-color: $white;
 }
 
-.rates__strings>th:first-child {
+.rates__strings > th:first-child {
   display: none;
 }
 
@@ -148,7 +148,7 @@
     transform: none;
   }
 
-  .rates__strings>th:first-child {
+  .rates__strings > th:first-child {
     display: table-cell;
   }
 
@@ -216,7 +216,7 @@
 @media (min-width: $desktop-width) {
   .rates {
     padding-top: 65px;
-    background: linear-gradient(176deg, #fff 19%, #f2f2f2 10%);
+    background: linear-gradient(176deg, #ffffff 19%, #f2f2f2 10%);
   }
 
   .rates__container {
