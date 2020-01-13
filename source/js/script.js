@@ -4,7 +4,7 @@ var navToggle = document.querySelector('.main-nav__toggle');
 var pageheader = document.querySelector('.page-header');
 var some = false;
 
-  // navMain.classList.remove('main-nav--nojs');
+  navMain.classList.remove('main-nav--nojs');
 
   navToggle.addEventListener('click', function() {
     some = !some

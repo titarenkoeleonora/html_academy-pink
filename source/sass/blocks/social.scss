@@ -48,6 +48,7 @@
 @media (min-width: $tablet-width) {
   .social {
     margin-right: 92px;
+    margin-bottom: 24px;
   }
 
   .social__list {
@@ -55,7 +56,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 177px;
-    padding-top: 10px;
   }
 
   .social__item {

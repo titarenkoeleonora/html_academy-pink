@@ -141,10 +141,10 @@
       display: block;
       width: 660px;
       height: 545px;
-      top: 187px;
-      left: -20px;
-      background-image: url("../img/iphone-hand-tablet@1x.png");
+      top: 185px;
+      background-image: url(../img/iphone-hand-tablet@1x.png);
       background-repeat: no-repeat;
+      background-position-x: -20px;
 
       @media (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-hand-tablet@2x.png");
@@ -158,8 +158,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 114px;
-    margin-left: 16px;
+    margin-top: 128px;
+    margin-left: 17px;
   }
 
   .download__slogan {
@@ -217,9 +217,9 @@
       width: 1045px;
       height: 853px;
       top: 320px;
-      left: 26px;
       background-image: url("../img/iphone-hand-desktop@1x.png");
       background-repeat: no-repeat;
+      background-position-x: 2px;
 
       @media (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-hand-desktop@2x.png");

@@ -50,8 +50,6 @@
   .like__count {
     margin-left: -2px;
   }
-
-
 }
 
 @media (min-width: $desktop-width) {
@@ -60,17 +58,17 @@
     padding-left: 28px;
     padding-bottom: 22px;
 
-  &--panorama {
-    position: absolute;
-    top: 9px;
-    right: 14px;
+    &--panorama {
+      position: absolute;
+      top: 9px;
+      right: 14px;
+    }
   }
-}
 
-.like__heart {
+  .like__heart {
 
-  &--panorama {
-    padding-right: 1px;
+    &--panorama {
+      padding-right: 1px;
+    }
   }
-}
 }

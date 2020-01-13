@@ -57,7 +57,7 @@
       width: 620px;
       min-height: 102px;
       margin-bottom: 0;
-    padding-top: 15px;
+      padding-top: 15px;
     }
   }
 
@@ -74,10 +74,10 @@
 
 
     &--panorama {
-    width: 533px;
-    letter-spacing: -0.15px;
-}
-}
+      width: 533px;
+      letter-spacing: -0.15px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

@@ -1,8 +1,8 @@
 .filters {
   width: 100%;
-    padding-top: 38px;
-    padding-bottom: 64px;
-    border-bottom: 1px solid $light-grey;
+  padding-top: 38px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid $light-grey;
 }
 
 .filters__list {
@@ -89,6 +89,7 @@
 
 @media (max-width: $mobile-width) {
   .filters__icon {
+
     &--active,
     &:active {
       color: $pink-text;

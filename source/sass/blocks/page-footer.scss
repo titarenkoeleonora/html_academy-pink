@@ -10,11 +10,15 @@
 }
 
 .page-footer__logo {
-  // margin-top: 39px;
+  &--photo {
+    margin-top: 39px;
+  }
+
   margin-top: 54px;
 }
 
 .page-footer__logo-image {
+
   &:hover,
   &:focus {
     fill: $pink-text;
@@ -51,8 +55,12 @@
   }
 
   .page-footer__logo {
-    margin-top: 85px;
+    margin-top: 3px;
     margin-right: 75px;
+
+    &--index {
+      margin-top: -7px;
+    }
 
     &--contest {
       margin-top: 39px;
@@ -60,12 +68,20 @@
   }
 
   .page-footer__social {
+    margin-top: 38px;
+
+    &--index {
+      margin-top: 36px;
+    }
+
     &--contest {
       margin-top: 78px;
     }
   }
 
   .page-footer__copyright {
+    margin-top: 16px;
+
     &--contest {
       margin-top: 54px;
     }
@@ -88,17 +104,22 @@
 
   .page-footer__logo {
     margin: 0;
+    margin-top: 50px;
     margin-right: 238px;
     margin-left: 3px;
   }
 
   .page-footer__social {
+    margin-top: 88px;
+
     &--contest {
       margin-top: 34px;
     }
   }
 
   .page-footer__copyright {
+    margin-top: 64px;
+
     &--contest {
       margin-top: 9px;
     }
