@@ -17,6 +17,7 @@
 
   .reviews__switch {
     @include reset-list;
+    margin-top: 18px;
   }
 
   .reviews__container {
@@ -45,10 +46,6 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
-  }
-
-  .reviews__switch {
-    margin-top: 18px;
   }
 }
 
