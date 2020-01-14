@@ -31,6 +31,7 @@
 
 .page-footer__social {
   margin-top: 36px;
+  margin-bottom: 36px;
 }
 
 .page-footer__copyright {
@@ -54,11 +55,15 @@
   }
 
   .page-footer__logo {
-    margin-top: 3px;
+    margin-top: 36px;
     margin-right: 75px;
 
     &--index {
-      margin-top: -7px;
+      margin-top: 7px;
+    }
+
+    &--photo {
+      margin-top: 6px;
     }
 
     &--contest {
@@ -67,11 +72,9 @@
   }
 
   .page-footer__social {
-    margin-top: 38px;
-
-    &--index {
-      margin-top: 36px;
-    }
+    margin-top: 37px;
+    margin-right: 92px;
+    margin-bottom: 19px;
 
     &--contest {
       margin-top: 86px;
@@ -79,7 +82,7 @@
   }
 
   .page-footer__copyright {
-    margin-top: 66px;
+    margin-top: 21px;
 
     &--contest {
       margin-top: 77px;
@@ -108,7 +111,7 @@
     margin-left: 3px;
 
     &--index {
-      margin-top: 0;
+      margin-top: -6px;
       margin-right: 234px;
     }
 
@@ -119,14 +122,16 @@
 
   .page-footer__social {
     margin-top: 88px;
+    margin-right: 229px;
 
     &--index {
-      margin-top: 39px;
+      margin-top: 27px;
       margin-right: 229px;
     }
 
     &--contest {
       margin-top: 21px;
+      margin-right: 223px;
     }
   }
 

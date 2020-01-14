@@ -1,0 +1,63 @@
+.photo__sticker {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 36px;
+  left: 50%;
+  background-color: $pink-text;
+  color: $white;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__image-wrapper {
+    position: relative;
+  }
+
+  .photo__image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .photo__sticker {
+    top: 56px;
+    left: 500px;
+  }
+
+  .photo__panorama {
+    flex-grow: 1;
+    width: 620px;
+  }
+
+  .photo__image--panorama {
+    width: 660px;
+    height: 509px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__panorama {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .photo__image {
+    width: 300px;
+    height: 400px;
+
+    &--panorama {
+      width: 100%;
+      height: 506px;
+    }
+  }
+
+  .photo__sticker {
+    top: 54px;
+    left: 930px;
+  }
+}

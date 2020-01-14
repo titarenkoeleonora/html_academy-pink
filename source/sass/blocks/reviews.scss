@@ -55,6 +55,12 @@
     margin: 0 auto;
   }
 
+  .reviews__list {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
   .reviews__item {
     display: flex;
     flex-direction: column;
@@ -89,7 +95,7 @@
   .reviews__switch {
     margin: 0 auto;
     padding-top: 30px;
-    padding-bottom: 26px;
+    padding-bottom: 0;
   }
 
   .reviews__toggle {

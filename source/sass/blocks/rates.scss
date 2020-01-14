@@ -137,12 +137,13 @@
 @media (min-width: $tablet-width) {
   .rates {
     padding-bottom: 6px;
+    background: linear-gradient(176deg,#fff 18%,#f2f2f2 10%);
   }
 
   .rates__table {
     width: 616px;
     margin: 0 auto;
-    margin-top: 83px;
+    margin-top: 109px;
     margin-bottom: 62px;
     padding: 0 20px;
     left: 0;

@@ -68,7 +68,9 @@
   }
 
   .site-list__link--active {
-    line-height: 37px;
+    pointer-events: none;
+    user-select: none;
+    line-height: 40px;
     border-bottom: 2px solid white;
   }
 }

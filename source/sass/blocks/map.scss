@@ -15,6 +15,7 @@
   .map__container {
     width: 660px;
     height: 826px;
+    margin-top: -451px;
   }
 
   .map__image {
@@ -26,7 +27,7 @@
 @media (min-width: $desktop-width) {
   .map__container {
     width: 1200px;
-    height: 850px;
+    height: 847px;
     margin-top: -329px;
     overflow: hidden;
   }

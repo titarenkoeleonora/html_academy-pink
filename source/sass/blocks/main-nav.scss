@@ -47,10 +47,6 @@
     right: 14px;
     height: 24px;
     text-indent: -9999px;
-  }
-
-  .main-nav__cross,
-  .main-nav__burger {
     fill: $white;
 
     &:hover,
@@ -60,9 +56,24 @@
 
     &:active {
       fill: $pink-text;
-      opacity: 0, 3;
+      opacity: 0.3;
     }
   }
+
+  // .main-nav__cross,
+  // .main-nav__burger {
+  //   fill: $white;
+
+  //   &:hover,
+  //   &:focus {
+  //     fill: $pink-text;
+  //   }
+
+  //   &:active {
+  //     fill: $pink-text;
+  //     opacity: 0.3;
+  //   }
+  // }
 }
 
 @media (min-width: $tablet-width) {
