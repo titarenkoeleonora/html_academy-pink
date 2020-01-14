@@ -1,6 +1,6 @@
 .rates {
-  padding-bottom: 40px;
-  background: linear-gradient(175deg, $white 13%, $grey-background 10%);
+  padding-bottom: 39px;
+  background: linear-gradient(176deg, $white 13%, $grey-background 10%);
 }
 
 .rates__container {
@@ -13,7 +13,7 @@
 
 .rates__table {
   position: relative;
-  width: 172%;
+  width: 172.8%;
   left: 50%;
   margin-top: 133px;
   margin-bottom: 34px;
@@ -27,7 +27,7 @@
   background-color: $white;
 }
 
-.rates__strings > th:first-child {
+.rates__strings>th:first-child {
   display: none;
 }
 
@@ -50,14 +50,15 @@
   &--hit {
     background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
+    background-position-x: -1px;
   }
 
 
   &--hit::after {
     content: "Хит";
     position: absolute;
-    left: 11px;
-    top: 12px;
+    top: 15px;
+    left: 8px;
     transform: rotate(-45deg);
     font-size: 14px;
     font-weight: 400;
@@ -148,7 +149,7 @@
     transform: none;
   }
 
-  .rates__strings > th:first-child {
+  .rates__strings>th:first-child {
     display: table-cell;
   }
 

@@ -2,25 +2,23 @@
   .reviews__button {
     display: none;
   }
-}
 
-.reviews {
-  position: relative;
-  z-index: 1;
-  margin-top: -45px;
-  background-color: $white;
-}
+  .reviews {
+    position: relative;
+    z-index: 1;
+    margin-top: -45px;
+    background-color: $white;
+  }
 
-.reviews__list {
-  @include reset-list;
-  text-align: center;
-}
+  .reviews__list {
+    @include reset-list;
+    text-align: center;
+  }
 
-.reviews__switch {
-  @include reset-list;
-}
+  .reviews__switch {
+    @include reset-list;
+  }
 
-@media (max-width: $mobile-width) {
   .reviews__container {
     display: flex;
     flex-direction: column;
@@ -32,7 +30,7 @@
 
   .reviews__author {
     @include reset-text;
-    margin-top: 41px;
+    margin-top: 42px;
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
