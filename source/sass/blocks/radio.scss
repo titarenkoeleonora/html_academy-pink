@@ -5,6 +5,7 @@
   width: 35px;
   height: 35px;
   margin-top: -4px;
+  margin-left: -70px;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
   background-color: $white;
@@ -23,13 +24,13 @@
 @media (min-width: $tablet-width) {
   .radio + .apps__label::before {
     margin-top: -3px;
-    margin-left: 6px;
+    margin-left: -59px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .radio + .apps__label::before {
     margin-top: -3px;
-    margin-left: 33px;
+    margin-left: -60px;
   }
 }

@@ -1,6 +1,6 @@
 .intro {
   display: flex;
-  min-height: 236px;
+  min-height: 237px;
   margin-top: -66px;
   color: $white;
   background-color: $dark-background;
@@ -63,7 +63,7 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    min-height: 392px;
+    min-height: 394px;
     margin-top: -110px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;

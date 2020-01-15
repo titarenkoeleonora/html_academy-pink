@@ -5,7 +5,7 @@
   width: 35px;
   height: 35px;
   margin-top: -5px;
-  margin-left: -20px;
+  margin-left: -70px;
   border: 2px solid #e5e5e5;
   background-color: $white;
 
@@ -33,12 +33,12 @@
 
 @media (min-width: $tablet-width) {
   .checkbox + .achievements__label::before {
-    margin-left: -10px;
+    margin-left: -60px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .checkbox + .achievements__label::before {
-    margin-left: -12px;
+    margin-left: -60px;
   }
 }

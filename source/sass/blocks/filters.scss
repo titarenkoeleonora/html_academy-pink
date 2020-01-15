@@ -209,30 +209,15 @@
 @media (min-width: $desktop-width) {
   .filters__list {
     width: 410px;
+    margin-top: -16px;
     padding-top: 0;
   }
 
   .filters__item {
     width: 413px;
+    height: 71px;
     padding-top: 0;
-    padding-bottom: 15px;
-
-    &--crop {
-      padding-top: 0;
-    }
-
-    &--fill,
-    &--contrast {
-      min-height: 72px;
-    }
-
-    &--fill {
-      padding-bottom: 0;
-    }
-
-    &--contrast {
-      padding-bottom: 6px;
-    }
+    padding-bottom: 0;
   }
 
   .filters__icon {

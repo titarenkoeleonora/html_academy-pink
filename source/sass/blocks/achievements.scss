@@ -30,7 +30,6 @@
 
 .achievements__item {
   padding-bottom: 52px;
-  padding-left: 18px;
 
   &:last-child {
     padding-bottom: 10px;
@@ -38,7 +37,9 @@
 }
 
 .achievements__label {
-  margin-left: 50px;
+  position: relative;
+  display: block;
+  margin-left: 68px;
   color: $dark-background;
   font-size: 18px;
   font-weight: 400;
@@ -67,11 +68,15 @@
   }
 
   .achievements__list {
-    margin-left: 38px;
+    margin-left: 0;
   }
 
   .achievements__item {
     padding-bottom: 52px;
+  }
+
+  .achievements__label {
+    margin-left: 106px;
   }
 }
 
@@ -92,10 +97,10 @@
   }
 
   .achievements__item {
-    padding-left: 30px;
+    padding-left: 0;
   }
 
   .achievements__label {
-    margin-left: 47px;
+    margin-left: 116px;
   }
 }

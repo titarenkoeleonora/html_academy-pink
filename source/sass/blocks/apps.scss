@@ -1,4 +1,5 @@
 .apps__container {
+  @include reset-fieldset;
   width: 320px;
   margin: 0 auto;
   margin-top: 38px;
@@ -18,9 +19,8 @@
 
 .apps__list {
   @include reset-list;
-  margin-top: 32px;
+  margin-top: 39px;
   margin-right: 20px;
-  margin-bottom: 13px;
   margin-left: 20px;
 }
 
@@ -28,11 +28,13 @@
   padding-bottom: 45px;
 
   &:last-child {
-    padding-bottom: 25px;
+    padding-bottom: 47px;
   }
 }
 
 .apps__label {
+  position: relative;
+  display: block;
   margin-left: 70px;
   color: $dark-background;
   font-size: 18px;
@@ -46,9 +48,9 @@
   }
 
   .apps__container {
-    width: 592px;
-    margin-top: 48px;
-    padding-bottom: 11px;
+    width: 616px;
+    margin-top: 47px;
+    padding-bottom: 0px;
     border: 2px solid #e5e5e5;
   }
 
@@ -60,12 +62,9 @@
 
   .apps__list {
     margin: 0;
-    margin-top: 45px;
-    padding-bottom: 18px;
-  }
-
-  .apps__item {
-    padding-left: 40px;
+    margin-top: 48px;
+    margin-left: 52px;
+    padding-bottom: 12px;
   }
 
   .apps__label {
@@ -89,12 +88,9 @@
   }
 
   .apps__list {
-    margin-top: 67px;
-    padding-bottom: 0;
-  }
-
-  .apps__item {
-    padding-bottom: 44px;
+    margin-top: 50px;
+    margin-left: 42px;
+    padding-bottom: 11px;
   }
 
   .apps__label {
