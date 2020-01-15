@@ -80,7 +80,6 @@
   display: flex;
 
   @include reset-list;
-  margin-top: 30px;
 }
 
 .app-store {
@@ -177,10 +176,6 @@
     margin-top: 31px;
   }
 
-  .download__list {
-    margin-top: 42px;
-  }
-
   .download__info {
     width: 300px;
     margin-top: 13px;
@@ -229,8 +224,8 @@
   }
 
   .download__wrapper {
-    margin-top: 247px;
-    margin-left: 9px;
+    margin-top: 226px;
+    margin-left: 10px;
   }
 
   .download__slogan {
@@ -245,20 +240,18 @@
 
   .download__info {
     width: 300px;
-    margin-top: 20px;
+    margin: 0;
+    margin-top: 49px;
     font-size: 18px;
     font-weight: 300;
     line-height: 24px;
   }
 
   .download__button {
-    margin-top: 52px;
+    margin-top: 51px;
+    padding-bottom: 18px;
     font-size: 21px;
     font-weight: 700;
     line-height: 18px;
-  }
-
-  .download__list {
-    margin-top: 65px;
   }
 }

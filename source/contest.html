@@ -21,7 +21,7 @@
 
   <header class="page-header">
     <div class="page-header__container">
-      <a class="page-header__logo">
+      <a class="page-header__logo"  href="index.html">
         <svg class="page-header__logo-image page-header__logo-image--mobile logo" width="75" height="23"
           viewBox="0 0 74.426 22.859">
           <use xlink:href="#icon-logo-pink-white-mobile"></use>
@@ -124,7 +124,7 @@
             <li class="user-contacts__item user-contacts__item--phone">
               <label class="user-contacts__label" for="phone-number">Номер телефона</label>
               <input class="user-contacts__input-text user-contacts__input-text--phone input-text" id="phone-number"
-                type="tel" placeholder="Номер, пожалуйста">
+                type="tel" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="Используйте формат: +7 (777) 777-77-77" placeholder="Номер, пожалуйста">
             </li>
             <li class="user-contacts__item user-contacts__item--e-mail">
               <label class="user-contacts__label" for="e-mail">Адрес почты</label>

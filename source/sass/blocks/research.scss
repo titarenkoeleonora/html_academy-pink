@@ -18,6 +18,18 @@
   }
 }
 
+.research__app {
+  display: none;
+}
+
+@media (max-width: $mobile-width) {
+  .research__text {
+    br {
+      display: none;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .research {
     display: flex;
@@ -147,9 +159,17 @@
   }
 
   .research__text {
-    width: 520px;
+    width: 530px;
     margin-top: 25px;
     line-height: 30px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .research__app {
+    display: block;
   }
 
   .research__link {
