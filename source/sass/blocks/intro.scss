@@ -10,6 +10,8 @@
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-position-y: -4px;
+    background-size: 320px 462px;
   }
 }
 

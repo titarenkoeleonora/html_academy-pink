@@ -34,6 +34,13 @@
   border-radius: 50%;
 }
 
+@media (max-width: $mobile-width) {
+  .radio:checked + .apps__label::after {
+    top: 8px;
+    left: -58px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .radio + .apps__label::before {
     margin-top: -3px;
