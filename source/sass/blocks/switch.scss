@@ -16,10 +16,24 @@
   background-color: #bec3c7;
   border: 3px solid $white;
   border-radius: 50px;
+  outline: none;
 
   &--active {
+    pointer-events: none;
+    user-select: none;
     background-color: $white;
-    border: 3px solid #283645;
+    border: 3px solid $dark-background;
     border-radius: 50px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $dark-background;
+    opacity: 0.6;
+  }
+
+  &:active {
+    background-color: $dark-background;
+    opacity: 0.1;
   }
 }

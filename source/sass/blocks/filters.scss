@@ -39,10 +39,6 @@
   }
 }
 
-.filters__icon {
-  color: $pink-text;
-}
-
 .filters__control {
   position: absolute;
   top: 84px;
@@ -87,12 +83,8 @@
   }
 }
 
-@media (max-width: $mobile-width) {
   .filters__icon {
-    &--active,
-    &:active {
-      color: $pink-text;
-    }
+    color: $pink-text;
 
     &--not-active {
       color: $dark-grey;
@@ -102,8 +94,11 @@
     &--not-active:focus {
       color: $grey-1;
     }
+
+    &:active {
+      color: $pink-text;
+    }
   }
-}
 
 
 @media (min-width: $tablet-width) {

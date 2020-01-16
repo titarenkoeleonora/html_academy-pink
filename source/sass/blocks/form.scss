@@ -37,6 +37,12 @@
   &:active {
     color: rgba($color: $white, $alpha: 0.3);
   }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: $white;
+    border-color: #e5e5e5;
+  }
 }
 
 .form-contest__legend {

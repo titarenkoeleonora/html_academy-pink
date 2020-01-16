@@ -46,7 +46,7 @@
 .download__button {
   display: block;
   width: 275px;
-  margin-top: 320px;
+  margin-top: 319px;
   padding-top: 13px;
   padding-bottom: 16px;
   text-align: center;
@@ -118,7 +118,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    min-height: 732px;
+    min-height: 730px;
     top: -112px;
     background-color: $dark-background;
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -161,12 +161,12 @@
   }
 
   .download__wrapper {
-    position: relative;
+    position: absolute;
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 125px;
+    margin-top: 111px;
     margin-left: 20px;
   }
 
@@ -241,7 +241,7 @@
   }
 
   .download__wrapper {
-    margin-top: 207px;
+    margin-top: 170px;
     margin-left: 10px;
     padding-bottom: 0;
   }

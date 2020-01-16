@@ -18,10 +18,6 @@
   }
 }
 
-.research__app {
-  display: none;
-}
-
 @media (max-width: $mobile-width) {
   .research__text {
     br {
@@ -83,7 +79,7 @@
       font-size: 96px;
       font-weight: 700;
       color: #d22856;
-      background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+      background-image: url("../img/editor-diagram-fill.svg"), url("../img/timer.svg");
       background-position-x: center, center;
       background-position-y: 55px, 0;
       background-size: 202px 202px, contain;
@@ -112,7 +108,6 @@
 
   .research__container {
     display: flex;
-    justify-content: center;
     width: 525px;
     margin: 0 auto;
     margin-left: 69px;
@@ -121,7 +116,7 @@
   .research__subtitle {
     @include reset-text;
     width: 350px;
-    margin-top: 9px;
+    margin-top: 123px;
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
@@ -150,7 +145,7 @@
       text-align: center;
       font-size: 120px;
       font-weight: 700;
-      background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+      background-image: url("../img/editor-diagram-fill.svg"), url("../img/timer.svg");
       background-position-x: center, center;
       background-position-y: 97px, 30px;
       background-size: 255px 255px, contain;
@@ -168,12 +163,8 @@
     }
   }
 
-  .research__app {
-    display: block;
-  }
-
   .research__link {
-    padding-top: 19px;
+    margin-top: 32px;
     font-size: 18px;
   }
 }

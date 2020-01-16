@@ -4,7 +4,6 @@
   justify-content: space-between;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 19px;
   padding-top: 15px;
   text-align: left;
   background-color: #f2f2f2;
@@ -47,9 +46,8 @@
 @media (min-width: $tablet-width) {
   .comment {
     width: 300px;
-    min-height: 155px;
-    margin-bottom: -2px;
-    padding-top: 19px;
+    min-height: 133px;
+    padding-top: 22px;
 
     &--panorama {
       position: relative;
@@ -57,7 +55,7 @@
       width: 620px;
       min-height: 102px;
       margin-bottom: 0;
-      padding-top: 15px;
+      padding-top: 19px;
     }
   }
 

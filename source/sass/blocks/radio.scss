@@ -11,6 +11,15 @@
   background-color: $white;
 }
 
+.radio + .apps__label:hover::before,
+.radio + .apps__label:focus::before {
+  border-color: $dark-background;
+}
+
+.radio + .apps__label:active::before {
+  border-color: $pink-text;
+}
+
 .radio:checked + .apps__label::before {
   content: "\2022";
   position: absolute;

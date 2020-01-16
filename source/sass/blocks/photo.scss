@@ -23,21 +23,21 @@
     display: block;
     width: 300px;
     height: 300px;
+
+    &--panorama {
+      width: 710px;
+      height: 509px;
+    }
   }
 
   .photo__sticker {
-    top: 56px;
-    left: 500px;
+    top: 57px;
+    left: 521px;
   }
 
   .photo__panorama {
     flex-grow: 1;
     width: 620px;
-  }
-
-  .photo__image--panorama {
-    width: 660px;
-    height: 509px;
   }
 }
 
