@@ -19,7 +19,7 @@
   width: 280px;
   min-height: 63px;
   margin: 0 auto;
-  margin-top: 38px;
+  margin-top: 37px;
   color: $white;
   font-size: 18px;
   font-weight: 700;
@@ -27,6 +27,7 @@
   text-transform: uppercase;
   border: 2px solid $green;
   background-color: $green;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -124,11 +125,11 @@
 
   .form-contest__button {
     margin-top: 65px;
-    margin-left: -3px;
+    margin-left: -1px;
   }
 
   .form-contest__send {
-    width: 936px;
+    width: 940px;
   }
 
   .form-contest__legend {

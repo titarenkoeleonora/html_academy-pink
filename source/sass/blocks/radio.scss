@@ -20,14 +20,18 @@
   border-color: $pink-text;
 }
 
-.radio:checked + .apps__label::before {
-  content: "\2022";
+.radio:checked + .apps__label::after {
+  content: "";
   position: absolute;
-  display: block;
-  margin-top: -4px;
-  text-align: center;
+  z-index: 1;
+  top: 9px;
+  left: -48px;
+  width: 15px;
+  height: 15px;
   color: $pink-text;
-  font-size: 62px;
+
+  background-color: $pink-text;
+  border-radius: 50%;
 }
 
 @media (min-width: $tablet-width) {

@@ -98,7 +98,7 @@
   .page-footer {
     display: flex;
     flex-direction: row;
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -110,31 +110,39 @@
 
   .page-footer__logo {
     margin: 0;
-    margin-top: 50px;
-    margin-right: 238px;
-    margin-left: 3px;
+
 
     &--index {
       margin-top: -6px;
       margin-right: 234px;
     }
 
+    &--photo {
+      margin-top: 50px;
+      margin-right: 238px;
+      margin-left: 2px;
+    }
+
     &--contest {
       margin-top: -6px;
+      margin-right: 239px;
+      margin-left: 3px;
     }
   }
 
   .page-footer__social {
-    margin-top: 88px;
-    margin-right: 229px;
-
     &--index {
       margin-top: 27px;
       margin-right: 229px;
     }
 
+    &--photo {
+      margin-top: 83px;
+      margin-right: 225px;
+    }
+
     &--contest {
-      margin-top: 21px;
+      margin-top: 28px;
       margin-right: 223px;
     }
   }

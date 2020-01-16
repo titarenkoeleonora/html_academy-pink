@@ -85,7 +85,11 @@
 
   .filters__icon {
     color: $pink-text;
+  }
 
+
+@media (max-width: $mobile-width) {
+  .filters__icon {
     &--not-active {
       color: $dark-grey;
     }
@@ -99,7 +103,7 @@
       color: $pink-text;
     }
   }
-
+}
 
 @media (min-width: $tablet-width) {
   .filters {
@@ -211,7 +215,7 @@
   .filters__item {
     width: 413px;
     height: 71px;
-    padding-top: 0;
+    padding-top: 1px;
     padding-bottom: 0;
   }
 
