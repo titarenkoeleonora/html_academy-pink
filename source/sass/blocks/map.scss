@@ -14,26 +14,28 @@
 @media (min-width: $tablet-width) {
   .map__container {
     width: 660px;
-    height: 826px;
-    margin-top: -451px;
+    height: 825px;
+    margin-top: -426px;
   }
 
   .map__image {
-    width: 700px;
-    height: 826px;
+    width: 660px;
+    height: 848px;
+    margin-top: 102px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map__container {
     width: 1200px;
-    height: 847px;
+    height: 830px;
     margin-top: -329px;
     overflow: hidden;
   }
 
   .map__image {
-    width: 2500px;
-    height: 850px;
+    width: 1200px;
+    height: 976px;
+    margin-top: 51px;
   }
 }

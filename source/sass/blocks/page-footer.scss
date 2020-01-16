@@ -45,6 +45,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    min-height: 125px;
+  }
+
   .page-footer__container {
     display: flex;
     flex-direction: row;
@@ -139,7 +143,7 @@
     margin-top: 64px;
 
     &--index {
-      margin-top: 14px;
+      margin-top: 8px;
     }
 
     &--contest {
