@@ -22,6 +22,7 @@
   height: 44px;
   padding: 0;
   outline: none;
+  cursor: pointer;
 
   &--crop {
     width: 44px;
@@ -77,6 +78,7 @@
   background-color: $white;
   border: 2px solid $pink-text;
   border-radius: 50%;
+  cursor: pointer;
 
   &:hover {
     background-color: $pink-text;

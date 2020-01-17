@@ -181,7 +181,7 @@
     line-height: 30px;
 
     &--world {
-      margin-left: 10px;
+      margin-left: 20px;
     }
 
     &--friends {
@@ -230,11 +230,11 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    width: 260px;
     min-height: 564px;
 
     &--mood {
-width: 294px;
-margin-left: 7px;
+      margin-left: 7px;
 
       &::before {
         content: "";
@@ -255,8 +255,7 @@ margin-left: 7px;
     }
 
     &--world {
-      width: 260px;
-      margin-left: 19px;
+      margin-left: 42px;
 
       &::before {
         content: "";
@@ -264,7 +263,7 @@ margin-left: 7px;
         display: block;
         width: 236px;
         height: 562px;
-        margin-left: 8px;
+        margin-left: 11px;
         background-image: url("../img/iphone-screen-2-desktop@1x.png");
         background-repeat: no-repeat;
         background-position-x: -15px;
@@ -277,8 +276,7 @@ margin-left: 7px;
     }
 
     &--friends {
-      width: 260px;
-      margin-left: 60px
+      margin-left: 71px;
 
       &::before {
         content: "";
@@ -313,7 +311,7 @@ margin-left: 7px;
     }
 
     &--world {
-      margin-left: 8px;
+      margin-left: 18px;
 
       br {
         display: none;

@@ -6,14 +6,6 @@
   min-width: 320px;
   margin: 0 auto;
   background-color: $dark-background;
-
-  &--close {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  &--open {
-    background-color: $dark-background;
-  }
 }
 
 .page-header__container {
@@ -72,11 +64,22 @@
   }
 }
 
+@media (max-width: 959px) {
+  .page-header {
+    &--close {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &--open {
+      background-color: $dark-background;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .page-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     width: 100%;
     min-height: 110px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -87,7 +90,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 941px;
+    width: 960px;
     margin: 0 auto;
   }
 

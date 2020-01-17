@@ -63,7 +63,7 @@
   .photos {
     display: flex;
     flex-wrap: wrap;
-    width: 702px;
+    width: 660px;
     margin: 0 auto;
     padding-bottom: 69px;
   }
@@ -91,6 +91,7 @@
     width: 536px;
     margin-top: 93px;
     margin-bottom: 75px;
+    margin-left: 40px;
     font-size: 18px;
   }
 
@@ -102,7 +103,7 @@
 
 @media (min-width: $desktop-width) {
   .photos {
-    width: 1200px;
+    width: 100%;
     padding-bottom: 66px;
   }
 
@@ -110,7 +111,9 @@
     width: 940px;
     margin: 0 auto;
     padding-top: 30px;
+    padding-right: 0;
     padding-bottom: 5px;
+    padding-left: 0;
   }
 
   .photos__item {

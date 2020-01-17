@@ -15,7 +15,7 @@
 
 .map__container {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   width: 100%;
   height: 210px;
   margin: 0 auto;
@@ -108,7 +108,7 @@
 
   .map__container {
     width: 100%;
-    height: 511px;
+    height: 492px;
     // height: 847px;
     // margin-top: -329px;
     overflow: hidden;
@@ -120,11 +120,11 @@
 
   .map__image {
     width: 100%;
-    height: 511px;
+    height: 492px;
   }
 
   .map__interactive {
     width: 100%;
-    height: 511px;
+    height: 492px;
   }
 }

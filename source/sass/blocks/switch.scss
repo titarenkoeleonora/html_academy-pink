@@ -17,6 +17,7 @@
   border: 3px solid $white;
   border-radius: 50px;
   outline: none;
+  cursor: pointer;
 
   &--active {
     pointer-events: none;

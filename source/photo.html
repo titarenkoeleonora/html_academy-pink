@@ -19,7 +19,7 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="page-header">
+  <header class="page-header page-header--close">
     <div class="page-header__container">
       <a class="page-header__logo" href="index.html">
         <svg class="page-header__logo-image page-header__logo-image--mobile logo" xmlns="http://www.w3.org/2000/svg"
@@ -88,18 +88,22 @@
           <div class="photo__sticker">
             <h3 class="photo__title">Панорама дня</h3>
           </div>
-          <picture>
-            <source type="image/webp" media="(min-width: 960px)"
-              srcset="img/webp/panorama-desktop@1x.webp 1x, img/webp/panorama-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)"
-              srcset="img/webp/panorama-tablet@1x.webp 1x, img/webp/panorama-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/webp/panorama-mobile@1x.webp 1x, img/webp/panorama-mobile@2x.webp 2x">
+          <a class="photo__link-full" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)"
+                srcset="img/webp/panorama-desktop@1x.webp 1x, img/webp/panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/webp/panorama-tablet@1x.webp 1x, img/webp/panorama-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/webp/panorama-mobile@1x.webp 1x, img/webp/panorama-mobile@2x.webp 2x">
 
-            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-            <img class="photo__image photo__image--panorama" src="img/panorama-mobile@1x.jpg"
-              srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама" width="320" height="137">
-          </picture>
+              <source media="(min-width: 960px)"
+                srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="photo__image photo__image--panorama" src="img/panorama-mobile@1x.jpg"
+                srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама" width="320" height="137">
+            </picture>
+          </a>
         </div>
         <div class="photo__comment comment comment--panorama">
           <div class="comment__wrapper comment__wrapper--panorama">
@@ -120,7 +124,7 @@
       <ul class="photos__list">
         <li class="photos__item photos__item--car photo ">
           <div class="photo__image-wrapper">
-            <a href="#">
+            <a class="photo__link-full" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)"
                   srcset="img/webp/photo-car-desktop@1x.webp 1x, img/webp/photo-car-desktop@2x.webp 2x">
@@ -136,7 +140,7 @@
                 <img class="photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
                   alt="Автомобиль" width="280" height="180">
               </picture>
-            </a>
+            </a class="photo__link-full">
 
           </div>
           <div class="photo__comment comment">
@@ -155,7 +159,7 @@
         </li>
         <li class="photos__item photos__item--drumset photo">
           <div class="photo__image-wrapper">
-            <a href="#">
+            <a class="photo__link-full" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)"
                   srcset="img/webp/photo-drumset-desktop@1x.webp 1x, img/webp/photo-drumset-desktop@2x.webp 2x">
@@ -189,7 +193,7 @@
         </li>
         <li class="photos__item photos__item--window photo">
           <div class="photo__image-wrapper">
-            <a href="#">
+            <a class="photo__link-full" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)"
                   srcset="img/webp/photo-window-desktop@1x.webp 1x, img/webp/photo-window-desktop@2x.webp 2x">
@@ -224,7 +228,7 @@
         </li>
         <li class="photos__item photos__item--fair photo">
           <div class="photo__image-wrapper">
-            <a href="#">
+            <a class="photo__link-full" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)"
                   srcset="img/webp/photo-fair-desktop@1x.webp 1x, img/webp/photo-fair-desktop@2x.webp 2x">
@@ -258,7 +262,7 @@
         </li>
         <li class="photos__item photos__item--pov photo">
           <div class="photo__image-wrapper">
-            <a href="#">
+            <a class="photo__link-full" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)"
                   srcset="img/webp/photo-pov-desktop@1x.webp 1x, img/webp/photo-pov-desktop@2x.webp 2x">
@@ -292,7 +296,7 @@
         </li>
         <li class="photos__item photo">
           <div class="photo__image-wrapper">
-            <a href="#">
+            <a class="photo__link-full"href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)"
                   srcset="img/webp/photo-wing-desktop@1x.webp 1x, img/webp/photo-wing-desktop@2x.webp 2x">

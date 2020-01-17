@@ -7,6 +7,7 @@
   &::after {
     content: "";
     position: absolute;
+    z-index: 2;
     display: block;
     width: 100%;
     height: 123px;
@@ -206,7 +207,7 @@
 
   .contacts__adress {
     order: 2;
-    margin-left: 19px;
+    margin-left: 27px;
   }
 
   .contacts__text {
