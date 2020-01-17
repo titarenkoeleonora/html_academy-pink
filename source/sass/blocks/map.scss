@@ -17,6 +17,7 @@
   position: relative;
   z-index: -1;
   width: 100%;
+  height: 210px;
   margin: 0 auto;
   // margin-top: -437px;
 
@@ -36,6 +37,7 @@
   position: absolute;
   z-index: -2;
   width: 100%;
+  height: 210px;
   left: 0;
   // margin-top: -649px;
 }
@@ -65,6 +67,7 @@
 
   .map__container {
     width: 100%;
+    height: 394px;
     // height: 812px;
     // margin-top: -418px;
 
@@ -76,12 +79,14 @@
 
   .map__image {
     width: 100%;
+    height: 394px;
     // height: 848px;
     // margin-top: -725px;
   }
 
   .map__interactive {
     width: 100%;
+    height: 394px;
     // height: 371px;
   }
 }
@@ -103,6 +108,7 @@
 
   .map__container {
     width: 100%;
+    height: 511px;
     // height: 847px;
     // margin-top: -329px;
     overflow: hidden;
@@ -115,11 +121,13 @@
 
   .map__image {
     width: 100%;
+    height: 511px;
     // height: 976px;
   }
 
   .map__interactive {
     width: 100%;
+    height: 511px;
     // height: 523px;
     // margin-top: 328px;
   }
