@@ -12,7 +12,7 @@
 }
 
 .radio + .apps__label:hover::before,
-.radio + .apps__label:focus::before {
+.radio:focus + .apps__label::before {
   border-color: $dark-background;
 }
 

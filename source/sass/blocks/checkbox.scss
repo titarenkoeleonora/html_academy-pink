@@ -11,7 +11,7 @@
 }
 
 .checkbox + .achievements__label:hover::before,
-.checkbox + .achievements__label:focus::before {
+.checkbox:focus + .achievements__label::before {
   border-color: $dark-background;
 }
 

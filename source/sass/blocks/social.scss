@@ -14,12 +14,12 @@
   border-radius: 50%;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 3px solid $dark-background;
   }
 
-  &:active,
-  &:focus {
+  &:active {
     opacity: 0.3;
   }
 }
