@@ -114,7 +114,6 @@
     overflow: hidden;
 
     &::before {
-      // margin-top: 609px;
       margin-left: 582px;
     }
   }
@@ -122,13 +121,10 @@
   .map__image {
     width: 100%;
     height: 511px;
-    // height: 976px;
   }
 
   .map__interactive {
     width: 100%;
     height: 511px;
-    // height: 523px;
-    // margin-top: 328px;
   }
 }
