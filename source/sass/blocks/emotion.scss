@@ -13,8 +13,9 @@
 
 .emotion__title {
   display: block;
-  text-align: center;
+  margin: 0 auto;
   margin-top: 41px;
+  text-align: center;
   color: $pink-text;
   font-size: 14px;
   font-weight: 400;
@@ -66,14 +67,15 @@
 @media (min-width: $desktop-width) {
   .emotion__container {
     width: 938px;
+    padding: 0;
     box-sizing: border-box;
   }
 
   .emotion__input-text {
     width: 819px;
     height: 128px;
-    margin-top: 19px;
-    margin-bottom: 33px;
+    margin-top: 28px;
+    margin-bottom: 43px;
     padding-top: 15px;
     padding-left: 18px;
   }

@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 48px;
+  padding-bottom: 41px;
+  color: $dark-background;
   background-color: $white;
 }
 
@@ -25,8 +26,24 @@
 }
 
 .photos__item {
-  margin-bottom: 21px;
+  margin-bottom: 19px;
   text-align: center;
+
+  &--drumset {
+    margin-bottom: 21px;
+  }
+
+  &--window {
+    margin-bottom: 20px;
+  }
+
+  &--fair {
+    margin-bottom: 21px;
+  }
+
+  &--pov {
+    margin-bottom: 21px;
+  }
 }
 
 .photos__subtitle {

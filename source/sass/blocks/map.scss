@@ -1,5 +1,4 @@
 .map {
-position: relative;
 
   // &::after {
   //   content: "";
@@ -20,67 +19,108 @@ position: relative;
   width: 320px;
   margin: 0 auto;
   margin-top: -437px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 36px;
+    height: 35px;
+    margin-top: 539px;
+    margin-left: 142px;
+    background-image: url("../img/map-marker.svg");
+  }
 }
 
 .map__image {
+  position: absolute;
+  z-index: -2;
   width: 320px;
+  left: 0;
+  margin-top: -649px;
+}
+
+.map__interactive {
+  width: 320px;
+  height: 194px;
+  margin-top: 444px;
 }
 
 
 @media (min-width: $tablet-width) {
-// .map {
-//   // &::after {
-//   //   content: "";
-//   //   position: absolute;
-//   //   display: block;
-//   //   width: 660px;
-//   //   height: 123px;
-//   //   margin-top: 0;
-//   //   background-image: url("../img/bg-triangle-white-footer.svg");
-//   //   background-size: contain;
-//   //   background-repeat: no-repeat;
-//   //   background-position-x: center;
-//   // }
-// }
+  // .map {
+  //   // &::after {
+  //   //   content: "";
+  //   //   position: absolute;
+  //   //   display: block;
+  //   //   width: 660px;
+  //   //   height: 123px;
+  //   //   margin-top: 0;
+  //   //   background-image: url("../img/bg-triangle-white-footer.svg");
+  //   //   background-size: contain;
+  //   //   background-repeat: no-repeat;
+  //   //   background-position-x: center;
+  //   // }
+  // }
 
   .map__container {
     width: 660px;
-    height: 816px;
-    margin-top: -426px;
+    height: 812px;
+    margin-top: -418px;
+
+    &::before {
+      margin-top: 638px;
+      margin-left: 312px;
+    }
   }
 
   .map__image {
     width: 660px;
     height: 848px;
-    margin-top: 89px;
+    margin-top: -725px;
+  }
+
+  .map__interactive {
+    width: 660px;
+    height: 371px;
   }
 }
 
 @media (min-width: $desktop-width) {
-// .map {
-//   // &::after {
-//   //   content: "";
-//   //   position: absolute;
-//   //   display: block;
-//   //   width: 1200px;
-//   //   height: 123px;
-//   //   background-image: url("../img/bg-triangle-white-footer.svg");
-//   //   background-repeat: no-repeat;
-//   //   background-size: contain;
-//   //   background-position-x: center;
-//   // }
-// }
+  // .map {
+  //   // &::after {
+  //   //   content: "";
+  //   //   position: absolute;
+  //   //   display: block;
+  //   //   width: 1200px;
+  //   //   height: 123px;
+  //   //   background-image: url("../img/bg-triangle-white-footer.svg");
+  //   //   background-repeat: no-repeat;
+  //   //   background-size: contain;
+  //   //   background-position-x: center;
+  //   // }
+  // }
 
   .map__container {
     width: 1200px;
-    height: 833px;
+    height: 847px;
     margin-top: -329px;
     overflow: hidden;
+
+    &::before {
+      margin-top: 609px;
+      margin-left: 582px;
+    }
   }
 
   .map__image {
     width: 1200px;
     height: 976px;
-    margin-top: 51px;
+  }
+
+  .map__interactive {
+    width: 1200px;
+    height: 523px;
+    margin-top: 328px;
   }
 }

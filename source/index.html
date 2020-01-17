@@ -97,8 +97,8 @@
             <li class="download_item">
               <a href="https://play.google.com/store">
                 <div class="photo__image-wrapper">
-                  <img class="download__logo google-play" src="img/logo-android.svg" alt="Скачать приложение в Google Play"
-                    width="43" height="47">
+                  <img class="download__logo google-play" src="img/logo-android.svg"
+                    alt="Скачать приложение в Google Play" width="43" height="47">
                 </div>
               </a>
             </li>
@@ -148,7 +148,8 @@
         <div class="research__container">
           <p class="research__subtitle">Эффект <br>на 24 часа!</p>
           <p class="research__text">
-            Британские ученые провели исследования и доказали, &nbsp; что положительный эффект <br>от использования приложения длится целые сутки!
+            Британские ученые провели исследования и доказали, &nbsp; что положительный эффект <br>от использования
+            приложения длится целые сутки!
           </p>
           <a class="research__link" href="#">Узнать больше об исследовании</a>
         </div>
@@ -179,14 +180,12 @@
         </ul>
         <div class="reviews__toggle">
           <button class="reviews__button reviews__button--left" aria-label="Назад">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="41"
-              viewBox="0 0 22 41">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="41" viewBox="0 0 22 41">
               <use xlink:href="#icon-review-arrow-left"></use>
             </svg>
           </button>
           <button class="reviews__button reviews__button--right" aria-label="Вперед">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22"
-              height="41" viewBox="0 0 22 41">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="41" viewBox="0 0 22 41">
               <use xlink:href="#icon-review-arrow-right"></use>
             </svg>
           </button>
@@ -301,18 +300,21 @@
     <section class="map">
       <h2 class="visually-hidden">Местоположение на карте</h2>
       <div class="map__container">
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)"
-            srcset="img/webp/bg-map-desktop@1x.webp 1x, img/webp/bg-map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/webp/bg-map-tablet@1x.webp 1x, img/webp/bg-map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/webp/bg-map-mobile@1x.webp 1x, img/webp/bg-map-mobile@2x.webp 2x">
+        <iframe class="map__interactive"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A4927c4905cd32bde2bea2e310e571a2aa84a2ff6cfbf1e1172f0b87f1f664eb7&amp;source=constructor"
+          width="320" height="194" frameborder="0"></iframeclass="map__interactive">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/webp/bg-map-desktop@1x.webp 1x, img/webp/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/webp/bg-map-tablet@1x.webp 1x, img/webp/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp/bg-map-mobile@1x.webp 1x, img/webp/bg-map-mobile@2x.webp 2x">
 
-          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-          <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" width="320"
-            height="645" alt="Карта">
-        </picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+            <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" width="320"
+              height="645" alt="Карта">
+          </picture>
       </div>
     </section>
   </main>

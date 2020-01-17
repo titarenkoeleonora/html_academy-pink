@@ -1,4 +1,5 @@
 .page-footer {
+  color: $dark-background;
   background-color: $white;
 }
 
@@ -46,7 +47,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    min-height: 125px;
+    min-height: 128px;
   }
 
   .page-footer__container {
@@ -113,8 +114,8 @@
 
 
     &--index {
-      margin-top: -6px;
-      margin-right: 234px;
+      margin-right: 235px;
+      margin-left: 2px;
     }
 
     &--photo {

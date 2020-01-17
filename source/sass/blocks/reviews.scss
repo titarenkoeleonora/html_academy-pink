@@ -1,3 +1,7 @@
+.reviews {
+  color: $dark-background;
+}
+
 @media (max-width: $mobile-width) {
   .reviews__button {
     display: none;

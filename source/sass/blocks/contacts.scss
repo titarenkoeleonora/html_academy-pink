@@ -1,6 +1,7 @@
 .contacts {
   position: relative;
   padding-top: 42px;
+  color: $dark-background;
   background-color: $white;
 
   &::after {
@@ -94,7 +95,7 @@
       position: absolute;
       display: block;
       width: 100%;
-      height: 123px;
+      height: 95px;
       margin-top: 0;
       background-image: url("../img/bg-triangle-white-footer.svg");
       background-size: contain;
@@ -105,11 +106,14 @@
 
   .contacts__container {
     width: 660px;
-    padding-bottom: 14px;
   }
 
   .contacts__title {
     padding-bottom: 8px;
+
+    &--adress {
+      padding-bottom: 10px;
+    }
   }
 
   .contacts__subtitle {
@@ -126,6 +130,7 @@
     width: 658px;
     margin: 0 auto;
     margin-top: 45px;
+    padding-bottom: 7px;
   }
 
   .contacts__item {

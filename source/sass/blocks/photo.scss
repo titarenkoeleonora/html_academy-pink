@@ -1,3 +1,11 @@
+.photo {
+  color: $dark-background;
+}
+
+.photo__image {
+  display: block;
+}
+
 .photo__sticker {
   position: absolute;
   display: flex;
@@ -20,7 +28,6 @@
   }
 
   .photo__image {
-    display: block;
     width: 300px;
     height: 300px;
 
