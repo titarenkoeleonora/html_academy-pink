@@ -8,7 +8,7 @@
     flex-flow: column;
     min-width: 320px;
     margin-top: -31px;
-    background: linear-gradient(174deg, #ffffff 20.5%, #f2f2f2 20%);
+    background: linear-gradient(174deg, #ffffff 20%, #f2f2f2 20%);
 
     &::after {
       content: "";
@@ -81,7 +81,7 @@
 @media (min-width: $tablet-width) {
   .advantages {
     width: 100%;
-    margin-top: -64px;
+    margin-top: -63px;
     background: linear-gradient(176deg, #ffffff 33%, #f2f2f2 10%);
   }
 
@@ -220,10 +220,10 @@
     @include reset-list;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 955px;
+    justify-content: flex-start;
+    width: 945px;
     margin-top: 115px;
-    margin-left: 50px;
+    margin-left: 32px;
   }
 
   .advantages__item {
@@ -233,6 +233,9 @@
     min-height: 564px;
 
     &--mood {
+width: 294px;
+margin-left: 7px;
+
       &::before {
         content: "";
         position: absolute;
@@ -249,19 +252,19 @@
           background-size: 292px auto;
         }
       }
-
-      &--world {
-        margin-left: 8px;
-      }
     }
 
     &--world {
+      width: 260px;
+      margin-left: 19px;
+
       &::before {
         content: "";
         position: absolute;
         display: block;
         width: 236px;
         height: 562px;
+        margin-left: 8px;
         background-image: url("../img/iphone-screen-2-desktop@1x.png");
         background-repeat: no-repeat;
         background-position-x: -15px;
@@ -274,7 +277,8 @@
     }
 
     &--friends {
-      margin-right: -3px;
+      width: 260px;
+      margin-left: 60px
 
       &::before {
         content: "";

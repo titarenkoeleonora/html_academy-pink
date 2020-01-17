@@ -1,6 +1,6 @@
 .rates {
   padding-bottom: 39px;
-  background: linear-gradient(176deg, $white 13%, $grey-background 10%);
+  background: linear-gradient(176deg, $white 12%, $grey-background 10%);
 }
 
 .rates__container {
@@ -13,7 +13,7 @@
 
 .rates__table {
   position: relative;
-  width: 172.8%;
+  width: 252.1%;
   left: 50%;
   margin-top: 133px;
   margin-bottom: 34px;
@@ -137,7 +137,7 @@
 @media (min-width: $tablet-width) {
   .rates {
     padding-bottom: 6px;
-    background: linear-gradient(176deg, #ffffff 18%, #f2f2f2 10%);
+    background: linear-gradient(176deg, #ffffff 16%, #f2f2f2 10%);
   }
 
   .rates__table {
@@ -161,7 +161,7 @@
 
   .rates__title {
     width: 25%;
-    padding: 11px 0 5px;
+    padding: 11px 0 8px;
 
     &--hit {
       background-size: 61px 61px;
@@ -174,12 +174,14 @@
   }
 
   .rates__subtitle {
-    font-size: 16px;
     margin-top: 1px;
+    font-size: 16px;
+    line-height: 29px;
   }
 
   .rates__price {
     font-size: 18px;
+    line-height: 29px;
   }
 
   .rates__object {

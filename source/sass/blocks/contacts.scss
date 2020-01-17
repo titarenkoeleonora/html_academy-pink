@@ -88,7 +88,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-top: 45px;
+    padding-top: 46px;
 
     &::after {
       content: "";
@@ -130,7 +130,7 @@
     width: 645px;
     margin: 0 auto;
     margin-top: 45px;
-    padding-bottom: 7px;
+    padding-bottom: 25px;
   }
 
   .contacts__item {
@@ -143,6 +143,10 @@
 
   .contacts__adress {
     padding-bottom: 3px;
+  }
+
+  .contacts__email {
+    padding-left: 13px;
   }
 }
 
