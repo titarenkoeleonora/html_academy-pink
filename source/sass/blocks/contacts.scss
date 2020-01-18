@@ -76,6 +76,7 @@
 .contacts__text {
   @include reset-text;
   color: $pink-text;
+  outline: none;
 
   &:hover,
   &:focus {
