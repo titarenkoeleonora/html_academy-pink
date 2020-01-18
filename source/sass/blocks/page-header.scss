@@ -26,17 +26,17 @@
     fill: $white;
     opacity: 0.3;
   }
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
 }
 
 .page-header__logo-image {
   min-height: 46px;
   margin-top: 21px;
   padding-left: 20px;
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
