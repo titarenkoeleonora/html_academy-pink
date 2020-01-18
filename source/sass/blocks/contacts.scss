@@ -81,9 +81,11 @@
   &:hover,
   &:focus {
     color: $dark-background;
+    border-bottom: 1px solid $dark-background;
   }
 
   &:active {
+    text-decoration: none;
     opacity: 0.3;
   }
 }

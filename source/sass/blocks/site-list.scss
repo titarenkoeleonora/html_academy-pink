@@ -42,13 +42,15 @@
   .site-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 621px;
+    width: 654px;
   }
 
   .site-list__item {
     display: flex;
     align-items: center;
+    min-width: 131px;
     min-height: 110px;
     border: 0;
   }

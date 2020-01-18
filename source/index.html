@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная &#448; PINK</title>
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff" crossorigin="anonymous">
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
@@ -88,26 +94,20 @@
           <ul class="download__list">
             <li class="download_item">
               <a href="https://www.apple.com/ios/app-store/">
-                <div class="photo__image-wrapper">
-                  <img class="download__logo app-store" src="img/logo-apple.svg" alt="Скачать приложение в App Store"
-                    width="47" height="56">
-                </div>
+                <img class="download__logo app-store" src="img/logo-apple.svg" alt="Скачать приложение в App Store"
+                  width="47" height="56">
               </a>
             </li>
             <li class="download_item">
               <a href="https://play.google.com/store">
-                <div class="photo__image-wrapper">
-                  <img class="download__logo google-play" src="img/logo-android.svg"
-                    alt="Скачать приложение в Google Play" width="43" height="47">
-                </div>
+                <img class="download__logo google-play" src="img/logo-android.svg"
+                  alt="Скачать приложение в Google Play" width="43" height="47">
               </a>
             </li>
             <li class="download_item">
               <a href="https://www.microsoft.com/ru-ru/">
-                <div class="photo__image-wrapper">
-                  <img class="download__logo microsoft-store" src="img/logo-microsoft.svg"
-                    alt="Скачать приложение в Microsoft Store" width="44" height="41">
-                </div>
+                <img class="download__logo microsoft-store" src="img/logo-microsoft.svg"
+                  alt="Скачать приложение в Microsoft Store" width="44" height="41">
               </a>
             </li>
           </ul>
@@ -199,7 +199,7 @@
       <div class="rates__container">
         <table class="rates__table">
           <tr class="rates__head">
-            <th class="rates__title--empty"></th>
+            <th class="rates__title rates__title--empty"></th>
             <th class="rates__title">
               <div class="rates__subtitle">База</div>
               <span class="rates__price">1,99 usd</span>

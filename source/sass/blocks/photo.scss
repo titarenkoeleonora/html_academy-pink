@@ -13,7 +13,7 @@
   align-items: center;
   width: 140px;
   height: 36px;
-  right: 31px;
+  right: 20px;
   background-color: $pink-text;
   color: $white;
   font-size: 10px;
@@ -70,7 +70,8 @@
 
   .photo__sticker {
     top: 54px;
-    right: 8px;
+    right: 0;
+    left: 810px;
   }
 
   .photo__link-full {

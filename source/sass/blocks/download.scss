@@ -79,6 +79,8 @@
 .download__list {
   @include reset-list;
   display: flex;
+  flex-wrap: wrap;
+  width: 205px;
   margin-top: 31px;
 }
 
