@@ -1,7 +1,8 @@
 .emotion__container {
+  @include reset-fieldset;
   width: 320px;
   margin: 0 auto;
-  margin-top: 32px;
+  margin-top: 33px;
   border: 0;
 }
 
@@ -13,8 +14,9 @@
 
 .emotion__title {
   display: block;
-  text-align: center;
+  margin: 0 auto;
   margin-top: 41px;
+  text-align: center;
   color: $pink-text;
   font-size: 14px;
   font-weight: 400;
@@ -24,12 +26,12 @@
 
 .emotion__input-text {
   display: flex;
-  width: 276px;
-  height: 197px;
+  width: 280px;
+  height: 201px;
   resize: none;
   overflow: auto;
   margin: 0 auto;
-  margin-top: 6px;
+  margin-top: 9px;
   padding-top: 14px;
   padding-right: 20px;
   padding-left: 20px;
@@ -38,7 +40,7 @@
 
 @media (min-width: $tablet-width) {
   .emotion__container {
-    width: 590px;
+    width: 616px;
     margin-top: 51px;
     padding-top: 9px;
     border: 2px solid #e5e5e5;
@@ -54,23 +56,28 @@
   }
 
   .emotion__input-text {
-    width: 496px;
-    height: 190px;
-    margin-top: 23px;
-    margin-bottom: 41px;
-    padding-top: 13px;
+    width: 500px;
+    height: 193px;
+    margin-top: 22px;
+    margin-bottom: 51px;
+    padding-top: 14px;
+    padding-left: 19px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .emotion__container {
-    width: 936px;
+    width: 938px;
+    padding: 0;
     box-sizing: border-box;
   }
 
   .emotion__input-text {
-    width: 816px;
-    height: 124px;
-    margin-top: 19px;
+    width: 819px;
+    height: 128px;
+    margin-top: 28px;
+    margin-bottom: 43px;
+    padding-top: 15px;
+    padding-left: 18px;
   }
 }

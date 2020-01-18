@@ -5,14 +5,18 @@
   width: 35px;
   height: 35px;
   margin-top: -5px;
-  margin-left: -20px;
+  margin-left: -70px;
   border: 2px solid #e5e5e5;
   background-color: $white;
+}
 
-  &:hover,
-  &:focus {
-    border: 2px solid $dark-background;
-  }
+.checkbox + .achievements__label:hover::before,
+.checkbox:focus + .achievements__label::before {
+  border-color: $dark-background;
+}
+
+.checkbox + .achievements__label:active::before {
+  border-color: $pink-text;
 }
 
 .checkbox:checked + .achievements__label::before {
@@ -25,14 +29,19 @@
   background-position-x: center;
   background-position-y: center;
 
-  &:hover,
-  &:focus {
+  &:hover::before {
     border-color: $dark-background;
   }
 }
 
 @media (min-width: $tablet-width) {
   .checkbox + .achievements__label::before {
-    margin-left: -10px;
+    margin-left: -60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox + .achievements__label::before {
+    margin-left: -60px;
   }
 }

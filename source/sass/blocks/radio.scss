@@ -4,31 +4,52 @@
   display: block;
   width: 35px;
   height: 35px;
-  margin-left: -2px;
+  margin-top: -4px;
+  margin-left: -70px;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
   background-color: $white;
 }
 
-.radio:checked + .apps__label::before {
-  content: "\2022";
+.radio + .apps__label:hover::before,
+.radio:focus + .apps__label::before {
+  border-color: $dark-background;
+}
+
+.radio + .apps__label:active::before {
+  border-color: $pink-text;
+}
+
+.radio:checked + .apps__label::after {
+  content: "";
   position: absolute;
-  display: block;
-  text-align: center;
+  z-index: 1;
+  top: 9px;
+  left: -48px;
+  width: 15px;
+  height: 15px;
   color: $pink-text;
-  font-size: 65px;
+  background-color: $pink-text;
+  border-radius: 50%;
+}
+
+@media (max-width: $mobile-width) {
+  .radio:checked + .apps__label::after {
+    top: 8px;
+    left: -58px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .radio + .apps__label::before {
     margin-top: -3px;
-    margin-left: 6px;
+    margin-left: -59px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .radio + .apps__label::before {
     margin-top: -3px;
-    margin-left: 33px;
+    margin-left: -60px;
   }
 }

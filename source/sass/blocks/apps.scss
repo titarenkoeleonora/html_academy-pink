@@ -1,7 +1,8 @@
 .apps__container {
+  @include reset-fieldset;
   width: 320px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 38px;
   border: 0;
 }
 
@@ -9,35 +10,37 @@
   max-width: 220px;
   margin: 0 auto;
   text-align: center;
+  text-transform: uppercase;
   color: $pink-text;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  text-transform: uppercase;
 }
 
 .apps__list {
   @include reset-list;
-  margin-right: 22px;
-  margin-left: 23px;
-  padding-top: 32px;
-  padding-bottom: 12px;
+  margin-top: 39px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .apps__item {
   padding-bottom: 45px;
 
   &:last-child {
-    padding-bottom: 25px;
+    padding-bottom: 47px;
   }
 }
 
 .apps__label {
-  margin-left: 67px;
+  position: relative;
+  display: block;
+  margin-left: 70px;
   color: $dark-background;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,28 +49,35 @@
   }
 
   .apps__container {
-    width: 590px;
-    margin-top: 45px;
+    width: 616px;
+    margin-top: 47px;
+    padding-bottom: 0;
     border: 2px solid #e5e5e5;
   }
 
   .apps__title {
     max-width: 450px;
-    padding-right: 32px;
+    padding-right: 33px;
     padding-left: 32px;
   }
 
   .apps__list {
-    padding-top: 42px;
-    padding-bottom: 23px;
+    margin: 0;
+    margin-top: 48px;
+    margin-left: 52px;
+    padding-bottom: 12px;
   }
 
-  .apps__item {
-    padding-left: 15px;
+  .apps__label {
+    margin-left: 65px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .apps {
+    padding-top: 2px;
+  }
+
   .apps__container {
     width: 431px;
     margin: 0;
@@ -75,13 +85,13 @@
   }
 
   .apps__title {
-    padding-top: 5px;
+    padding-top: 3px;
   }
 
   .apps__list {
-    padding-top: 67px;
-    padding-left: 3px;
-    padding-bottom: 33px;
+    margin-top: 50px;
+    margin-left: 42px;
+    padding-bottom: 11px;
   }
 
   .apps__label {

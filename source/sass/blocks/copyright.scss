@@ -1,16 +1,17 @@
 .copyright {
   display: flex;
   align-items: center;
-  margin-top: 0;
 }
 
 .copyright__link {
-  padding-left: 5px;
-  color: $pink-text;
+  padding-top: 2px;
+  padding-left: 7px;
+  fill: $pink-text;
+  outline: none;
 
   &:hover,
   &:focus {
-    color: $dark-background;
+    fill: $dark-background;
   }
 
   &:active {
@@ -25,8 +26,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .copyright {
-    margin-top: 7px;
+  .copyright__icon {
+    padding-top: 4px;
+    padding-left: 7px;
+
+    &--contest {
+      padding-top: 5px;
+      padding-left: 8px;
+    }
   }
 }
 
@@ -35,5 +42,9 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
+  }
+
+  .copyright__icon {
+    padding-top: 5px;
   }
 }

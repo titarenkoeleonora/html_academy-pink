@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 63px;
+  min-height: 64px;
   text-align: center;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), 0 -1px #000000;
 }
@@ -15,6 +15,7 @@
   font-weight: 700;
   line-height: 32px;
   text-transform: uppercase;
+  outline: none;
 
 
   &:hover {
@@ -33,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 63px;
+    min-height: 64px;
   }
 }
 
@@ -68,7 +69,9 @@
   }
 
   .site-list__link--active {
-    color: $white;
-    border-bottom: 2px solid $white;
+    pointer-events: none;
+    user-select: none;
+    line-height: 40px;
+    border-bottom: 2px solid white;
   }
 }

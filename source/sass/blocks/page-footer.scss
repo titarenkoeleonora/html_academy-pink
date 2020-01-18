@@ -1,4 +1,5 @@
 .page-footer {
+  color: $dark-background;
   background-color: $white;
 }
 
@@ -10,19 +11,32 @@
 }
 
 .page-footer__logo {
-  margin-top: 55px;
-}
+  margin-top: 54px;
+  cursor: pointer;
+  outline: none;
 
-.page-footer__logo-image {
+  &--photo {
+    margin-top: 39px;
+  }
+
   &:hover,
   &:focus {
-    color: $pink-text;
+    fill: $pink-text;
   }
 
   &:active {
-    color: $dark-background;
+    fill: $dark-background;
     opacity: 0.3;
   }
+}
+
+.page-footer__social {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.page-footer__copyright {
+  margin-top: 0;
 }
 
 @media (max-width: $mobile-width) {
@@ -32,6 +46,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    min-height: 128px;
+  }
+
   .page-footer__container {
     display: flex;
     flex-direction: row;
@@ -42,8 +60,38 @@
   }
 
   .page-footer__logo {
-    margin: 0;
+    margin-top: 36px;
     margin-right: 75px;
+
+    &--index {
+      margin-top: 7px;
+    }
+
+    &--photo {
+      margin-top: 6px;
+    }
+
+    &--contest {
+      margin-top: 59px;
+    }
+  }
+
+  .page-footer__social {
+    margin-top: 38px;
+    margin-right: 92px;
+    margin-bottom: 19px;
+
+    &--contest {
+      margin-top: 86px;
+    }
+  }
+
+  .page-footer__copyright {
+    margin-top: 21px;
+
+    &--contest {
+      margin-top: 72px;
+    }
   }
 }
 
@@ -51,7 +99,7 @@
   .page-footer {
     display: flex;
     flex-direction: row;
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -63,6 +111,52 @@
 
   .page-footer__logo {
     margin: 0;
-    margin-right: 238px;
+
+
+    &--index {
+      margin-right: 235px;
+      margin-left: 2px;
+    }
+
+    &--photo {
+      margin-top: 50px;
+      margin-right: 238px;
+      margin-left: 2px;
+    }
+
+    &--contest {
+      margin-top: -6px;
+      margin-right: 239px;
+      margin-left: 3px;
+    }
+  }
+
+  .page-footer__social {
+    &--index {
+      margin-top: 27px;
+      margin-right: 229px;
+    }
+
+    &--photo {
+      margin-top: 83px;
+      margin-right: 225px;
+    }
+
+    &--contest {
+      margin-top: 28px;
+      margin-right: 223px;
+    }
+  }
+
+  .page-footer__copyright {
+    margin-top: 64px;
+
+    &--index {
+      margin-top: 8px;
+    }
+
+    &--contest {
+      margin-top: 9px;
+    }
   }
 }

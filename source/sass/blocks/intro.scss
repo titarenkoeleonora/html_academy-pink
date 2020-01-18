@@ -1,7 +1,7 @@
 .intro {
   display: flex;
-  min-height: 238px;
-  margin-top: -66px;
+  min-height: 240px;
+  margin-top: -70px;
   color: $white;
   background-color: $dark-background;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -10,6 +10,8 @@
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-position-y: -4px;
+    background-size: 320px 462px;
   }
 }
 
@@ -17,63 +19,75 @@
   display: flex;
   width: 230px;
   margin: 0 auto;
-  margin-top: 99px;
+  margin-top: 97px;
   padding-bottom: 55px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
   line-height: 28px;
+
+  &--contest {
+    margin-top: 99px;
+    padding-bottom: 54px;
+    line-height: 29px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .intro {
-    min-height: 442px;
+    min-height: 438px;
     margin-top: -110px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position-y: -45px;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: cover;
+      background-size: 1186px;
+      background-position-y: 1px;
     }
   }
 
   .intro__title {
-    padding-top: 84px;
+    padding-top: 81px;
     font-size: 50px;
     font-weight: 300;
     line-height: 60px;
-  }
 
-  .intro__title--photos {
-    width: 348px;
-  }
+    &--photos {
+      width: 348px;
+    }
 
-  .intro__title--contest {
-    width: 570px;
+    &--contest {
+      width: 570px;
+      padding-top: 79px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
-    min-height: 392px;
+    width: 100%;
+    min-height: 394px;
     margin-top: -110px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-size: 2650px 853px;
+    background-size: 2562px;
     background-position-x: center;
+    background-position-y: 0;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2562px;
+      background-position-y: 11px;
     }
   }
 
-  .intro__title--contest {
-    width: 839px;
-  }
-
   .intro__title {
-    padding-top: 72px;
+    padding-top: 76px;
+
+    &--contest {
+      width: 839px;
+      padding-top: 77px;
+    }
   }
 }

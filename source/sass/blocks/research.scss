@@ -1,12 +1,31 @@
 .research {
   display: none;
   min-width: 320px;
+  color: $dark-background;
 }
 
 .research__link {
   text-decoration: underline;
   font-size: 14px;
   color: $pink-text;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $dark-background;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .research__text {
+    br {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -15,10 +34,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 610px;
+    width: 617px;
     margin: 0 auto;
-    padding-top: 55px;
-    padding-bottom: 51px;
+    padding-top: 58px;
+    padding-bottom: 20px;
     text-align: left;
     background-color: $white;
   }
@@ -27,38 +46,46 @@
     display: flex;
     flex-direction: column;
     width: 295px;
-    margin-left: 64px;
+    margin-left: 70px;
   }
 
   .research__subtitle {
     @include reset-text;
     width: 200px;
-    margin-top: 43px;
+    margin-top: 38px;
     font-size: 30px;
     font-weight: 700;
-    line-height: 33px;
+    line-height: 35px;
   }
 
   .research__text {
     @include reset-text;
     width: 300px;
-    margin-top: 13px;
+    margin-top: 11px;
   }
 
   .research__info {
     display: flex;
-    width: 603px;
+    width: 619px;
     font-size: 14px;
     line-height: 24px;
 
     &::before {
-      content: "";
+      content: "24";
       position: relative;
       display: block;
       width: 238px;
-      height: 276px;
-      background-image: url("../img/icon-timer.svg");
-      background-size: contain;
+      height: 215px;
+      padding-top: 139px;
+      text-align: center;
+      font-size: 96px;
+      font-weight: 700;
+      color: #d22856;
+      background-image: url("../img/editor-diagram-fill.svg"), url("../img/timer.svg");
+      background-position-x: center, center;
+      background-position-y: 55px, 0;
+      background-size: 202px 202px, contain;
+      background-repeat: no-repeat;
     }
   }
 
@@ -75,15 +102,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 35px;
-    padding-bottom: 50px;
+    padding-top: 0;
+    padding-bottom: 9px;
     text-align: left;
     background-color: $grey-background;
   }
 
   .research__container {
     display: flex;
-    justify-content: center;
     width: 525px;
     margin: 0 auto;
     margin-left: 69px;
@@ -92,7 +118,7 @@
   .research__subtitle {
     @include reset-text;
     width: 350px;
-    margin-top: 45px;
+    margin-top: 123px;
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
@@ -107,28 +133,40 @@
     justify-content: space-between;
     width: 940px;
     min-height: 350px;
-    padding-bottom: 60px;
+    padding-bottom: 0;
     font-size: 18px;
     line-height: 24px;
 
     &::before {
-      content: "";
+      content: "24";
       position: relative;
       display: block;
       width: 298px;
-      height: 345px;
-      background-image: url("../img/icon-timer.svg");
-      background-size: contain;
+      height: 227px;
+      padding-top: 206px;
+      text-align: center;
+      font-size: 120px;
+      font-weight: 700;
+      background-image: url("../img/editor-diagram-fill.svg"), url("../img/timer.svg");
+      background-position-x: center, center;
+      background-position-y: 97px, 30px;
+      background-size: 255px 255px, contain;
+      background-repeat: no-repeat;
     }
   }
 
   .research__text {
+    width: 530px;
     margin-top: 25px;
     line-height: 30px;
+
+    br {
+      display: none;
+    }
   }
 
   .research__link {
-    padding-top: 19px;
+    margin-top: 32px;
     font-size: 18px;
   }
 }

@@ -1,6 +1,6 @@
 .rates {
-  padding-bottom: 40px;
-  background: linear-gradient(175deg, $white 13%, $grey-background 10%);
+  padding-bottom: 39px;
+  background: linear-gradient(176deg, $white 12%, $grey-background 10%);
 }
 
 .rates__container {
@@ -13,7 +13,7 @@
 
 .rates__table {
   position: relative;
-  width: 173%;
+  width: 252.1%;
   left: 50%;
   margin-top: 133px;
   margin-bottom: 34px;
@@ -50,14 +50,15 @@
   &--hit {
     background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
+    background-position-x: -1px;
   }
 
 
   &--hit::after {
     content: "Хит";
     position: absolute;
-    left: 11px;
-    top: 12px;
+    top: 15px;
+    left: 8px;
     transform: rotate(-45deg);
     font-size: 14px;
     font-weight: 400;
@@ -71,7 +72,7 @@
   margin-top: -4px;
   font-size: 18px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 31px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -79,7 +80,7 @@
 .rates__price {
   font-size: 24px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 31px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -87,11 +88,11 @@
 .rates__item {
   position: relative;
   height: 61px;
-  padding: 0 20px;
+  padding: 0 22px;
   text-align: left;
   font-size: 14px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 31px;
   color: $dark-background;
   text-transform: uppercase;
   background-clip: padding-box;
@@ -104,16 +105,19 @@
   display: block;
   width: 32px;
   height: 27px;
-  top: 16px;
-  right: 18px;
+  top: 17px;
+  right: 14px;
   font-size: 0;
 
   &--yes {
     background-image: url("../img/icon-yes.svg");
     background-repeat: no-repeat;
+    background-size: 31px 23px;
   }
 
   &--no {
+    top: 14px;
+    right: 13px;
     background-image: url("../img/icon-no.svg");
     background-repeat: no-repeat;
   }
@@ -126,19 +130,20 @@
 .rates__switch {
   @include reset-list;
   margin: 0 auto;
-  padding-top: 6px;
+  padding-top: 5px;
   padding-bottom: 8px;
 }
 
 @media (min-width: $tablet-width) {
   .rates {
     padding-bottom: 6px;
+    background: linear-gradient(176deg, #ffffff 16%, #f2f2f2 10%);
   }
 
   .rates__table {
     width: 616px;
     margin: 0 auto;
-    margin-top: 84px;
+    margin-top: 109px;
     margin-bottom: 62px;
     padding: 0 20px;
     left: 0;
@@ -156,21 +161,27 @@
 
   .rates__title {
     width: 25%;
-    padding: 11px 0 5px;
+    padding: 11px 0 8px;
+
+    &--hit {
+      background-size: 61px 61px;
+    }
 
     &--hit::after {
-      top: 13px;
-      left: 12px;
+      top: 7px;
+      left: 7px;
     }
   }
 
   .rates__subtitle {
+    margin-top: 1px;
     font-size: 16px;
-    margin-top: 2px;
+    line-height: 29px;
   }
 
   .rates__price {
     font-size: 18px;
+    line-height: 29px;
   }
 
   .rates__object {
@@ -192,9 +203,13 @@
 
   .rates__option {
     position: relative;
-    top: 0;
-    left: 0;
+    top: 2px;
+    left: 3px;
     margin: auto;
+
+    &--no {
+      top: -1px;
+    }
   }
 
   .rates__switch {
@@ -203,6 +218,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .rates {
+    padding-top: 65px;
+    background: linear-gradient(176deg, #ffffff 17.5%, #f2f2f2 10%);
+  }
+
   .rates__container {
     padding-top: 5px;
     padding-bottom: 27px;
@@ -210,11 +230,12 @@
 
   .rates__table {
     width: 938px;
-    margin-top: 110px;
+    margin-top: 115px;
   }
 
   .rates__title {
     height: 98px;
+    padding-top: 2px;
 
     &--hit::after {
       top: 11px;
@@ -238,5 +259,14 @@
 
   .rates__item {
     height: 61px;
+  }
+
+  .rates__option {
+    top: 3px;
+    left: 0;
+
+    &--no {
+      top: -1px;
+    }
   }
 }

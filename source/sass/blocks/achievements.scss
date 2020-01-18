@@ -3,6 +3,7 @@
 }
 
 .achievements__container {
+  @include reset-fieldset;
   width: 320px;
   margin: 0 auto;
   border: 0;
@@ -11,26 +12,25 @@
 .achievements__title {
   max-width: 220px;
   margin: 0 auto;
-  padding-top: 39px;
-  padding-bottom: 37px;
+  padding-top: 38px;
+  padding-bottom: 43px;
   text-align: center;
+  text-transform: uppercase;
   color: $pink-text;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  text-transform: uppercase;
 }
 
 .achievements__list {
   @include reset-list;
   margin-right: 22px;
   margin-left: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 37px;
 }
 
 .achievements__item {
   padding-bottom: 52px;
-  padding-left: 18px;
 
   &:last-child {
     padding-bottom: 10px;
@@ -38,11 +38,14 @@
 }
 
 .achievements__label {
-  margin-left: 50px;
+  position: relative;
+  display: block;
+  margin-left: 68px;
   color: $dark-background;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -51,25 +54,32 @@
   }
 
   .achievements__container {
-    width: 590px;
-    padding-bottom: 20px;
+    width: 616px;
+    margin-top: 2px;
+    padding-top: 3px;
+    padding-bottom: 16px;
     border: 2px solid #e5e5e5;
   }
 
   .achievements__title {
     max-width: 450px;
-    padding-top: 47px;
+    padding-top: 46px;
     padding-right: 32px;
-    padding-bottom: 43px;
+    padding-bottom: 45px;
     padding-left: 32px;
   }
 
   .achievements__list {
-    margin-left: 36px;
+    margin-left: 0;
+    padding-bottom: 27px;
   }
 
   .achievements__item {
     padding-bottom: 52px;
+  }
+
+  .achievements__label {
+    margin-left: 118px;
   }
 }
 
@@ -85,11 +95,15 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 876px;
-    height: 228px; //как без этого ограничения сделать перенос? ведь если добавятся пункты, то все поплывет
-    margin-top: 5px;
+    height: 228px;
+    margin-top: 4px;
   }
 
   .achievements__item {
-    padding-left: 30px;
+    padding-left: 0;
+  }
+
+  .achievements__label {
+    margin-left: 116px;
   }
 }
