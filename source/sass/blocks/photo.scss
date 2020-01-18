@@ -63,14 +63,22 @@
     height: 400px;
 
     &--panorama {
-      width: 100%;
+      width: 1200px;
       height: 506px;
     }
   }
 
   .photo__sticker {
     top: 54px;
-    right: 130px;
+    right: 8px;
     left: initial;
+  }
+
+  .photo__link-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
   }
 }
