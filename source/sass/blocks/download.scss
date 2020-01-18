@@ -235,14 +235,14 @@
 
       @media (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-hand-desktop@2x.png");
-        background-size: contain;
+        background-size: auto 645px;
       }
     }
   }
 
   .download__wrapper {
     margin-top: 170px;
-    margin-left: 2px;
+    margin-left: 1px;
     padding-bottom: 0;
   }
 

@@ -1,6 +1,5 @@
 .pop-up__sent {
   position: absolute;
-  display: block;
   width: 320px;
   min-height: 289px;
   top: 1885px;
@@ -10,6 +9,11 @@
   background-color: $white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
+  // pop-up__sent--open shows hidden by default modal
+  &--open {
+    display: block;
+  }
+
   &--close {
     display: none;
   }
@@ -17,7 +21,6 @@
 
 .pop-up__error {
   position: absolute;
-  display: block;
   width: 320px;
   min-height: 289px;
   top: 1420px;
@@ -26,6 +29,11 @@
   padding-top: 46px;
   background-color: $white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  // pop-up__error--open shows hidden by default modal
+  &--open {
+    display: block;
+  }
 
   &--close {
     display: none;
