@@ -80,7 +80,8 @@
   border-radius: 50%;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $pink-text;
   }
 }

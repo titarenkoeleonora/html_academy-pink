@@ -7,6 +7,7 @@
   padding-top: 2px;
   padding-left: 7px;
   fill: $pink-text;
+  outline: none;
 
   &:hover,
   &:focus {
@@ -25,7 +26,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .copyright__link {
+  .copyright__icon {
     padding-top: 4px;
     padding-left: 7px;
 
@@ -43,7 +44,7 @@
     line-height: 18px;
   }
 
-  .copyright__link {
+  .copyright__icon {
     padding-top: 5px;
   }
 }

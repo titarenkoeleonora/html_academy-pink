@@ -13,11 +13,9 @@
   margin: 0 auto;
 }
 
-.page-header__logo-image {
-  min-height: 46px;
-  margin-top: 21px;
-  padding-left: 20px;
+.page-header__logo {
   fill: $white;
+  outline: none;
 
   &:hover,
   &:focus {
@@ -33,6 +31,12 @@
   &--desktop {
     display: none;
   }
+}
+
+.page-header__logo-image {
+  min-height: 46px;
+  margin-top: 21px;
+  padding-left: 20px;
 }
 
 @media (min-width: $tablet-width) {

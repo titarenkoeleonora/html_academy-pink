@@ -11,16 +11,13 @@
 }
 
 .page-footer__logo {
+  margin-top: 54px;
   cursor: pointer;
 
   &--photo {
     margin-top: 39px;
   }
 
-  margin-top: 54px;
-}
-
-.page-footer__logo-image {
   &:hover,
   &:focus {
     fill: $pink-text;
