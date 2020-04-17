@@ -16,8 +16,6 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 ---
 
-### Памятка
-
 #### 1. Зарегистрируйтесь на Гитхабе
 
 Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
@@ -43,6 +41,8 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 ```
 git clone SSH-адрес_вашего_форка
 ```
+
+
 
 Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
 
