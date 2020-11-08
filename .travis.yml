@@ -9,7 +9,7 @@ cache:
   - node_modules
 
 script:
-  npm run build
+  gulp build
 
 deploy:
   provider: pages
