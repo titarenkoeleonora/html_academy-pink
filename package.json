@@ -44,7 +44,7 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "8.16"
+    "node": "12.x"
   },
   "dependencies": {
     "del": "^5.1.0"
